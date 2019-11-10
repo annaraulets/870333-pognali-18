@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anna-Anastasiia Raulets](https://up.htmlacademy.ru/adaptive/18/user/870333).
-* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
+* Наставник: [Малик Бобер](https://htmlacademy.ru/profile/id17217).
 
 ---
 
