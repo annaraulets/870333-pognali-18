@@ -26,37 +26,37 @@
               <a href="#">Направления</a>
             </li>
             <li class="main-popup__item">
-              <a href="#">Попутчики</a>
+              <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
 
           <a class="main-popup__reg" href="#">Авторизация</a>
 
-          <div class="main-popup__contacts">
-            <p>
+          <div class="main-popup__contacts contact">
+            <p class="contact__tel">
               <img src="https://via.placeholder.com/150x150">
               <a href="#">8 800 555-86-28</a>
             </p>
 
-            <p>
+            <p class="contact__mail">
               <img src="https://via.placeholder.com/150x150">
               <a href="#">mail@htmlacademy.ru</a>
             </p>
           </div>
 
-          <ul class="main-menu__social">
-            <li class="main-menu__social-item">
-              <a href="#">
+          <ul class="main-menu__social social">
+            <li class="social__item">
+              <a class="social__link" href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
             </li>
-            <li class="main-menu__social-item">
-              <a href="#">
+            <li class="social__item">
+              <a class="social__link" href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
             </li>
-            <li class="main-menu__social-item">
-              <a href="#">
+            <li class="social__item">
+              <a class="social__link" href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
             </li>
@@ -66,10 +66,10 @@
     </header>
 
     <main>
-      <h1>Приложение погнали - для настоящий путешественников</h1>
+      <h1 class="visually-hidden">Приложение погнали - для настоящий путешественников</h1>
 
       <section class="main-banner">
-        <h2 class="main-benner__title">В путешествие с крутыми попутчиками!</h2>
+        <h2 class="main-banner__title">В путешествие с крутыми попутчиками!</h2>
         <div class="main-banner__wrapper">
           <a class="main-banner__tel" href="#">
             <img src="https://via.placeholder.com/150x150">
@@ -84,7 +84,7 @@
       <section class="content">
         <blockquote class="content__quote">
           <p>«Лучшее приложение, что я видел в жизни!»</p>
-          <cite>Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
+          <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
         </blockquote>
 
         <ul class="content__list">
@@ -121,7 +121,7 @@
               <!-- <svg></svg> -->
               <h4 class="way-list__title">Таиланд</h4>
               <p class="way-list__text">Джунгли зовут!</p>
-              <p class="way-list__number"><span></span>18321</p>
+              <p class="way-list__number">18321</p>
             </div>
           </li>
           <li class="way-list__item">
@@ -129,7 +129,7 @@
               <!-- <svg></svg> -->
               <h4 class="way-list__title">Франция</h4>
               <p class="way-list__text">Трэ бьен, манифик!</p>
-              <p class="way-list__number"><span></span>12518</p>
+              <p class="way-list__number">12518</p>
             </div>
           </li>
           <li class="way-list__item">
@@ -137,7 +137,7 @@
               <!-- <svg></svg> -->
               <h4 class="way-list__title">Чехия</h4>
               <p class="way-list__text">Закоулки старой Европы</p>
-              <p class="way-list__number"><span></span>12518</p>
+              <p class="way-list__number">12518</p>
             </div>
           </li>
         </ul>
@@ -232,9 +232,9 @@
           <span></span>
         </div>
         <ul class="profile__list">
-          <li class="profile__item">Базовое размещение<br>Бесплатно</li>
-          <li class="profile__item">Вывод на первых позициях<br>99 руб./мес</li>
-          <li class="profile__item">Кастомный цвет карточки<br>59 руб./мес</li>
+          <li class="profile__item">Базовое размещение<span>Бесплатно</span></li>
+          <li class="profile__item">Вывод на первых позициях<span>99 руб./мес</span></li>
+          <li class="profile__item">Кастомный цвет карточки<span>59 руб./мес</span></li>
         </ul>
         <button class="profile__button">Показать тарифы для бизнеса</button>
       </section>
@@ -245,10 +245,12 @@
         Уже зарегистрированы?
         Тогда скорее <a href="#">авторизуйтесь</a>.
         </p>
-        <form class="contact__form">
+
+        <form class="contact__form" action="https://echo.htmlacademy.ru">
           <input class="contact__input" type="email" name="email" placeholder="E-mail">
+          <button class="contact__btn" type="submit"></button>
         </form>
-        <p class="contact__text">Остались вопросы?<br>Мы с радостью на них ответим!</p>
+        <p class="contact__text">Остались вопросы? Мы с радостью на них ответим!</p>
         <div class="contact__wrapper">
           <p class="contact__phone">
             <img src="#">
@@ -264,9 +266,10 @@
       <section class="map">
         <div class="map__block">
           <img src="https://via.placeholder.com/150x150">
-          <p>ул. Большая<br>Конюшенная, 19/8</p>
+          <p>ул. Большая Конюшенная, 19/8</p>
         </div>
         <a class="map__button" href="#">Проложить маршрут</a>
+        <img class="map__img" src="#">
       </section>
     </main>
 
