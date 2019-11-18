@@ -66,79 +66,221 @@
     </header>
 
     <main>
-      <section class="profile">
-        <div class="profile__top">
-          <div class="profile__lvl">
-            <span>80</span>
-            <span>level</span>
+      <form>
+        <section class="profile">
+          <div class="profile__top">
+            <div class="profile__lvl">
+              <span>80</span>
+              <span>level</span>
+            </div>
+            <div class="profile__avatar">
+              <img src="#">
+            </div>
+            <button class="profile__btn">Сменить фото</button>
           </div>
-          <div class="profile__avatar">
-            <img src="#">
+
+          <div class="profile__bottom">
+              <fieldset class="profile__box-one">
+                <legend>Тэги</legend>
+                <textarea rows="3">#бургер #бар #футбол #концерт #крафт</textarea>
+              </fieldset>
+              <fieldset class="profile__box-two">
+                <legend>Транспорт</legend>
+                <ul class="profile__list transport">
+                  <li class="transport__item">
+                    <input type="checkbox" name="plane" id="plane-field">
+                    <label for="plane-field"></label>
+                  </li>
+                  <li class="transport__item">
+                    <input type="checkbox" name="bus" id="bus-field">
+                    <label for="bus-field"></label>
+                  </li>
+                  <li class="transport__item">
+                    <input type="checkbox" name="bike" id="bike-field">
+                    <label for="bike-field"></label>
+                  </li>
+                  <li class="transport__item">
+                    <input type="checkbox" name="run" id="run-field">
+                    <label for="run-field"></label>
+                  </li>
+                </ul>
+              </fieldset>
           </div>
-          <button class="profile__btn">Сменить фото</button>
-        </div>
+        </section>
 
-        <div class="profile__bottom">
-          <form class="profile__form">
-            <fieldset class="profile__box-one">
-              <legend>Тэги</legend>
-              <textarea rows="3">#бургер #бар #футбол #концерт #крафт</textarea>
-            </fieldset>
-            <fieldset class="profile__box-two">
-              <legend>Транспорт</legend>
-              <ul class="profile__list transport">
-                <li class="transport__item">
-                  <input type="checkbox" name="plane" id="plane-field">
-                  <label for="plane-field"></label>
-                </li>
-                <li class="transport__item">
-                  <input type="checkbox" name="bus" id="bus-field">
-                  <label for="bus-field"></label>
-                </li>
-                <li class="transport__item">
-                  <input type="checkbox" name="bike" id="bike-field">
-                  <label for="bike-field"></label>
-                </li>
-                <li class="transport__item">
-                  <input type="checkbox" name="run" id="run-field">
-                  <label for="run-field"></label>
-                </li>
-              </ul>
-            </fieldset>
-          </form>
-        </div>
-      </section>
-
-      <section class="plans">
-        <h2 class="plans__main-title">Мои планы:</h2>
-        <div class="plans__box">
-          <h3 class="plans__title">1. Франция, Италия</h3>
-          <p class="plans__text">3 попутчика</p>
-          <p class="plans__text">26 мар — 29 мар</p>
-          <a class="plans__link" href="#">Изменить</a>
-        </div>
-        <div class="plans__box">
-          <h3 class="plans__title">2. Таиланд, Индонезия</h3>
-          <p class="plans__text">1 попутчика</p>
-          <p class="plans__text">1 июл — 15 июл</p>
-          <a class="plans__link" href="#">Изменить</a>
-        </div>
-      </section>
-
-      <section class="steps">
-        <h2 class="steps__main-title">Добавить план:</h2>
-        <form>
-          <div class="step-one">
-            <h3>Шаг 1. Даты пребывания</h3>
-            <p>Укажите предпочтительное количество попутчиков,
-            которых вы хотели бы позвать в поездку и ее
-            предполагаемую длительность.</p>
-            <h4>ищу попутчиков:</h4>
-            <span></span>
-
+        <section class="plans">
+          <h2 class="plans__main-title">Мои планы:</h2>
+          <div class="plans__box">
+            <h3 class="plans__title">1. Франция, Италия</h3>
+            <p class="plans__text">3 попутчика</p>
+            <p class="plans__text">26 мар — 29 мар</p>
+            <a class="plans__link" href="#">Изменить</a>
           </div>
-        </form>
-      </section>
+          <div class="plans__box">
+            <h3 class="plans__title">2. Таиланд, Индонезия</h3>
+            <p class="plans__text">1 попутчика</p>
+            <p class="plans__text">1 июл — 15 июл</p>
+            <a class="plans__link" href="#">Изменить</a>
+          </div>
+        </section>
+
+        <section class="steps">
+          <h2 class="steps__main-title">Добавить план:</h2>
+            <div class="steps__step-one step-one">
+              <h3 class="step-one__title">Шаг 1. Даты пребывания</h3>
+              <p class="step-one__text">Укажите предпочтительное количество попутчиков,
+              которых вы хотели бы позвать в поездку и ее
+              предполагаемую длительность.</p>
+              <h4 class="step-one__text-find">ищу попутчиков:</h4>
+              <span class="step-one__people">Чел.</span>
+              <div class="step-one__wrapper">
+                <button class="step-one__less"></button>
+                <input class="step-one__number" type="number" name="travelers">
+                <button class="step-one__more"></button>
+              </div>
+              <h4 class="step-one__text-find">Длительность:</h4>
+              <span class="step-one__days">дн.</span>
+              <div class="step-one__wrapper">
+                <button class="step-one__less"></button>
+                <input class="step-one__number" type="number" name="travelers">
+                <button class="step-one__more"></button>
+              </div>
+              <input class="step-one__checkbox" type="checkbox" name="child" id="child">
+              <label for="child">Можно с детьми</label>
+
+              <div class="step-one__calendar">
+                <div class="">
+                  <button></button>
+                  <h4>Март 2019</h4>
+                  <button></button>
+                </div>
+
+                <table>
+                  <tr>
+                    <td>П</td>
+                    <td>В</td>
+                    <td>С</td>
+                    <td>Ч</td>
+                    <td>П</td>
+                    <td>С</td>
+                    <td>В</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td>31</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                  </tr>
+                </table>
+              </div>
+              <a href="form.html#step-two"></a>
+            </div>
+
+            <div class="steps__step-two step-two">
+              <h3 class="steps__main-title">Шаг 2. Маршрут</h3>
+              <p class="steps__main-text">Укажите страны, которые вы хотели по посетить.
+              Это может быть одна или сразу несколько.</p>
+
+              <div class="step-two__city">
+                <input type="text" name="city" placeholder="Босния и герцеговина">
+                <button>Показать</button>
+                <div class="step-two__wrapper">
+                  <img src="#">
+                  <button>Закрыть</button>
+                </div>
+              </div>
+              <div class="step-two__city">
+                <input type="text" name="city" placeholder="Чехия">
+                <button>Показать</button>
+                <div class="step-two__wrapper">
+                  <img src="#">
+                  <button>Закрыть</button>
+                </div>
+              </div>
+              <div class="step-two__city">
+                <input type="text" name="city" placeholder="Выберите страну">
+                <button>Показать</button>
+                <button>Закрыть</button>
+              </div>
+              <div class="step-two__city">
+                <input type="text" name="city" placeholder="Добавить страну">
+                <button>Показать</button>
+                <button>Закрыть</button>
+              </div>
+
+              <a href="#">Следующий шаг</a>
+              <a href="#">На шаг назад</a>
+            </div>
+
+            <div>
+              <h3>Шаг 3. Развлечения</h3>
+              <p>Наконец, расскажите о своих планах времяпровождения.
+              Можно писать в свободной форме и ставить тэги.</p>
+
+              <b>Босния и герцеговина</b>
+              <img src="#">
+              <textarea placeholder="План действий" rows="10"></textarea>
+
+              <b>Чехия</b>
+              <img src="#">
+              <textarea placeholder="План действий" rows="10">
+                Пить пиво и лазить по старым замкам,
+                наслаждаться архитектурой
+                и вот это все.</textarea>
+              <button type="submit">Отправить</button>
+              <a href="#">На шаг назад</a>
+            </div>
+
+        </section>
+      </form>
     </main>
 
     <footer class="footer">
