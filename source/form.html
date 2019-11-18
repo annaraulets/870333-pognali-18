@@ -62,7 +62,84 @@
           </ul>
         </div>
       </nav>
+      <h1>Направления</h1>
     </header>
+
+    <main>
+      <section class="profile">
+        <div class="profile__top">
+          <div class="profile__lvl">
+            <span>80</span>
+            <span>level</span>
+          </div>
+          <div class="profile__avatar">
+            <img src="#">
+          </div>
+          <button class="profile__btn">Сменить фото</button>
+        </div>
+
+        <div class="profile__bottom">
+          <form class="profile__form">
+            <fieldset class="profile__box-one">
+              <legend>Тэги</legend>
+              <textarea rows="3">#бургер #бар #футбол #концерт #крафт</textarea>
+            </fieldset>
+            <fieldset class="profile__box-two">
+              <legend>Транспорт</legend>
+              <ul class="profile__list transport">
+                <li class="transport__item">
+                  <input type="checkbox" name="plane" id="plane-field">
+                  <label for="plane-field"></label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bus" id="bus-field">
+                  <label for="bus-field"></label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bike" id="bike-field">
+                  <label for="bike-field"></label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="run" id="run-field">
+                  <label for="run-field"></label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+
+      <section class="plans">
+        <h2 class="plans__main-title">Мои планы:</h2>
+        <div class="plans__box">
+          <h3 class="plans__title">1. Франция, Италия</h3>
+          <p class="plans__text">3 попутчика</p>
+          <p class="plans__text">26 мар — 29 мар</p>
+          <a class="plans__link" href="#">Изменить</a>
+        </div>
+        <div class="plans__box">
+          <h3 class="plans__title">2. Таиланд, Индонезия</h3>
+          <p class="plans__text">1 попутчика</p>
+          <p class="plans__text">1 июл — 15 июл</p>
+          <a class="plans__link" href="#">Изменить</a>
+        </div>
+      </section>
+
+      <section class="steps">
+        <h2 class="steps__main-title">Добавить план:</h2>
+        <form>
+          <div class="step-one">
+            <h3>Шаг 1. Даты пребывания</h3>
+            <p>Укажите предпочтительное количество попутчиков,
+            которых вы хотели бы позвать в поездку и ее
+            предполагаемую длительность.</p>
+            <h4>ищу попутчиков:</h4>
+            <span></span>
+
+          </div>
+        </form>
+      </section>
+    </main>
 
     <footer class="footer">
       <a class="footer__logo" href="#">
