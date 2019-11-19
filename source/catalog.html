@@ -62,12 +62,187 @@
           </ul>
         </div>
       </nav>
+      <h1>Попутчики</h1>
     </header>
 
     <main>
-      <div>
-        <h2>Попутчики</h2>
-      </div>
+
+      <section class="filter">
+        <div class="filter__close close">
+          <span class="close__img"></span>
+          <h3 class="close__title">Фильтрация по странам</h3>
+        </div>
+
+        <div class="filter__open open">
+          <ul class="fitler__list open__country">
+            <li>
+              <a href="europe.html">Европа</a>
+            </li>
+            <li>
+              <a href="europe.html">Азия</a>
+            </li>
+            <li>
+              <a href="europe.html">Америка</a>
+            </li>
+            <li>
+              <a href="europe.html">Острова</a>
+            </li>
+          </ul>
+
+          <ul class="filter__list open__letters">
+            <li>А</li>
+            <li>Б</li>
+            <li>В</li>
+            <li>Г</li>
+            <li>Д</li>
+            <li>Е</li>
+            <li>И</li>
+            <li>К</li>
+            <li>Л</li>
+            <li>М</li>
+            <li>Н</li>
+            <li>О</li>
+            <li>П</li>
+            <li>Р</li>
+            <li>С</li>
+            <li>Т</li>
+            <li>У</li>
+            <li>Ф</li>
+            <li>Х</li>
+            <li>Ч</li>
+            <li>Ш</li>
+            <li>Э</li>
+            <li>Ю</li>
+            <li>Я</li>
+          </ul>
+
+          <ul class="filter__list open__city">
+            <li>
+              <a href="#">Афганистан</a>
+            </li>
+            <li>
+              <a href="#">Албания</a>
+            </li>
+            <li>
+              <a href="#">Алжир</a>
+            </li>
+            <li>
+              <a href="#">Андорра</a>
+            </li>
+            <li>
+              <a href="#">Аргентина</a>
+            </li>
+            <li>
+              <a href="#">Армения</a>
+            </li>
+            <li>
+              <a href="#">Австралия</a>
+            </li>
+            <li>
+              <a href="#">Австрия</a>
+            </li>
+            <li>
+              <a href="#">Азербайджан</a>
+            </li>
+          </ul>
+
+          <button class="filter__btn">свернуть</button>
+        </div>
+      </section>
+
+      <section class="filter-travel">
+        <h2 class="filter-travel__main-title">Подберите идеального попутчика</h2>
+        <form class="filter-travel__form">
+          <ul class="filter-travel__list">
+            <li class="filter-travel__item">
+              <h3 class="filter-travel__title">Хобби</h3>
+              <span class="filter-travel__arrow"></span>
+              <ul class="hobbi">
+                <li class="hobbi__item">
+                  <input type="checkbox" name="hobbi-1" id="hobbi1-field">
+                  <label for="hobbi1-field">Вышивать крестиком</label>
+                </li>
+                <li class="hobbi__item">
+                  <input type="checkbox" name="hobbi-2" id="hobbi2-field">
+                  <label for="hobbi2-field">Готовить</label>
+                </li>
+                <li class="hobbi__item">
+                  <input type="checkbox" name="hobbi-3" id="hobbi3-field">
+                  <label for="hobbi3-field">Экономить деньги</label>
+                </li>
+              </ul>
+            </li>
+            <li class="filter-travel__item">
+              <h3 class="filter-travel__title">Музыка</h3>
+              <span class="filter-travel__arrow"></span>
+              <ul class="music">
+                <li class="music__item">
+                  <input type="checkbox" name="music-1" id="music1">
+                  <label for="music1">Тяжелый рок</label>
+                </li>
+                <li class="music__item">
+                  <input type="checkbox" name="music-2" id="music2">
+                  <label for="music2">Русский рэп</label>
+                </li>
+                <li class="music__item">
+                  <input type="checkbox" name="music-3" id="music3">
+                  <label for="music3">Евроденс</label>
+              </li>
+              </ul>
+            </li>
+            <li class="filter-travel__item">
+              <h3 class="filter-travel__title">Еда</h3>
+              <span class="filter-travel__arrow"></span>
+              <ul class="food">
+                <li class="food__item">
+                  <input type="checkbox" name="food-1" id="food1">
+                  <label for="food1">Мясоед</label>
+                </li>
+                <li class="food__item">
+                  <input type="checkbox" name="food-2" id="food2">
+                  <label for="food2">Веган</label>
+                </li>
+                <li class="food__item">
+                  <input type="checkbox" name="food-3" id="food3">
+                  <label for="food3">Кошер</label>
+                </li>
+              </ul>
+            </li>
+            <li class="filter-travel__item">
+              <h3 class="filter-travel__title">Транспорт</h3>
+              <span class="filter-travel__arrow"></span>
+              <ul class="transport">
+                <li class="transport__item">
+                  <input type="checkbox" name="plane" id="plane-field">
+                  <label for="plane-field"></label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bus" id="bus-field">
+                  <label for="bus-field"></label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="bike" id="bike-field">
+                  <label for="bike-field"></label>
+                </li>
+                <li class="transport__item">
+                  <input type="checkbox" name="run" id="run-field">
+                  <label for="run-field"></label>
+                </li>
+              </ul>
+            </li>
+            <li class="filter-travel__item">
+              <h3 class="filter-travel__title">Левел</h3>
+              <div class="filter-travel__wrapper lvl">
+                <span class="lvl__first"></span>
+                <span class="lvl__second"></span>
+              </div>
+              <span></span>
+              <span></span>
+            </li>
+          </ul>
+          <button class="filter-travel__btn" type="submit">Показать</button>
+        </form>
+      </section>
 
       <section class="ctl">
         <ul class="ctl__list">
