@@ -1,0 +1,26 @@
+.contact {
+  background: #192144;
+  color: #ffffff;
+  @include textstylelight;
+}
+
+.contact__title {
+  @include titlestyle;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: #ffd74b;
+}
+
+.contact__wrapper {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.map__block {
+  p {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,18 @@
+.about {
+  background-color: #192144;
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 292px 352px;
+  color: #ffffff;
+}
+
+.about__title {
+  @include titlestyle;
+}
+
+.about__text {
+  @include textstylelight;
+  &--quote {
+    font-weight: bold;
+  }
+}

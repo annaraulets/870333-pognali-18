@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header>
       <a class="main-logo">
-        <img src="https://via.placeholder.com/150x150" alt="Главный логотип">
+        <img src="img/logo-mobile-white@1x.png" alt="Главный логотип">
       </a>
 
       <nav class="main-popup">
@@ -23,7 +24,7 @@
               <a href="#">О сервисе</a>
             </li>
             <li class="main-popup__item">
-              <a href="#">Направления</a>
+              <a href="form.html">Направления</a>
             </li>
             <li class="main-popup__item">
               <a href="catalog.html">Попутчики</a>
@@ -69,30 +70,31 @@
       <h1 class="visually-hidden">Приложение погнали - для настоящий путешественников</h1>
 
       <section class="main-banner">
-        <h2 class="main-banner__title">В путешествие с крутыми попутчиками!</h2>
-        <div class="main-banner__wrapper">
-          <a class="main-banner__tel" href="#">
-            <img src="https://via.placeholder.com/150x150">
-          </a>
-          <a class="main-banner__mail" href="#">
-            <img src="https://via.placeholder.com/150x150">
-          </a>
-          <a class="main-banner__login" href="#">авторизация</a>
+        <div class="main-banner__block">
+          <h2 class="main-banner__title">В путешествие с крутыми попутчиками!</h2>
+          <div class="main-banner__wrapper">
+            <a class="main-banner__tel" href="#">
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <a class="main-banner__mail" href="#">
+              <img src="https://via.placeholder.com/150x150">
+            </a>
+            <a class="main-banner__login" href="#">авторизация</a>
+          </div>
+
+        <div class="content">
+          <blockquote class="content__quote">
+            <p>«Лучшее приложение, что я видел в жизни!»</p>
+            <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+          </blockquote>
+
+          <ul class="content__list">
+            <li class="content__item">Выберите направление</li>
+            <li class="content__item">Изучите идеи путешественников</li>
+            <li class="content__item">Находите тех, кто похож на вас</li>
+            <li class="content__item">Путешествуйте вместе!</li>
+          </ul>
         </div>
-      </section>
-
-      <section class="content">
-        <blockquote class="content__quote">
-          <p>«Лучшее приложение, что я видел в жизни!»</p>
-          <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-        </blockquote>
-
-        <ul class="content__list">
-          <li class="content__item">Выберите направление</li>
-          <li class="content__item">Изучите идеи путешественников</li>
-          <li class="content__item">Находите тех, кто похож на вас</li>
-          <li class="content__item">Путешествуйте вместе!</li>
-        </ul>
       </section>
 
       <section class="about">
@@ -117,6 +119,9 @@
 
         <ul class="way__list way-list">
           <li class="way-list__item">
+            <div class="way-list__image">
+              <img src="../img/thailand-mobile@1x.jpg">
+            </div>
             <div class="way-list__block">
               <!-- <svg></svg> -->
               <h4 class="way-list__title">Таиланд</h4>
@@ -125,6 +130,9 @@
             </div>
           </li>
           <li class="way-list__item">
+            <div class="way-list__image">
+              <img src="../img/france-mobile@1x.jpg">
+            </div>
             <div class="way-list__block">
               <!-- <svg></svg> -->
               <h4 class="way-list__title">Франция</h4>
@@ -133,6 +141,9 @@
             </div>
           </li>
           <li class="way-list__item">
+            <div class="way-list__image">
+              <img src="../img/czech-mobile@1x.jpg">
+            </div>
             <div class="way-list__block">
               <!-- <svg></svg> -->
               <h4 class="way-list__title">Чехия</h4>
@@ -142,7 +153,7 @@
           </li>
         </ul>
 
-        <a class="way__link" href="form.html">Показать все</a>
+        <a class="way__link btn-yellow" href="form.html">Показать все</a>
       </section>
 
       <section class="companion">
@@ -156,6 +167,7 @@
         <ul class="companion__main-list">
           <li class="companion__item">
             <div class="companion__lvl">
+              <img src="img/firsova-mobile@1x.jpg" width="270" height="270">
               <span></span>
             </div>
             <div class="companion__about">
@@ -222,13 +234,13 @@
           </li>
         </ul>
 
-        <a class="companion__link" href="catalog.html">Показать всех</a>
+        <a class="companion__link btn-yellow" href="catalog.html">Показать всех</a>
       </section>
 
       <section class="profile">
         <h3 class="profile__title">Добавьте свой профиль</h3>
         <div class="profile__avatar">
-          <img src="#">
+          <img src="img/rates@1x.png" width="99" height="99">
           <span></span>
         </div>
         <ul class="profile__list">
@@ -241,9 +253,9 @@
 
       <section class="contact">
         <h3 class="contact__title">Заинтересовались?</h3>
-        <p class="contact__text">Зарегистрируйтесь, это быстро и бесплатно!
-        Уже зарегистрированы?
-        Тогда скорее <a href="#">авторизуйтесь</a>.
+        <p class="contact__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
+        Тогда скорее
+        <a class="contact__link" href="#">авторизуйтесь</a>.
         </p>
 
         <form class="contact__form" action="https://echo.htmlacademy.ru">
@@ -254,11 +266,11 @@
         <div class="contact__wrapper">
           <p class="contact__phone">
             <img src="#">
-            <a href="#">8 800 555-86-28</a>
+            <a class="contact__link" href="#">8 800 555-86-28</a>
           </p>
           <p class="contact__email">
             <img src="#">
-            <a href="#">mail@htmlacademy.ru</a>
+            <a class="contact__link" href="#">mail@htmlacademy.ru</a>
           </p>
         </div>
       </section>
@@ -268,35 +280,43 @@
           <img src="https://via.placeholder.com/150x150">
           <p>ул. Большая Конюшенная, 19/8</p>
         </div>
-        <a class="map__button" href="#">Проложить маршрут</a>
-        <img class="map__img" src="#">
+        <a class="map__button btn-yellow" href="#">Проложить маршрут</a>
+        <div class="map__wrapper">
+           <img class="map__img" src="#">
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <a class="footer__logo" href="#">
-        <img src="https://via.placeholder.com/150x150">
+        <img src="img/logo-mobile-blue@1x.png">
       </a>
       <ul class="footer__list social">
         <li class="social__item">
-          <a class="social__link" href="#">facebook</a>
+          <a class="social__link" href="#">
+            <img src="img/facebook.svg" width="11" height="21">
+            <span class="visually-hidden">facebook</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">vkontakte</a>
+          <a class="social__link" href="#">
+            <img src="img/vk.svg" width="23" height="12">
+            <span class="visually-hidden">vkontakte</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="#">instagram</a>
+          <a class="social__link" href="#">
+            <img src="img/instagram.svg" width="18" height="18">
+            <span class="visually-hidden">instagram</span></a>
         </li>
       </ul>
       <div class="footer__made">
         <p>Разработано</p>
         <a href="#">
-          <!-- <svg></svg> -->
+          <img src="img/htmlacademy.svg" width="27" height="34">
         </a>
       </div>
     </footer>
 
-    <section class="modal">
+    <section class="modal visually-hidden">
       <h2 class="modal__title">Бизнес-тарифы</h2>
       <ul class="modal__list">
         <li class="modal__item">

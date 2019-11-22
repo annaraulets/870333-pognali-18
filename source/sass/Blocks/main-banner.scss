@@ -1,0 +1,47 @@
+.main-banner {
+  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-size: 320px 569px;
+
+  color: #ffffff;
+}
+
+.main-banner__title {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.main-banner__login {
+  @include text-style-btn;
+  background: #ffd74b;
+  padding: 13px 38px;
+  border-radius: 20px;
+}
+
+.content__quote {
+  @include textstylelight;
+
+  cite {
+    font-weight: bold;
+  }
+}
+
+
+.content__list {
+  font-weight: bold;
+  list-style: none;
+  color: #161c35;
+  font-size: 18px;
+  line-height: 18px;
+}
+.content__item:first-child {
+  background-color: #ff8d30;
+}
+.content__item:nth-child(2) {
+  background-color: #ffa530;
+}
+.content__item:nth-child(3) {
+  background-color: #ffbd30;
+}
+.content__item:nth-child(4) {
+  background-color: #ffd74b;
+}
