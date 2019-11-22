@@ -10,9 +10,19 @@
   font-size: 36px;
 }
 
+.main-banner__login {
+  @include text-style-btn;
+  background: #ffd74b;
+  padding: 13px 38px;
+  border-radius: 20px;
+}
+
 .content__quote {
-  font-size: 16px;
-  line-height: 22px;
+  @include textstylelight;
+
+  cite {
+    font-weight: bold;
+  }
 }
 
 

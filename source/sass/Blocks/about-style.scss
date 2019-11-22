@@ -7,5 +7,12 @@
 }
 
 .about__title {
-  color: #ff8d30;
+  @include titlestyle;
+}
+
+.about__text {
+  @include textstylelight;
+  &--quote {
+    font-weight: bold;
+  }
 }

@@ -1,0 +1,16 @@
+.companion {
+  background-color: #192144;
+  color: #ffffff;
+}
+
+.companion__title {
+  @include titlestyle;
+}
+
+.companion__text {
+  @include textstylelight;
+
+  &--quote {
+    font-weight: bold;
+  }
+}

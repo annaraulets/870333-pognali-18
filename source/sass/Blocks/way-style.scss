@@ -1,0 +1,20 @@
+.way {
+  background-color: #edeff6;
+}
+
+.way__title {
+  @include titlestyle;
+}
+
+.way__text {
+  @include textstylelight;
+}
+
+.way-list {
+  list-style: none;
+}
+
+.way-list__block {
+  background-color: #ffffff;
+}
+
