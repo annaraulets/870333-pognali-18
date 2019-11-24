@@ -1,0 +1,37 @@
+.plans {
+  background: #dfe3f0;
+  color: #1d2e5b;
+}
+
+.plans__main-title {
+  @include titlestyle;
+  color: #1d2e5b;
+}
+
+.plans__box {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.plans__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.plans__text {
+  font-size: 14px;
+  // line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.plans__link {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 1.4px;
+}

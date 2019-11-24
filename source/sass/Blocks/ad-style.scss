@@ -1,0 +1,23 @@
+.ad {
+  background: #edeff6;
+
+  @include textstylelight;
+}
+
+.ad__title {
+  @include titlestyle;
+}
+
+.ad__list {
+  list-style: none;
+}
+
+.ad__button {
+  color: #192144;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

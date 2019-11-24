@@ -12,6 +12,7 @@
 
 .about__text {
   @include textstylelight;
+
   &--quote {
     font-weight: bold;
   }
