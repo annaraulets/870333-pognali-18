@@ -18,7 +18,6 @@
   img {
     border-radius: 50%;
   }
-
 }
 
 .ctl__name {
@@ -39,6 +38,7 @@
 .citi-list {
   list-style: none;
 }
+
 .citi-list__item {
   @include text-style-ctl;
   text-transform: uppercase;
@@ -48,6 +48,7 @@
 
 .ctl__btn {
   background: #ffd74b;
+
   @include text-style-btn;
   padding: 13px 79px;
   border-radius: 20px;
