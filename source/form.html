@@ -75,7 +75,7 @@
               <span>level</span>
             </div>
             <div class="profile__avatar">
-              <img src="#">
+              <img src="img/demin-mobile@1x.jpg" width="100" height="100">
             </div>
             <button class="profile__btn">Сменить фото</button>
           </div>
@@ -126,10 +126,10 @@
         </section>
 
         <section class="steps">
-          <h2 class="steps__main-title">Добавить план:</h2>
+          <h2 class="steps__title">Добавить план:</h2>
             <div class="steps__step-one step-one">
-              <h3 class="step-one__title">Шаг 1. Даты пребывания</h3>
-              <p class="step-one__text">Укажите предпочтительное количество попутчиков,
+              <h3 class="steps__main-title">Шаг 1. Даты пребывания</h3>
+              <p class="steps__main-text">Укажите предпочтительное количество попутчиков,
               которых вы хотели бы позвать в поездку и ее
               предполагаемую длительность.</p>
               <h4 class="step-one__text-find">ищу попутчиков:</h4>
@@ -149,15 +149,15 @@
               <input class="step-one__checkbox" type="checkbox" name="child" id="child">
               <label for="child">Можно с детьми</label>
 
-              <div class="step-one__calendar">
-                <div class="">
+              <div class="step-one__calendar cal">
+                <div class="cal__top">
                   <button></button>
-                  <h4>Март 2019</h4>
+                  <h4 class="cal__title">Март 2019</h4>
                   <button></button>
                 </div>
 
-                <table>
-                  <tr>
+                <table class="cal__table">
+                  <tr class="cal__week">
                     <td>П</td>
                     <td>В</td>
                     <td>С</td>
@@ -166,7 +166,7 @@
                     <td>С</td>
                     <td>В</td>
                   </tr>
-                  <tr>
+                  <tr class="cal__days">
                     <td>23</td>
                     <td>24</td>
                     <td>25</td>
@@ -175,7 +175,7 @@
                     <td>28</td>
                     <td>1</td>
                   </tr>
-                  <tr>
+                  <tr class="cal__days">
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
@@ -184,7 +184,7 @@
                     <td>7</td>
                     <td>8</td>
                   </tr>
-                  <tr>
+                  <tr class="cal__days">
                     <td>9</td>
                     <td>10</td>
                     <td>11</td>
@@ -193,7 +193,7 @@
                     <td>14</td>
                     <td>15</td>
                   </tr>
-                  <tr>
+                  <tr class="cal__days">
                     <td>16</td>
                     <td>17</td>
                     <td>18</td>
@@ -202,7 +202,7 @@
                     <td>21</td>
                     <td>22</td>
                   </tr>
-                  <tr>
+                  <tr class="cal__days">
                     <td>23</td>
                     <td>24</td>
                     <td>25</td>
@@ -211,7 +211,7 @@
                     <td>28</td>
                     <td>29</td>
                   </tr>
-                  <tr>
+                  <tr class="cal__days">
                     <td>30</td>
                     <td>31</td>
                     <td>1</td>
@@ -222,7 +222,7 @@
                   </tr>
                 </table>
               </div>
-              <a href="form.html#step-two"></a>
+              <a class="steps__link" href="form.html#step-two">Следующий шаг</a>
             </div>
 
             <div class="steps__step-two step-two">
@@ -257,8 +257,8 @@
                 <button>Закрыть</button>
               </div>
 
-              <a href="#">Следующий шаг</a>
-              <a href="#">На шаг назад</a>
+              <a class="steps__link" href="form.html#step-two">Следующий шаг</a>
+              <a class="steps__link steps__link--before" href="#">На шаг назад</a>
             </div>
 
             <div>
@@ -276,8 +276,8 @@
                 Пить пиво и лазить по старым замкам,
                 наслаждаться архитектурой
                 и вот это все.</textarea>
-              <button type="submit">Отправить</button>
-              <a href="#">На шаг назад</a>
+              <button class="steps__link" type="submit">Отправить</button>
+              <a class="steps__link steps__link--before" href="#">На шаг назад</a>
             </div>
 
         </section>

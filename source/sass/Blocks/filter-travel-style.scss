@@ -1,0 +1,22 @@
+.filter-travel {
+  background: #ffd74b;
+  border-radius: 20px;
+  color: #1d2e5b;
+}
+
+.filter-travel__main-title {
+  font-size: 22.5px;
+  font-weight: bold;
+}
+
+.filter-travel__list {
+  list-style: none;
+}
+
+.filter-travel__btn {
+  @include text-style-btn;
+  font-family: inherit;
+  border: none;
+  background: #ffffff;
+  border-radius: 20px;
+}

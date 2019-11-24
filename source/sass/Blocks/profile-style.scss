@@ -1,22 +1,30 @@
 .profile {
- background: #edeff6;
- @include textstylelight;
+  background: #edeff6;
+  color: #1d2e5b;
 }
 
-.profile__title {
-  @include titlestyle;
+
+.profile__avatar {
+
+  img {
+    border-radius: 50%;
+  }
 }
 
-.profile__list {
-  list-style: none;
-}
-
-.profile__button {
-  color: #192144;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: bold;
-  background: none;
+.profile__btn {
+  @include text-style-btn;
+  color: #161c35;
+  background: #dfe3f0;
   border: none;
-  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 75px;
+}
+
+.profile__bottom {
+  legend {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
