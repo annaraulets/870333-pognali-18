@@ -1,8 +1,11 @@
 .contact {
-  background: #192144;
   color: #ffffff;
-
+  background: #192144;
   @include textstylelight;
+
+  &--menu {
+    background: #ffffff;
+  }
 }
 
 .contact__title {

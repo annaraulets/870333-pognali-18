@@ -48,3 +48,31 @@
 .content__item:nth-child(4) {
   background-color: #ffd74b;
 }
+
+@media (min-width: $tablet) {
+  .main-banner__wrapper {
+    display: none;
+  }
+
+  .content__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 688px;
+  }
+
+  .content__item {
+    width: 50%;
+    min-height: 140px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .content__list {
+    flex-wrap: nowrap;
+  }
+
+  .content__item {
+    width: 25%;
+    min-height: 104px;
+  }
+}

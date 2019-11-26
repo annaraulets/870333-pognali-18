@@ -7,6 +7,11 @@
   list-style: none;
 }
 
+.footer__made {
+  display: flex;
+  justify-content: space-between;
+}
+
 .social__item {
   background: #ffd74b;
   width: 45px;

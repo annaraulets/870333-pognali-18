@@ -1,10 +1,34 @@
 body {
+  min-width: 320px;
+  margin: 0 auto;
   background: #ffcef2;
   font-family: "Blogger Sans", "Arial", sans-serif;
 }
 
 header {
-  background-color: #192144;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 320px;
 }
 
 .visually-hidden {
@@ -25,4 +49,17 @@ header {
 
 .btn-yellow {
   @include yellowbtn;
+}
+
+@media (min-width: $tablet) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    width: 1200px;
+    // background-color: #ffffff;
+  }
 }
