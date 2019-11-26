@@ -3,6 +3,10 @@
   color: #ffffff;
 }
 
+.companion__list {
+  display: flex;
+}
+
 .companion__title {
   @include titlestyle;
 }
@@ -12,5 +16,12 @@
 
   &--quote {
     font-weight: bold;
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .companion__main-list {
+    display: flex;
   }
 }

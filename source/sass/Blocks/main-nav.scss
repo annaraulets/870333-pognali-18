@@ -1,7 +1,16 @@
+.main-popup {
+  background: #ffffff;
+}
+
 .main-popup__title {
   color: #ffffff;
   font-size: 36px;
   line-height: 40px;
+}
+
+.social {
+  list-style: none;
+  display: flex;
 }
 
 // .main-popup__reg {
