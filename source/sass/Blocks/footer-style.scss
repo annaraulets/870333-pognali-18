@@ -22,17 +22,18 @@
 }
 
 .social__item--footer {
-  display: flex;
-  align-items: center;
-  background: #ffd74b;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
   margin: 0;
 }
 
 .social__link {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background: #ffd74b;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 0;
 }
 
 .footer__html {
