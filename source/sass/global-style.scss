@@ -49,6 +49,11 @@ img {
 
 .btn-yellow {
   @include yellowbtn;
+  display: block;
+  padding: 24px;
+  text-align: left;
+  margin-top: 24px;
+  border-radius: 10px;
 }
 
 @media (min-width: $tablet) {
