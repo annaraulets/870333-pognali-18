@@ -1,19 +1,70 @@
 .way {
+  position: relative;
+  z-index: 50;
+  margin-top: -20px;
+  padding: 70px 25px 25px 25px;
   background-color: #edeff6;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .way__title {
   @include titlestyle;
+  padding: 0 25px;
 }
 
 .way__text {
   @include textstylelight;
+  padding: 0 25px;
 }
 
 .way-list {
+  margin-bottom: 25px;
+  padding: 0;
   list-style: none;
 }
 
+.way-list__item {
+  margin-bottom: 10px;
+}
+
+.way-list__image {
+  img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
 .way-list__block {
+  position: relative;
+  z-index: 20;
+  margin-top: -37px;
+  border-radius: 10px;
   background-color: #ffffff;
+  padding: 23px 23px;
+  color: #161c35;
+}
+
+.way-list__title {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.way-list__text {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.3;
+}
+
+.way-list__number {
+  position: absolute;
+  right: 23px;
+  top: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+  margin: 0;
+  opacity: 0.3;
 }

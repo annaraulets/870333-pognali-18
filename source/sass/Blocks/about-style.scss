@@ -1,13 +1,19 @@
 .about {
+  position: relative;
+  z-index: 60;
+  padding: 25px 50px 85px 50px;
   background-color: #192144;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 292px 352px;
   color: #ffffff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .about__title {
   @include titlestyle;
+  margin: 0;
 }
 
 .about__text {
