@@ -1,19 +1,49 @@
 .main-banner {
+  background-color: #192144;
+  padding: 25px 25px;
   background-image: url("../img/globe-back-mobile@1x.jpg");
-  background-size: 320px 569px;
+  background-size: 320px 400px;
+  background-repeat: no-repeat;
 
   color: #ffffff;
+
 }
 
 .main-banner__title {
+  margin: 0 16px;
   font-weight: bold;
   font-size: 36px;
+  text-align: center;
+}
+
+.main-banner__wrapper {
+  display: flex;
+  margin-top: 240px;
+}
+
+.main-banner__tel {
+  display: flex;
+  justify-content: center;
+  background-color: #ff8d30;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.main-banner__mail {
+  display: flex;
+  justify-content: center;
+  background-color: #ff8d30;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .main-banner__login {
   @include text-style-btn;
+  line-height: 40px;
   background: #ffd74b;
-  padding: 13px 38px;
+  padding: 0 38px;
   border-radius: 20px;
 }
 
@@ -31,6 +61,16 @@
   color: #161c35;
   font-size: 18px;
   line-height: 18px;
+  padding: 0;
+  border-radius: 20px;
+}
+
+.content__item {
+  min-height: 70px;
+  padding-top: 25px;
+  padding-left: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .content__item:first-child {
@@ -39,14 +79,18 @@
 
 .content__item:nth-child(2) {
   background-color: #ffa530;
+  margin-top: -20px;
 }
 
 .content__item:nth-child(3) {
   background-color: #ffbd30;
+  margin-top: -20px;
 }
 
 .content__item:nth-child(4) {
   background-color: #ffd74b;
+  margin-top: -20px;
+  border-radius: 20px;
 }
 
 @media (min-width: $tablet) {
