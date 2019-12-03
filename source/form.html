@@ -7,64 +7,110 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <a href="index.html" class="main-logo">
-        <img src="https://via.placeholder.com/150x150" alt="Главный логотип">
-      </a>
 
-      <nav class="main-popup">
-        <button class="main-popup__toggle">Открыть меню</button>
+
+    <header class="container">
+      <div class="main-menu">
+        <a class="main-menu__logo" href="index.html">
+          <img src="img/logo-mobile-white@1x.png" alt="Главный логотип">
+        </a>
+        <button class="main-menu__toggle">
+          <svg class="main-menu__burger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 25 11" xml:space="preserve">
+          <g>
+          <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
+          <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
+          </g>
+          </svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <div class="menu-where">
+        <h1>Направления</h1>
+      </div>
+
+
+      <nav class="main-popup main-popup--close">
         <div class="main-popup__wrapper">
           <a class="main-popup__logo">
-            <img src="https://via.placeholder.com/150x150">
+            <img src="img/logo-mobile-blue@1x.png">
           </a>
-          <button class="main-popup__toggle">Закрыть меню</button>
-          <ul class="main-popup__main-menu">
-            <li class="main-popup__item">
-              <a href="index.html">О сервисе</a>
-            </li>
-            <li class="main-popup__item">
-              <a href="#">Направления</a>
-            </li>
-            <li class="main-popup__item">
-              <a href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
-
-          <a class="main-popup__reg" href="#">Авторизация</a>
-
-          <div class="main-popup__contacts contact">
-            <p class="contact__tel">
-              <img src="#">
-              <a href="#">8 800 555-86-28</a>
-            </p>
-
-            <p class="contact__mail">
-              <img src="#">
-              <a href="#">mail@htmlacademy.ru</a>
-            </p>
-          </div>
-
-          <ul class="main-menu__social social">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img src="#">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img src="#">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img src="#">
-              </a>
-            </li>
-          </ul>
+          <button class="main-popup__toggle">
+            <svg class="main-popup__close" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+            <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
+            L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
+            L10.3,9z"/>
+            </svg>
+            <span class="visually-hidden">Закрыть меню</span>
+          </button>
         </div>
+        <ul class="main-popup__main-menu">
+          <li class="main-popup__item">
+            <a class="main-popup__link" href="index.html">О сервисе</a>
+          </li>
+          <li class="main-popup__item">
+            <a class="main-popup__link">Направления</a>
+          </li>
+          <li class="main-popup__item">
+            <a class="main-popup__link" href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <a class="main-popup__reg" href="#">Авторизация</a>
+        <div class="main-popup__contacts contact contact--menu">
+          <p class="contact__text">
+            <a class="contact__link" href="#">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+              <!-- <style type="text/css">
+              .st0{fill:#010101;}
+              </style> -->
+              <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+              c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+              c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+              c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+              M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+              c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+              c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+              c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+              </svg>
+            </a>
+            <a href="#">8 800 555-86-28</a>
+          </p>
+          <p class="contact__text">
+            <a class="contact__link" href="#">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+              <!-- <style type="text/css">
+              .st0{fill:#010101;}
+              </style> -->
+              <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+              c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+              L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+              c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+              </svg>
+            </a>
+            <a href="#">mail@htmlacademy.ru</a>
+          </p>
+        </div>
+        <ul class="main-popup__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/facebook.svg" width="11" height="21">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/vk.svg" width="23" height="12">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/instagram.svg" width="18" height="18">
+            </a>
+          </li>
+        </ul>
       </nav>
-      <h1 class="main-popup__title">Направления</h1>
     </header>
 
     <main>
@@ -285,33 +331,51 @@
       </form>
     </main>
 
-    <footer class="footer">
-      <a class="footer__logo" href="#">
+    <footer class="container">
+      <section class="footer">
+        <a class="footer__logo" href="#">
         <img src="img/logo-mobile-blue@1x.png">
       </a>
       <ul class="footer__list social">
-        <li class="social__item">
-          <a class="social__link" href="#">
+        <li class="social__item social__item--footer">
+          <a class="social__link social__link--footer" href="#">
             <img src="img/facebook.svg" width="11" height="21">
             <span class="visually-hidden">facebook</span></a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
+        <li class="social__item social__item--footer">
+          <a class="social__link social__link--footer" href="#">
             <img src="img/vk.svg" width="23" height="12">
             <span class="visually-hidden">vkontakte</span></a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
+        <li class="social__item social__item--footer">
+          <a class="social__link social__link--footer" href="#">
             <img src="img/instagram.svg" width="18" height="18">
             <span class="visually-hidden">instagram</span></a>
         </li>
       </ul>
       <div class="footer__made">
         <p>Разработано</p>
-        <a href="#">
+        <a class="footer__html" href="#">
           <img src="img/htmlacademy.svg" width="27" height="34">
         </a>
       </div>
+      </section>
     </footer>
+
+    <script>
+      var mainNav = document.querySelector('.main-popup');
+      var openMenu = document.querySelector('.main-menu__toggle');
+      var closeMenu = document.querySelector('.main-popup__toggle');
+
+      openMenu.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        mainNav.classList.remove('main-popup--close');
+      });
+
+      closeMenu.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        mainNav.classList.add('main-popup--close');
+      })
+    </script>
   </body>
 </html>
