@@ -24,12 +24,18 @@
 }
 
 .promo__list {
+  width: 185px;
   padding: 0;
   list-style: none;
 }
 
 .promo__item {
-  margin-bottom: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #cccccc;
+
+  &:last-child {
+    border-bottom: 1px solid #cccccc;
+  }
 }
 
 .promo__button {
@@ -40,4 +46,34 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+
+@media (min-width: $tablet) {
+  .promo {
+    padding: 75px 40px;
+  }
+
+  .promo__title {
+    font-size: 45px;
+    line-height: 45px;
+    padding-left: 80px;
+  }
+
+  .promo__img {
+    display: none;
+  }
+
+  .promo__list {
+    width: 100%;
+    font-size: 28px;
+    line-height: 33px;
+    padding-left: 60px;
+  }
+
+  .promo__item {
+    span {
+      margin-left: 100px;
+    }
+  }
 }

@@ -16,6 +16,10 @@
   fill: #ffffff;
 }
 
+.main-menu__reg {
+  display: none;
+}
+
 .menu-where {
   padding: 10px 25px;
   background: #161c35;
@@ -94,4 +98,10 @@
 
 .social__item {
   justify-content: center;
+}
+
+@media (min-width: $tablet) {
+  .main-menu__reg {
+    display: block;
+  }
 }

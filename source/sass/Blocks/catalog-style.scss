@@ -1,18 +1,31 @@
 .ctl {
+  padding: 30px 25px;
   background: #edeff6;
 }
 
 .ctl__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .ctl__item {
+  padding: 15px 20px;
+  margin-bottom: 10px;
   background: #ffffff;
   border-radius: 20px;
-  margin-bottom: 10px;
-  padding-top: 16px;
-  padding-left: 18px;
 }
+
+.ctl__wrapper {
+  display: flex;
+
+
+  &--last {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+
 
 .ctl__avatar {
   img {
@@ -27,6 +40,7 @@
 
 .ctl__tag {
   @include text-style-ctl;
+  padding-left: 5px;
 }
 
 .ctl__title {
@@ -37,6 +51,7 @@
 
 .citi-list {
   list-style: none;
+  padding: 0;
 }
 
 .citi-list__item {
@@ -44,22 +59,73 @@
   text-transform: uppercase;
   color: #1d2e5b;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  img {
+    margin-right: 15px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.trans-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.trans-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edeff6;
+  border-radius: 50%;
+  width: 33px;
+  height: 32px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .ctl__btn {
+  display: inline-block;
   background: #ffd74b;
 
   @include text-style-btn;
-  padding: 13px 79px;
+  padding: 5px 79px;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
+
 
 .ctl__show-more {
+  display: block;
+
   @include text-style-btn;
+  text-align: center;
+  margin: 25px 0;
 }
 
-.ctl__pages {
+.ctl__wrapper-page {
+  display: flex;
+  justify-content: space-around;
   background: #ffffff;
-  padding: 15px 63px;
+  min-width: 270px;
+  height: 50px;
   border-radius: 20px;
+}
+
+.ctl__link {
+  margin-top: 15px;
+
+  svg {
+    width: 10px;
+    height: 20px;
+  }
 }

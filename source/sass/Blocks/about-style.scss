@@ -23,3 +23,43 @@
     font-weight: bold;
   }
 }
+
+.about__link {
+  display: none;
+}
+
+
+@media (min-width: $tablet) {
+  .about {
+    padding: 40px 40px;
+  }
+
+  .about__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-left: 40px;
+  }
+
+  .about__text {
+    width: 300px;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
+
+    &--quote {
+      width: 290px;
+      display: block;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .about__link {
+    display: block;
+    margin-left: 40px;
+    width: 200px;
+  }
+}
