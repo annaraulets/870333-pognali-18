@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <header class="container">
+    <header class="container desktop-view">
       <div class="main-menu">
         <a class="main-menu__logo">
           <img src="img/logo-mobile-white@1x.png" alt="Главный логотип">
@@ -152,12 +152,15 @@
       </section>
 
       <section class="way">
-        <h3 class="way__title">Направления</h3>
-        <p class="way__text">Мы не продаем туры
-          и ничего не рекламируем.
-          Люди сами пишут о странах, куда хотели бы отправиться
-          и чем можно там заняться.
-        </p>
+        <div class="way__wrapper">
+          <h3 class="way__title">Направления</h3>
+          <p class="way__text">Мы не продаем туры
+            и ничего не рекламируем.
+            Люди сами пишут о странах, куда хотели бы отправиться
+            и чем можно там заняться.
+          </p>
+        </div>
+
 
         <ul class="way__list way-list">
           <li class="way-list__item">
@@ -199,12 +202,15 @@
       </section>
 
       <section class="companion">
-        <h3 class="companion__title">Попутчики</h3>
-        <p class="companion__text">Все мы индивидуальны и у
-          каждого свой взгляд на идеальный отдых.
-          Одному нужен пляж и коктейль,
-          а другому маршрут для хайкинга.</p>
-        <b class="companion__text companion__text--quote">Теперь можно легко найти единомышленников!</b>
+        <div class="companion__wrapper">
+          <h3 class="companion__title">Попутчики</h3>
+          <p class="companion__text">Все мы индивидуальны и у
+            каждого свой взгляд на идеальный отдых.
+            Одному нужен пляж и коктейль,
+            а другому маршрут для хайкинга.</p>
+          <b class="companion__text companion__text--quote">Теперь можно легко найти единомышленников!</b>
+        </div>
+
 
         <ul class="companion__main-list">
           <li class="companion__main-item">
@@ -370,7 +376,9 @@
 
         <form class="contact__form" action="https://echo.htmlacademy.ru">
           <input class="contact__input" type="email" name="email" placeholder="E-mail">
-          <button class="contact__btn" type="submit"></button>
+          <button class="contact__btn" type="submit">
+            <span class="contact__btn-text">Регистрация</span>
+          </button>
         </form>
         <p class="contact-block__text">Остались вопросы? Мы с радостью на них ответим!</p>
         <div class="contact">
@@ -400,7 +408,7 @@
               c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
               </svg>
             </a>
-            <a href="#">mail@htmlacademy.ru</a>
+            <a class="upper" href="#">mail@htmlacademy.ru</a>
           </p>
         </div>
       </section>

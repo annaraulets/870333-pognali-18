@@ -134,3 +134,20 @@
     right: 340px;
   }
 }
+
+
+@media (min-width: $desktop) {
+  .way {
+    padding: 160px 240px 140px 130px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .way__wrapper {
+    order: 1;
+  }
+
+  .way__link {
+    display: none;
+  }
+}

@@ -51,6 +51,7 @@
 
 @media (min-width: $tablet) {
   .promo {
+    position: relative;
     padding: 75px 40px;
   }
 
@@ -61,19 +62,41 @@
   }
 
   .promo__img {
-    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
   }
 
   .promo__list {
     width: 100%;
+    margin-bottom: 60px;
     font-size: 28px;
     line-height: 33px;
-    padding-left: 60px;
   }
 
   .promo__item {
+    display: flex;
+    justify-content: space-between;
+
     span {
       margin-left: 100px;
     }
+  }
+
+  .promo__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 60px;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .promo {
+    padding: 100px 130px 165px 130px;
+  }
+
+  .promo__title {
+    margin: 0 auto;
   }
 }

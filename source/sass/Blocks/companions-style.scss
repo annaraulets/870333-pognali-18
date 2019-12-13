@@ -134,3 +134,20 @@
     justify-content: center;
   }
 }
+
+
+@media (min-width: $desktop) {
+  .companion {
+    display: flex;
+    padding: 130px 60px 130px 130px;
+    justify-content: space-between;
+  }
+
+  // .companion__wrapper {
+
+  // }
+
+  .companion__link {
+    display: none;
+  }
+}

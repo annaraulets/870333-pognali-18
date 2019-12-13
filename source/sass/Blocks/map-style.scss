@@ -41,3 +41,60 @@
 .map__button {
   border: 3px solid #192144;
 }
+
+
+@media (min-width: $tablet) {
+  .map {
+    padding: 85px 75px;
+  }
+
+  .map__block {
+    margin-bottom: 60px;
+
+    p {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  .map__wrapper {
+    width: 67px;
+    height: 67px;
+
+    svg {
+      width: 21px;
+      height: 31px;
+    }
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .map {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .map__block {
+    margin: 0;
+  }
+
+  .map__wrapper {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+
+    svg {
+      width: 28px;
+      height: 43px;
+    }
+  }
+
+  .mao__button {
+    margin: 0;
+  }
+}
