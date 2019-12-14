@@ -1,4 +1,5 @@
 .main-banner {
+  position: relative;
   background-color: #192144;
   padding: 25px 25px;
   background-image: url("../img/globe-back-mobile@1x.jpg");
@@ -14,9 +15,21 @@
   text-align: center;
 }
 
+.traveller-pic {
+  position: absolute;
+  left: 80px;
+  width: 192px;
+  height: 255px;
+  background-image: url("../img/traveller-illustration-mobile@1x.png");
+  background-size: 192px 255px;
+  background-repeat: no-repeat;
+}
+
 .main-banner__wrapper {
   display: flex;
   margin-top: 240px;
+  z-index: 50;
+  position: relative;
 }
 
 .main-banner__tel {
@@ -92,30 +105,199 @@
   border-radius: 20px;
 }
 
+
 @media (min-width: $tablet) {
+  .main-banner {
+    padding: 40px 40px;
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-size: 100%;
+    background-position: 0 350px;
+  }
+
+  .main-banner__title {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 0 125px;
+  }
+
+  .traveller-pic {
+    left: 300px;
+    width: 400px;
+    height: 591px;
+    background-image: url("../img/traveller-illustration-tablet@1x.png");
+    background-size: 100%;
+  }
+
   .main-banner__wrapper {
     display: none;
+  }
+
+  .content {
+    position: relative;
+    z-index: 50;
+  }
+
+  .content__quote {
+    position: absolute;
+    top: -380px;
+    left: 0;
+    width: 260px;
+    font-size: 28px;
+    line-height: 33px;
+
+    cite {
+      font-size: 21px;
+      line-height: 25px;
+      font-style: normal;
+    }
   }
 
   .content__list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 550px;
     width: 688px;
   }
 
   .content__item {
-    width: 50%;
-    min-height: 140px;
+    font-size: 24px;
+    line-height: 24px;
+    min-height: 80px;
+    padding: 30px 34px;
+    width: 40%;
+  }
+
+  .content__item:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    width: 42%;
+    margin-right: -2%;
+  }
+
+  .content__item:nth-child(2) {
+
+    margin: 0;
+  }
+
+  .content__item:nth-child(3) {
+    width: 42%;
+    margin-right: -2%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .content__item:nth-child(4) {
+    border-top-left-radius: 0;
   }
 }
 
+
 @media (min-width: $desktop) {
+  .main-banner {
+    padding: 60px 60px;
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-size: 100%;
+    background-position-y: bottom;
+    background-color: #161c35;
+    min-height: 630px;
+  }
+
+  .main-banner__title {
+    width: 395px;
+    text-align: left;
+    margin: 0;
+    padding-left: 60px;
+  }
+
+  .traveller-pic {
+    margin: 0 auto;
+    top: 30px;
+    left: 500px;
+    background-image: url("../img/traveller-illustration-desktop@1x.png");
+    background-size: 100%;
+    width: 431px;
+    height: 640px;
+  }
+
+  .main-banner__wrapper {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    right: 60px;
+    top: -40px;
+  }
+
+  .main-banner__tel {
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-banner__mail {
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-banner__login {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 30px;
+    border-radius: 25px;
+  }
+
+  .content {
+    position: initial;
+  }
+
+  .content__quote {
+    top: 0;
+    left: initial;
+    right: 60px;
+  }
+
   .content__list {
+    position: relative;
+    z-index: 10;
     flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 100px;
   }
 
   .content__item {
     width: 25%;
-    min-height: 104px;
+    padding: 30px 30px;
+    min-height: 47px;
+    display: flex;
+    align-content: center;
+  }
+
+  .content__item:first-child {
+    border-bottom-left-radius: 20px;
+    width: 25%;
+    margin-right: -2%;
+  }
+
+  .content__item:nth-child(2) {
+    margin: 0;
+    width: 25%;
+    margin-right: -2%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+
+  .content__item:nth-child(3) {
+    width: 25%;
+    margin: 0;
+    margin-right: -2%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+
+  .content__item:nth-child(4) {
+    width: 25%;
+    border-top-left-radius: 20px;
+    margin: 0;
+    margin-left: -2%;
   }
 }

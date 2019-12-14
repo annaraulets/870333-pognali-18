@@ -23,3 +23,75 @@
     font-weight: bold;
   }
 }
+
+.about__link {
+  display: none;
+}
+
+
+@media (min-width: $tablet) {
+  .about {
+    padding: 40px 40px;
+    background-image: url("../img/about-tablet@1x.png");
+    background-position-x: 410px;
+    background-position-y: 29px;
+    background-size: 50%;
+  }
+
+  .about__title {
+    font-size: 45px;
+    line-height: 45px;
+    margin-left: 40px;
+  }
+
+  .about__text {
+    width: 300px;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
+
+    &--quote {
+      width: 290px;
+      display: block;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .about__link {
+    display: block;
+    margin-left: 40px;
+    width: 200px;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .about {
+    padding: 90px 60px 160px 130px;
+    background-image: url("../img/about-desktop@1x.png");
+    background-size: 630px 665px;
+    background-position-x: 92%;
+    background-position-y: 88px;
+  }
+
+  .about__title {
+    margin: 0;
+  }
+
+  .about__text {
+    width: 611px;
+    margin-left: 0;
+
+    &--quote {
+      margin-bottom: 86px;
+    }
+  }
+
+  .about__link {
+    margin-left: 0;
+  }
+}
