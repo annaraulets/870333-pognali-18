@@ -18,10 +18,19 @@
   position: absolute;
   width: 100px;
   height: 100px;
+  left: 20px;
 
-  span:first-child {
+  svg {
     position: absolute;
-    left: 34px;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  span:nth-child(2) {
+    position: absolute;
+    left: 30px;
     top: 20px;
     font-size: 38px;
     line-height: 38px;
@@ -31,28 +40,19 @@
 
   span:last-child {
     position: absolute;
-    left: 38px;
+    left: 35px;
     top: 60px;
     font-size: 18px;
     line-height: 22px;
   }
 }
 
-.profile__lvl::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  border: 3px solid #ff8d30;
-}
 
 
 .profile__avatar {
   img {
     border-radius: 50%;
+    margin-right: 20px;
   }
 }
 
@@ -70,10 +70,65 @@
 }
 
 .profile__bottom {
+  margin-top: 30px;
+
   legend {
     font-size: 16px;
     line-height: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
+    font-style: inherit;
+  }
+
+}
+
+.profile__box-one {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 20px 25px;
+
+  textarea {
+    padding: 0;
+    width: 215px;
+    background: #edeff6;
+    border: none;
+    color: #444444;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
+
+.profile__box-two {
+  border: 1px solid #cbced9;
+  border-radius: 10px;
+}
+
+.profile__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+}
+
+.transport__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+
+  svg {
+    fill: #1d2e5b;
+  }
+}
+
+input:checked + label svg {
+  opacity: 15%;
+}
+
+

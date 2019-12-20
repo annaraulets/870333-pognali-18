@@ -113,6 +113,9 @@
           <div class="profile__top">
             <div class="profile__lvl-wrapper">
               <div class="profile__lvl">
+                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                  <path fill="none" stroke-linecap="round" stroke-width="3" stroke="#ff8d30" d="M30,1.5A28.5,28.5,0,1,1,1.5,30,28.5,28.5,0,0,1,30,1.5"/>
+                </svg>
                 <span>80</span>
                 <span>level</span>
               </div>
@@ -129,26 +132,67 @@
           <div class="profile__bottom">
               <fieldset class="profile__box-one">
                 <legend>Тэги</legend>
-                <textarea rows="3">#бургер #бар #футбол #концерт #крафт</textarea>
+                <textarea rows="2">#бургер #бар #футбол #концерт #крафт</textarea>
               </fieldset>
               <fieldset class="profile__box-two">
                 <legend>Транспорт</legend>
                 <ul class="profile__list transport">
                   <li class="transport__item">
-                    <input type="checkbox" name="plane" id="plane-field">
-                    <label for="plane-field"></label>
+                    <input class="visually-hidden" type="checkbox" name="plane" id="plane-field">
+                    <label for="plane-field">
+                      <svg width="14" height="16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
+                      <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
+                      c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
+                      C-0.2,8.3,0,8.5,0.4,8.6c0,0,8,2.6,8.3,2.7C9,11.3,9,11.5,8.9,11.9c-0.2,0.4-1.4,2.3-1.6,2.6c-0.1,0.2-0.2,0.2-0.4,0.3l-2.8,1
+                      c-0.1,0-0.3,0.1-0.4,0.3c0,0-0.2,0.3-0.4,0.6c-0.2,0.3-0.1,0.5,0.2,0.5c0.3,0.1,2.1,0.2,2.1,0.2c0,0,0.3,0.1,0.4,0.1
+                      c0.2,0.1,0.4,0.3,0.2,0.6c-0.3,0.6-0.4,1.2-0.2,1.3s0.6-0.2,1-0.7c0.2-0.3,0.4-0.2,0.6,0C7.8,18.6,8,18.8,8,18.8c0,0,0.8,1.6,1,1.9
+                      c0.2,0.3,0.4,0.3,0.6,0c0.2-0.3,0.4-0.6,0.4-0.6c0.1-0.1,0.1-0.3,0.1-0.5l-0.3-3.1c0-0.2,0-0.2,0.1-0.5c0.1-0.2,1.4-2.2,1.6-2.5
+                      c0.2-0.3,0.4-0.3,0.6-0.1c0.2,0.2,5.7,6.7,5.7,6.7c0.3,0.3,0.5,0.4,0.9-0.2C19.1,19.5,19,19.1,18.9,18.9z"/>
+                      </svg>
+                    </label>
                   </li>
                   <li class="transport__item">
-                    <input type="checkbox" name="bus" id="bus-field">
-                    <label for="bus-field"></label>
+                    <input class="visually-hidden" type="checkbox" name="bus" id="bus-field">
+                    <label for="bus-field">
+                      <svg width="13" height="16" version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
+                      <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
+                      c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
+                      C4.3,2.7,4.3,1.6,5,1.6z M2.7,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C3.8,15,3.3,15.6,2.7,15.6z
+                      M8.4,10.2H2.2c-0.6,0-0.7-0.4-0.7-0.9l0.6-4.7c0.1-0.6,0.3-0.9,1-0.9h5.3h5.4c0.7,0,0.9,0.4,1,0.9l0.6,4.7c0.1,0.4-0.1,0.9-0.7,0.9
+                      H8.4z M14.3,15.6c-0.6,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2c0.6,0,1.2,0.5,1.2,1.2C15.5,15,15,15.6,14.3,15.6z"/>
+                      </svg>
+                    </label>
                   </li>
                   <li class="transport__item">
-                    <input type="checkbox" name="bike" id="bike-field">
-                    <label for="bike-field"></label>
+                    <input class="visually-hidden" type="checkbox" name="bike" id="bike-field" checked>
+                    <label for="bike-field">
+                      <svg width="19" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
+                      <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
+                      S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
+                      l-1.9-3.3C13.6,3.3,13.1,3,12.4,3c-0.5,0-0.9,0.2-1.2,0.5L7.5,7.2C7.2,7.5,7,7.9,7,8.4C7,9,7.3,9.6,7.8,9.9l3.3,2v5H13v-6.5
+                      l-2.2-1.7l2.3-2.4L14.8,8.9z M5,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5S7.8,11,5,11z M5,19.6c-1.9,0-3.5-1.6-3.5-3.5
+                      s1.6-3.5,3.5-3.5s3.5,1.5,3.5,3.5S6.9,19.6,5,19.6z"/>
+                      </svg>
+                    </label>
                   </li>
                   <li class="transport__item">
-                    <input type="checkbox" name="run" id="run-field">
-                    <label for="run-field"></label>
+                    <input class="visually-hidden" type="checkbox" name="run" id="run-field">
+                    <label for="run-field">
+                      <svg width="15" height="17" version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
+                      <g>
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
+                      <path d="M19.4,4.6c-0.5-0.2-1.2-0.1-1.4,0.4l-0.9,1.6L13,4.3c-0.2-0.1-0.3-0.1-0.6-0.1H7.9C7.5,4.2,7.2,4.3,7,4.7L5.3,7.6
+                      C5,8.1,5.2,8.7,5.7,8.9C5.9,9,6.1,9,6.2,9C6.6,9,7,8.8,7.2,8.5l1.4-2.4h1.6l-4.7,8.1H1.1c-0.6,0-1.1,0.4-1.1,1s0.5,1,1.1,1h5
+                      c0.4,0,0.7-0.2,0.9-0.5l1.9-3.2l3,2.6L11.7,20c-0.1,0.5,0.4,1,1,1c0,0,0,0,0.1,0c0.6,0,1-0.4,1.1-0.9l0.3-5.4
+                      c0-0.3-0.1-0.6-0.3-0.8l-2.6-2.2l2.7-4.6l3.1,1.8C17.1,9,17.5,9.1,17.7,9c0.3-0.1,0.5-0.2,0.7-0.5L19.9,6C20.2,5.5,20,4.9,19.4,4.6
+                      z"/>
+                      </g>
+                      </svg>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -173,35 +217,78 @@
 
         <section class="steps">
           <h2 class="steps__title">Добавить план:</h2>
-            <div class="steps__step-one step-one">
-              <h3 class="steps__main-title">Шаг 1. Даты пребывания</h3>
+            <div class="steps__step step-one">
+              <h3 class="steps__main-title">Шаг 1.<br> Даты пребывания</h3>
               <p class="steps__main-text">Укажите предпочтительное количество попутчиков,
               которых вы хотели бы позвать в поездку и ее
               предполагаемую длительность.</p>
               <h4 class="step-one__text-find">ищу попутчиков:</h4>
               <span class="step-one__people">Чел.</span>
               <div class="step-one__wrapper">
-                <button class="step-one__less"></button>
-                <input class="step-one__number" type="number" name="travelers">
-                <button class="step-one__more"></button>
+                <button class="step-one__less">
+                  <svg width="14" height="2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 14 2" style="enable-background:new 0 0 14 2;" xml:space="preserve">
+                  <style type="text/css">
+                  .st0{fill:#606161;}
+                  </style>
+                  <rect class="st0" width="14" height="2"/>
+                  </svg>
+                </button>
+                <input class="step-one__number" type="number" name="travelers" placeholder="2">
+                <button class="step-one__more">
+                  <svg width="14" height="14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
+                  <style type="text/css">
+                  .st0{fill:#606161;}
+                  </style>
+                  <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+                  </svg>
+                </button>
               </div>
               <h4 class="step-one__text-find">Длительность:</h4>
               <span class="step-one__days">дн.</span>
               <div class="step-one__wrapper">
-                <button class="step-one__less"></button>
-                <input class="step-one__number" type="number" name="travelers">
-                <button class="step-one__more"></button>
+                <button class="step-one__less">
+                  <svg width="14" height="2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 14 2" style="enable-background:new 0 0 14 2;" xml:space="preserve">
+                  <style type="text/css">
+                  .st0{fill:#606161;}
+                  </style>
+                  <rect class="st0" width="14" height="2"/>
+                  </svg>
+                </button>
+                <input class="step-one__number" type="number" name="duration" placeholder="2">
+                <button class="step-one__more">
+                  <svg width="14" height="14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
+                  <style type="text/css">
+                  .st0{fill:#606161;}
+                  </style>
+                  <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+                  </svg>
+                </button>
               </div>
-              <input class="step-one__checkbox" type="checkbox" name="child" id="child">
-              <label for="child">Можно с детьми</label>
+              <input class="visually-hidden" type="checkbox" name="child" id="child">
+              <label class="step-one__checkbox" for="child">Можно с детьми</label>
 
               <div class="step-one__calendar cal">
                 <div class="cal__top">
-                  <button></button>
+                  <button class="cal__btn cal__btn--left">
+                    <svg width="9" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 34" style="enable-background:new 0 0 18 34;" xml:space="preserve">
+                    <path d="M3.6,17l14-14.4c0.6-0.6,0.6-1.6,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L0.4,15.9c-0.6,0.6-0.6,1.6,0,2.1l15.1,15.5
+                    c0.3,0.3,0.7,0.4,1,0.4s0.8-0.1,1-0.4c0.6-0.6,0.6-1.6,0-2.1L3.6,17z"/>
+                    </svg>
+                  </button>
                   <h4 class="cal__title">Март 2019</h4>
-                  <button></button>
+                  <button class="cal__btn cal__btn--right">
+                    <svg width="9" height="17" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 18 34" style="enable-background:new 0 0 18 34;" xml:space="preserve">
+                    <path d="M14.4,17L0.4,2.6C-0.1,2-0.1,1,0.4,0.4c0.6-0.6,1.5-0.6,2.1,0l15.1,15.5c0.6,0.6,0.6,1.6,0,2.1L2.5,33.6
+                    c-0.3,0.3-0.7,0.4-1,0.4s-0.8-0.1-1-0.4c-0.6-0.6-0.6-1.6,0-2.1L14.4,17z"/>
+                    </svg>
+                  </button>
                 </div>
-
                 <table class="cal__table">
                   <tr class="cal__week">
                     <td>П</td>
@@ -271,59 +358,154 @@
               <a class="steps__link" href="form.html#step-two">Следующий шаг</a>
             </div>
 
-            <div class="steps__step-two step-two">
-              <h3 class="steps__main-title">Шаг 2. Маршрут</h3>
+            <div class="steps__step step-two">
+              <h3 class="steps__main-title">Шаг 2.<br> Маршрут</h3>
               <p class="steps__main-text">Укажите страны, которые вы хотели по посетить.
               Это может быть одна или сразу несколько.</p>
 
-              <div class="step-two__city">
-                <input type="text" name="city" placeholder="Босния и герцеговина">
-                <button>Показать</button>
-                <div class="step-two__wrapper">
-                  <img src="#">
-                  <button>Закрыть</button>
+              <div class="step-two__city place">
+                <div class="place__add-city">
+                  <input type="text" name="city" placeholder="Босния и герцеговина">
+                  <button class="place__btn-show">
+                    <svg width="12" height="7" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                    <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7
+                    s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+                    </svg>
+                    <span class="visually-hidden">Показать</span>
+                  </button>
                 </div>
-              </div>
-              <div class="step-two__city">
-                <input type="text" name="city" placeholder="Чехия">
-                <button>Показать</button>
-                <div class="step-two__wrapper">
-                  <img src="#">
-                  <button>Закрыть</button>
+                <div class="place__flag">
+                  <svg width="35" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="nonzero" fill="none"><rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36"/><path fill="#F6D660" d="M13.9.13h37v47z"/><path d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z" fill="#FFF"/></g>
+                  </svg>
                 </div>
-              </div>
-              <div class="step-two__city">
-                <input type="text" name="city" placeholder="Выберите страну">
-                <button>Показать</button>
-                <button>Закрыть</button>
-              </div>
-              <div class="step-two__city">
-                <input type="text" name="city" placeholder="Добавить страну">
-                <button>Показать</button>
-                <button>Закрыть</button>
+                <button class="place__btn-close">
+                  <svg width="9" height="9" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                  <style type="text/css">
+                  .st0{fill:#606161;}
+                  </style>
+                  <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+                  L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+                  L6.9,6z"/>
+                  </svg>
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
               </div>
 
-              <a class="steps__link" href="form.html#step-two">Следующий шаг</a>
-              <a class="steps__link steps__link--before" href="#">На шаг назад</a>
+              <div class="step-two__city place">
+                <div class="place__add-city">
+                  <input type="text" name="city" placeholder="Чехия">
+                  <button class="place__btn-show">
+                    <svg width="12" height="7" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                    <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7
+                    s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+                    </svg>
+                    <span class="visually-hidden">Показать</span>
+                  </button>
+                </div>
+                <div class="place__flag">
+                  <svg width="35" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="nonzero" fill="none"><path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/><path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/><path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/></g>
+                  </svg>
+                </div>
+                <button class="place__btn-close">
+                  <svg width="9" height="9" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                  <style type="text/css">
+                  .st0{fill:#606161;}
+                  </style>
+                  <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+                  L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+                  L6.9,6z"/>
+                  </svg>
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </div>
+
+
+              <div class="step-two__city place">
+                <div class="place__add-city place__add-city--choose">
+                  <input type="text" name="city" placeholder="Выберите страну">
+                  <button class="place__btn-show">
+                    <svg width="12" height="7" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 17 9" style="enable-background:new 0 0 17 9;" xml:space="preserve">
+                    <path d="M8.5,7.2l-7.2-7C1-0.1,0.5-0.1,0.2,0.2c-0.3,0.3-0.3,0.8,0,1L8,8.8c0.3,0.3,0.8,0.3,1.1,0l7.7-7.5C16.9,1.1,17,0.9,17,0.7
+                    s-0.1-0.4-0.2-0.5c-0.3-0.3-0.8-0.3-1.1,0L8.5,7.2z"/>
+                    </svg>
+                    <span class="visually-hidden">Показать</span>
+                  </button>
+                  <button class="place__btn-close place__btn-close--choose">
+                  <svg width="9" height="9" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+                  <style type="text/css">
+                  .st0{fill:#606161;}
+                  </style>
+                  <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+                  L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+                  L6.9,6z"/>
+                  </svg>
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                </div>
+              </div>
+
+              <div class="step-two__city place">
+                <div class="place__add-city place__add-city--country">
+                  <input type="text" name="city" placeholder="Добавить страну">
+                  <button class="place__btn-show place__btn-show--country">
+                    <svg width="14" height="14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
+                    <style type="text/css">
+                    .st0{fill:#606161;}
+                    </style>
+                    <polygon class="st0" points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
+                    </svg>
+                    <span class="visually-hidden">Показать</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="steps__wrapper">
+                <a class="steps__link" href="form.html#step-two">Следующий шаг</a>
+                <a class="steps__link steps__link--before" href="#">На шаг назад</a>
+              </div>
             </div>
 
-            <div>
-              <h3>Шаг 3. Развлечения</h3>
-              <p>Наконец, расскажите о своих планах времяпровождения.
+            <div class="steps__step step-three">
+              <h3 class="steps__main-title">Шаг 3.<br>Развлечения</h3>
+              <p class="steps__main-text">Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.</p>
 
-              <b>Босния и герцеговина</b>
-              <img src="#">
-              <textarea placeholder="План действий" rows="10"></textarea>
+              <div class="step-three__city-box">
+                <div class="step-three__wrapper">
+                  <b class="step-three__title">Босния и герцеговина</b>
+                  <svg width="35" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill-rule="nonzero" fill="none"><rect fill="#4758A9" x=".9" y=".13" width="70" height="47" rx="6.36"/><path fill="#F6D660" d="M13.9.13h37v47z"/><path d="M8.19 4.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.11.36 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.3zM12.51 10.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.8c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.3zM16.84 15.88c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.11-1a.84.84 0 0 0-.55-.65l-1-.31zM21.17 21.38c-.27-.08-.28-.24 0-.36l1-.44a.92.92 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.1.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM25.5 26.88c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.83.83 0 0 0-.55-.65l-.99-.31zM29.83 32.38c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM34.16 37.89c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.34.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .2.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.08.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.17.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-.99-.31zM37.87 42.6c-.27-.08-.28-.24 0-.36l1-.44a.93.93 0 0 0 .49-.73v-1c0-.28.17-.33.35-.12l.67.81c.203.22.517.3.8.2l1.08-.43c.26-.11.35 0 .21.24l-.62 1a.79.79 0 0 0 0 .84l.65.85c.17.22.09.36-.19.31l-1.06-.2a.88.88 0 0 0-.8.32l-.55.76c-.16.23-.33.19-.36-.09l-.12-1a.84.84 0 0 0-.55-.65l-1-.31z" fill="#FFF"/></g>
+                  </svg>
+                </div>
 
-              <b>Чехия</b>
-              <img src="#">
-              <textarea placeholder="План действий" rows="10">
+                <textarea placeholder="План действий" rows="10"></textarea>
+              </div>
+
+              <div class="step-three__city-box step-three__city-box--second">
+                <div class="step-three__wrapper">
+                  <b class="step-three__title">Чехия</b>
+                  <svg width="35" height="24" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/><path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/><path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/></g></svg>
+                </div>
+
+                <textarea placeholder="План действий" rows="10">
                 Пить пиво и лазить по старым замкам,
                 наслаждаться архитектурой
                 и вот это все.</textarea>
-              <button class="steps__link" type="submit">Отправить</button>
-              <a class="steps__link steps__link--before" href="#">На шаг назад</a>
+              </div>
+
+              <div class="steps__wrapper">
+                <button class="steps__link steps__link--btn" type="submit">Отправить</button>
+                <a class="steps__link steps__link--before" href="#">На шаг назад</a>
+              </div>
             </div>
 
         </section>

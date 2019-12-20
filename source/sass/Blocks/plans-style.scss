@@ -1,16 +1,22 @@
 .plans {
   background: #dfe3f0;
   color: #1d2e5b;
+  padding: 30px 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .plans__main-title {
   @include titlestyle;
   color: #1d2e5b;
+  margin: 0;
 }
 
 .plans__box {
   background: #ffffff;
   border-radius: 10px;
+  padding: 23px 23px;
+  margin-bottom: 10px;
 }
 
 .plans__title {
@@ -20,8 +26,9 @@
 }
 
 .plans__text {
+  margin: 0;
   font-size: 14px;
-  // line-height: 14px;
+  line-height: 14px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.4px;
@@ -29,6 +36,7 @@
 
 .plans__link {
   font-size: 14px;
+  line-height: 18px;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;

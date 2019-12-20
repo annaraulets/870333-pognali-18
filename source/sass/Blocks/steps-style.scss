@@ -1,16 +1,28 @@
 .steps {
   background: #d4d9eb;
   color: #1d2e5b;
+  padding: 30px 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .steps__title {
   @include titlestyle;
   color: #1d2e5b;
+  margin: 0 0 30px 0;
+}
+
+.steps__step {
+  padding: 25px 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  margin-bottom: 10px;
 }
 
 .steps__main-title {
   font-size: 20px;
   font-weight: bold;
+  margin: 0;
 }
 
 .steps__main-text {
@@ -18,9 +30,9 @@
   color: #444444;
 }
 
-.step-one {
-  background: #ffffff;
-}
+// .step-one {
+//   background: #ffffff;
+// }
 
 .step-one__text-find {
   font-size: 16px;
@@ -30,26 +42,236 @@
   text-transform: uppercase;
 }
 
-.steps__link {
-  @include text-style-btn;
-  background: #ffd74b;
-  padding: 10px 45px;
-  border-radius: 20px;
+.step-one {
+  position: relative;
+}
 
-  &--before {
-    background: none;
+.step-one__text-find {
+  margin: 10px 0;
+}
+
+.step-one__people {
+  position: absolute;
+  top: 210px;
+  right: 25px;
+  text-transform: uppercase;
+  color: rgba(29, 46, 91, 0.3)
+}
+
+.step-one__wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 192px;
+  height: 23px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+}
+
+.step-one__less  {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-one__number {
+  border: none;
+  width: 20px;
+}
+
+.step-one__more {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-one__days {
+  position: absolute;
+  top: 302px;
+  right: 25px;
+  text-transform: uppercase;
+  color: rgba(29, 46, 91, 0.3)
+}
+
+.step-one__checkbox {
+  position: relative;
+  margin-left: 50px;
+  margin-top: 20px;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -50px;
+    height: 26px;
+    width: 26px;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
   }
+}
+
+.cal {
+  margin-top: 20px;
+}
+
+.cal__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+}
+
+.cal__btn {
+  padding: 0;
 }
 
 .cal__title {
   font-size: 20px;
   color: #1d2e5b;
   text-align: center;
+  margin: 10px 0;
 }
 
 .cal__table {
   font-size: 14px;
-  border: 1px solid #444444;
+  border: 1px solid #cbced9;
   text-align: center;
   border-collapse: collapse;
+  margin-bottom: 25px
+}
+
+.steps__link {
+  @include text-style-btn;
+  background: #ffd74b;
+  padding: 10px 35px;
+  border-radius: 20px;
+  width: 100%;
+
+  &--before {
+    background: none;
+    margin-top: 20px;
+  }
+
+  &--btn {
+    border: none;
+    width: 100%;
+    padding: 5px 35px;
+  }
+}
+
+.step-two__city {
+  margin-bottom: 22px;
+}
+
+.place {
+  display: flex;
+}
+
+.place__add-city {
+  position: relative;
+  display: flex;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  input {
+    border: none;
+    padding: 9px 10px;
+    height: 24px;
+    width: 148px;
+    color: #1d2e5b;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.place__add-city--choose {
+  input {
+    width: 204px;
+  }
+}
+
+.place__add-city--country {
+  input{
+    width: 204px;
+    background: #edeff6;
+  }
+}
+
+.place__btn-show {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  width: 49px;
+  height: 36px;
+  background: #ffffff;
+  border: none;
+
+  &--country {
+    background: none;
+  }
+}
+
+.place__flag {
+  width: 53px;
+  height: 24px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding: 9px 9px;
+}
+
+.place__btn-close {
+  position: absolute;
+  display: flex;
+  right: 120px;
+  width: 21px;
+  height: 21px;
+  background: #edeff6;
+  border-radius: 50%;
+  border: none;
+
+  &--choose {
+    top: -5px;
+    right: -8px;
+  }
+}
+
+.steps__wrapper {
+  margin-top: 30px;
+}
+
+
+.step-three__city-box {
+  textarea {
+    min-width: 195px;
+    padding: 10px 15px;
+    border: 1px solid #cbced9;
+    text-align: left;
+  }
+
+  &--second {
+    margin: 20px 0;
+  }
+}
+
+.step-three__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.step-three__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
