@@ -1,6 +1,6 @@
 .main-menu {
   position: relative;
-  background: #192144;
+  background: #161c35;
   padding: 25px 25px;
   display: flex;
   justify-content: space-between;
@@ -21,6 +21,8 @@
 }
 
 .menu-where {
+  position: relative;
+  z-index: 50;
   padding: 10px 25px;
   background: #161c35;
   border-bottom-left-radius: 25px;
@@ -100,9 +102,32 @@
   justify-content: center;
 }
 
+
 @media (min-width: $tablet) {
   .main-menu__reg {
     display: block;
+  }
+
+  .main-menu__login {
+    @include text-style-btn;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 20px;
+    line-height: 30px;
+    background: #ffd74b;
+    border-radius: 25px;
+  }
+
+  .menu-where {
+    padding: 70px 75px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    h1 {
+      font-size: 60px;
+      line-height: 70px;
+    }
   }
 }
 
@@ -112,6 +137,7 @@
     position: relative;
     background: #161c35;
     box-sizing: border-box;
+
   }
 
   .main-menu {
@@ -128,7 +154,8 @@
   }
 
   .main-popup {
-    display: flex;
+    display: none;
+    // display: flex;
     background: #161c35;
     padding: 67px 0 0 0;
 

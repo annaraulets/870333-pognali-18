@@ -1,7 +1,9 @@
 .profile {
+  position: relative;
+  margin-top: -20px;
+  padding: 40px 25px;
   background: #edeff6;
   color: #1d2e5b;
-  padding: 35px 25px;
 }
 
 .profile__top {
@@ -48,7 +50,6 @@
 }
 
 
-
 .profile__avatar {
   img {
     border-radius: 50%;
@@ -65,7 +66,7 @@
   padding: 5px 75px;
 }
 
-.profile__btn-mobile {
+.profile__btn-desktop {
   display: none;
 }
 
@@ -131,4 +132,144 @@ input:checked + label svg {
   opacity: 15%;
 }
 
+
+@media (min-width: $tablet) {
+  .profile {
+    padding: 80px 75px;
+  }
+
+  .profile__lvl {
+    left: 0;
+  }
+
+  .profile__avatar {
+    img {
+      border-radius: 5px;
+      margin-right: 0;
+    }
+  }
+
+  .profile__btn {
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 10px;
+    @include tablet-text-middle;
+  }
+
+  // .prifile__bottom {
+  //   legend {
+
+  //   }
+  // }
+
+  .profile__box-one {
+    position: relative;
+    textarea {
+      width: 100%;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    legend {
+      position: absolute;
+      bottom: -30px;
+      left: 38%;
+      background: #edeff6;
+      width: 153px;
+      height: 40px;
+      @include tablet-text-middle;
+    }
+  }
+
+  .profile__box-two {
+    position: absolute;
+    top: 65px;
+    left: 230px;
+    margin: 0;
+    width: 308px;
+    height: 94px;
+
+    legend {
+      @include tablet-text-middle;
+      position: absolute;
+      bottom: -30px;
+      left: 93px;
+      background: #edeff6;
+      width: 153px;
+      height: 40px;
+    }
+  }
+
+  .profile__list {
+    margin-top: 20px;
+  }
+
+  .transport__item {
+    width: 43px;
+    height: 43px;
+    margin-right: 8px;
+  }
+}
+
+
+
+@media (min-width: $desktop) {
+  .profile__top {
+    position: absolute;
+    top: -170px;
+    right: 155px;
+    z-index: 100;
+  }
+
+  .profile__lvl {
+    left: -150px;
+    top: 50px;
+
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .profile__avatar {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 190px;
+      height: 190px;
+    }
+  }
+
+  .profile__btn {
+    display: none;
+  }
+
+  .profile__btn-desktop {
+    @include tablet-text-middle;
+    display: block;
+    background: #dfe3f0;
+    border: none;
+    height: 47px;
+  }
+
+  .profile__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile__box-one {
+    width: 50%;
+  }
+
+  .profile__box-two {
+    position: initial;
+    top: initial;
+    left: initial;
+
+    legend {
+      left: initial;
+      right: 0;
+      bottom: 62px;
+    }
+  }
+}
 

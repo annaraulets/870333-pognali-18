@@ -1,4 +1,7 @@
 .plans {
+  position: relative;
+  margin-top: -20px;
+  z-index: 10;
   background: #dfe3f0;
   color: #1d2e5b;
   padding: 30px 25px;
@@ -42,4 +45,75 @@
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 1.4px;
+}
+
+@media (min-width: $tablet) {
+  .plans {
+    padding: 55px 75px 80px 75px;
+  }
+
+  .plans__main-title {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 55px;
+  }
+
+  .plans__box {
+    position: relative;
+    padding: 40px 35px 20px 35px;
+  }
+
+  .plans__title {
+    margin: 0 0 35px 0;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .plans__number {
+    position: absolute;
+    right: 32px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+   .plans__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plans__text {
+    @include tablet-text-middle;
+  }
+
+  .plans__link {
+    @include tablet-text-middle;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .plans__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .plans__title {
+    margin: 0;
+  }
+
+  .plans__number {
+    position: initial;
+  }
+
+  .plans__wrapper {
+    display: flex;
+  }
+
+  .plans__text {
+    margin-right: 40px;
+  }
+
+
 }
