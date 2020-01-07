@@ -2,7 +2,7 @@
   position: relative;
   z-index: 10;
   margin-top: -20px;
-  padding: 50px 25px 25px 25px;
+  padding: 50px 25px 35px 25px;
   background: #ffd74b;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -11,10 +11,12 @@
 .map__block {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 
   p {
     margin: 0;
     font-size: 16px;
+    line-height: 22px;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -29,7 +31,7 @@
   width: 45px;
   height: 45px;
   margin-right: 15px;
-
+  margin-top: 3px;
 
   svg {
     fill: #ffd74b;
@@ -39,7 +41,26 @@
 }
 
 .map__button {
+  position: relative;
+  padding: 20px 23px 20px 20px;
   border: 3px solid #192144;
+}
+
+.map__button::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  right: 21px;
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-size: 10px 14px;
+}
+
+.map__img {
+  img {
+    height: 50%;
+  }
 }
 
 

@@ -1,13 +1,17 @@
 .main-menu {
   position: relative;
   background: #161c35;
-  padding: 25px 25px;
+  padding: 27px 25px;
   display: flex;
   justify-content: space-between;
 }
 
 .main-menu__logo {
   vertical-align: middle;
+}
+
+.main-menu__toggle {
+  padding: 0;
 }
 
 .main-menu__burger {
@@ -154,10 +158,16 @@
   }
 
   .main-popup {
-    display: none;
-    // display: flex;
+    // display: none;
+    display: flex;
+    position: absolute;
+    left: 250px;
+    top: 30px;
+    width: 100%;
+    max-width: 930px;
     background: #161c35;
     padding: 67px 0 0 0;
+    z-index: 100;
 
     a {
       color: #ffffff;

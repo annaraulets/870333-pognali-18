@@ -1,7 +1,7 @@
 .main-banner {
   position: relative;
   background-color: #192144;
-  padding: 25px 25px;
+  padding: 15px 25px;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-size: 320px 400px;
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@
 
 .traveller-pic {
   position: absolute;
+  top: 145px;
   left: 80px;
   width: 192px;
   height: 255px;
@@ -27,7 +28,7 @@
 
 .main-banner__wrapper {
   display: flex;
-  margin-top: 240px;
+  margin-top: 243px;
   z-index: 50;
   position: relative;
 }
@@ -60,9 +61,18 @@
 
 .content__quote {
   @include textstylelight;
+  margin: 26px 0 30px 25px;
+
+  p {
+    width: 150px
+  }
 
   cite {
+    display: block;
+    margin-top: 19px;
     font-weight: bold;
+    font-style: normal;
+    width: 172px;
   }
 }
 
@@ -73,16 +83,31 @@
   font-size: 18px;
   line-height: 18px;
   padding: 0;
-  border-radius: 20px;
+  margin: 23px 0;
 }
 
 .content__item {
-  min-height: 70px;
-  padding-top: 25px;
+  position: relative;
+  min-height: 55px;
+  padding-top: 22px;
   padding-left: 25px;
-  padding-bottom: 25px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  padding-bottom: 23px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  p {
+    width: 150px;
+    margin: 0;
+  }
+
+  span {
+    position: absolute;
+    right: 21px;
+    top: 22px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .content__item:first-child {
@@ -102,7 +127,8 @@
 .content__item:nth-child(4) {
   background-color: #ffd74b;
   margin-top: -20px;
-  border-radius: 20px;
+  border-radius: 15px;
+  min-height: 20px;
 }
 
 

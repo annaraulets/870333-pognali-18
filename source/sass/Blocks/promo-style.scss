@@ -1,19 +1,20 @@
 .promo {
+  @include textstylelight;
+
   position: relative;
   z-index: 30;
   margin-top: -20px;
-  padding: 70px 25px 25px 50px;
+  padding: 72px 25px 35px 50px;
   background: #edeff6;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-
-  @include textstylelight;
 }
 
 .promo__avatar {
   display: flex;
 
   img {
+    margin-top: -15px;
     height: 99px;
   }
 }
@@ -21,16 +22,23 @@
 
 .promo__title {
   @include titlestyle;
+  margin: 0;
 }
 
 .promo__list {
   width: 185px;
   padding: 0;
+  margin: 33px 0 29px 0;
   list-style: none;
 }
 
 .promo__item {
-  padding: 15px 0;
+  position:  relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 230px;
+  padding: 10px 0;
   border-top: 1px solid #cccccc;
 
   &:last-child {
@@ -38,7 +46,12 @@
   }
 }
 
+.promo__text {
+  margin: 0;
+}
+
 .promo__button {
+  padding: 0;
   color: #192144;
   font-size: 16px;
   line-height: 16px;
@@ -46,6 +59,23 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.promo__number {
+  position: absolute;
+  top: 2px;
+  right: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #ffa530;
+  border-radius: 50%;
 }
 
 

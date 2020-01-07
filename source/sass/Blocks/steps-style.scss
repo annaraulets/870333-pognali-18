@@ -405,12 +405,17 @@
     width: 180px;
   }
 
-
-
+  .steps__wrapper {
+    justify-content: space-between;
+  }
 
   .step-three__city-box {
     textarea {
       width: 50%;
     }
+  }
+
+  .steps__link {
+    width: 20%;
   }
 }

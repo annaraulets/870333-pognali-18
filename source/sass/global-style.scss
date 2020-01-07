@@ -29,6 +29,7 @@ img {
 
 .container {
   width: 320px;
+  position: relative;
 }
 
 .visually-hidden {
@@ -50,7 +51,7 @@ img {
 .btn-yellow {
   @include yellowbtn;
   display: block;
-  padding: 24px;
+  padding: 23px;
   text-align: left;
   // margin-top: 24px;
   border-radius: 10px;

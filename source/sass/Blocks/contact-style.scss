@@ -2,7 +2,7 @@
   position: relative;
   z-index: 20;
   margin-top: -20px;
-  padding: 70px 25px 25px 25px;
+  padding: 70px 25px 12px 25px;
   color: #ffffff;
   background: #192144;
   border-bottom-left-radius: 25px;
@@ -19,6 +19,7 @@
 .contact-block__title {
   @include titlestyle;
   padding: 0 25px;
+  margin: 24px 0 17px 0;
   text-align: center;
 }
 
@@ -26,7 +27,13 @@
   font-weight: 300;
   text-align: center;
   padding: 0 30px;
-  line-height: 1.38;
+  margin-bottom: 30px;
+  line-height: 22px;
+
+  &--second {
+    padding: 0;
+    margin: 28px 0 18px 0
+  }
 }
 
 .contact-block__login {
@@ -43,6 +50,10 @@
   display: flex;
   align-items: center;
   font-weight: bold;
+
+  &--second {
+    margin-top: -16px;
+  }
 }
 
 .contact__link {
@@ -81,12 +92,23 @@
 
 .contact__btn {
   position: absolute;
-  right: 30px;
+  right: 25px;
   height: 62px;
   width: 60px;
   background: #ffd74b;
   border-radius: 10px;
   border: none;
+}
+
+.contact__btn::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 23px;
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-size: 10px 14px;
 }
 
 .contact__btn-text {

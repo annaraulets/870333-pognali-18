@@ -2,7 +2,7 @@
   position: relative;
   z-index: 40;
   margin-top: -20px;
-  padding: 70px 25px 25px 25px;
+  padding: 68px 25px 30px 25px;
   background-color: #192144;
   color: #ffffff;
   border-bottom-left-radius: 25px;
@@ -12,11 +12,13 @@
 .companion__title {
   @include titlestyle;
   padding: 0 25px;
+  margin: 24px 0 20px 0;
 }
 
 .companion__text {
   @include textstylelight;
   padding: 0 25px;
+  margin: 16px 0 20px;
 
   &--quote {
     display: block;
@@ -26,17 +28,37 @@
 
 .companion__main-list {
   padding: 0;
+  margin: 56px 0 18px 0;
   list-style: none;
+}
+
+.companion__main-item{
+  margin-bottom: 10px;
+}
+
+.companion__list {
+  position: relative;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.companion__list--flag {
+  padding-left: 18px;
+  margin-top: -32px;
+}
+
+.companion__list--flag-second {
+  padding-left: 45px;
 }
 
 .companion__list--transport {
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding-left: 20px;
 }
 
 .companion__item {
-  // margin-bottom: 10px;
   margin-right: 15px;
 
   svg {
@@ -45,34 +67,104 @@
   }
 }
 
+.companion__item--flag {
+  margin-right: 19px;
+
+  svg {
+    width: 35px;
+    height: 24px;
+  }
+}
+
 .companion__avatar {
+  position: relative;
+
   img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
 }
 
+.companion__lvl {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+
+  span:nth-child(2) {
+    position: absolute;
+    left: 18px;
+    top: 15px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+  }
+
+  span:last-child {
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
 .companion__about {
   position: relative;
   z-index: 10;
-  margin-top: -10px;
-  padding: 20px 45px;
+  margin-top: -5px;
+  padding: 19px 45px;
   color: #444444;
   background: #ffffff;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  &--second {
+    padding: 18px 45px;
+  }
 }
 
 .companion__name {
-  margin: 0;
+  margin: 8px 0;
+  padding-left: 25px;
   color: #1d2e5b;
   font-size: 21px;
   font-weight: bold;
+
+  &--second {
+    margin: 9px 0;
+    padding-left: 34px;
+  }
 }
 
-.companion__list {
-  display: flex;
-  list-style: none;
+.companion__tags {
+  margin: 13px 0 16px 0;
+  text-align: center;
+
+  &--second {
+    padding-left: 15px;
+    margin-bottom: 19px;
+  }
+}
+
+.companion__link {
+  padding: 22px 23px 22px 23px;
+  position: relative;
+}
+
+.companion__link::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 23px;
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-size: 10px 14px;
 }
 
 

@@ -2,7 +2,7 @@
   position: relative;
   z-index: 50;
   margin-top: -20px;
-  padding: 70px 25px 25px 25px;
+  padding: 70px 25px 29px 25px;
   background-color: #edeff6;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -11,14 +11,18 @@
 .way__title {
   @include titlestyle;
   padding: 0 25px;
+  margin: 24px 0 18px 0;
 }
 
 .way__text {
   @include textstylelight;
   padding: 0 25px;
+  width: 194px;
+  margin: 0;
 }
 
 .way-list {
+  margin-top: 60px;
   margin-bottom: 25px;
   padding: 0;
   list-style: none;
@@ -38,17 +42,24 @@
 .way-list__block {
   position: relative;
   z-index: 20;
-  margin-top: -37px;
+  margin-top: -15px;
   border-radius: 10px;
   background-color: #ffffff;
   padding: 23px 23px;
   color: #161c35;
 }
 
+.way-list__svg {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+}
+
 .way-list__title {
   font-size: 21px;
+  line-height: 21px;
   font-weight: bold;
-  margin: 0;
+  margin: 2px 0;
 }
 
 .way-list__text {
@@ -67,6 +78,34 @@
   text-align: right;
   margin: 0;
   opacity: 0.3;
+}
+
+.way-list__user-pic {
+  position: absolute;
+  top: 3px;
+  right: 51px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/user.svg");
+
+  &--last {
+    right: 42px;
+  }
+}
+
+.way__link {
+  position: relative;
+}
+
+.way__link::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 23px;
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-size: 10px 14px;
 }
 
 @media (min-width: $tablet) {
