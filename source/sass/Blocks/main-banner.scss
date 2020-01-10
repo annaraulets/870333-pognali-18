@@ -134,7 +134,7 @@
 
 @media (min-width: $tablet) {
   .main-banner {
-    padding: 40px 40px;
+    padding: 25px 40px;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-size: 100%;
     background-position: 0 350px;
@@ -147,9 +147,10 @@
   }
 
   .traveller-pic {
-    left: 300px;
-    width: 400px;
-    height: 591px;
+    top: 265px;
+    left: 285px;
+    width: 372px;
+    height: 553px;
     background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-size: 100%;
   }
@@ -165,13 +166,20 @@
 
   .content__quote {
     position: absolute;
-    top: -380px;
-    left: 0;
+    top: -448px;
+    left: 9px;
     width: 260px;
     font-size: 28px;
     line-height: 33px;
 
+    p {
+      width: inherit;
+      margin: 28px 0 44px 0;
+    }
+
     cite {
+      margin: 0;
+      width: inherit;
       font-size: 21px;
       line-height: 25px;
       font-style: normal;
@@ -181,16 +189,35 @@
   .content__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 550px;
+    margin-top: 481px;
     width: 688px;
   }
 
   .content__item {
     font-size: 24px;
     line-height: 24px;
-    min-height: 80px;
-    padding: 30px 34px;
+    min-height: 99px;
+    padding: 31px 34px;
     width: 40%;
+
+    p {
+      width: 200px;
+    }
+
+    span {
+      right: initial;
+      left: 33px;
+      top: 85px;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: bold;
+    }
+  }
+
+  .content__item-text {
+    // br {
+    //   display: none;
+    // }
   }
 
   .content__item:first-child {
@@ -206,6 +233,7 @@
   }
 
   .content__item:nth-child(3) {
+    min-height: 80px;
     width: 42%;
     margin-right: -2%;
     border-bottom-left-radius: 20px;

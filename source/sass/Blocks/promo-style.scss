@@ -82,41 +82,100 @@
 @media (min-width: $tablet) {
   .promo {
     position: relative;
-    padding: 75px 40px;
+    padding: 134px 40px 84px 40px;
+    margin-top: -60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .promo__title {
     font-size: 45px;
     line-height: 45px;
-    padding-left: 80px;
+    margin: 0 auto;
   }
 
   .promo__img {
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    right: 85px;
+    bottom: 48px;
+    z-index: 50;
   }
 
   .promo__list {
-    width: 100%;
+    position: relative;
+    width: 90%;
     margin-bottom: 60px;
+    padding-left: 90px;
+    margin: 73px 0 59px 0;
     font-size: 28px;
     line-height: 33px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -42px;
+      right: 22px;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background: #e2e5f2;
+    }
   }
 
   .promo__item {
     display: flex;
     justify-content: space-between;
+    width: 91%;
+    padding: 16px 0;
 
-    span {
-      margin-left: 100px;
-    }
+    // span {
+    //   margin-left: 100px;
+    // }
+  }
+
+  .promo__span {
+    position: absolute;
+    top: 17px;
+    right: 0;
+
+  }
+
+  .promo__number {
+    top: -1px;
+    right: initial;
+    left: -90px;
+    width: 67px;
+    height: 67px;
+    font-size: 28px;
+    line-height: 28px;
   }
 
   .promo__button {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 60px;
+    margin-left: 90px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 65px;
+      left: 39px;
+      width: 67px;
+      height: 67px;
+      background: #e2e5f2;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 87px;
+      left: 65px;
+      width: 17px;
+      height: 21px;
+      background-image: url("../img/business.svg");
+      background-size: 17px 21px;
+    }
   }
 }
 

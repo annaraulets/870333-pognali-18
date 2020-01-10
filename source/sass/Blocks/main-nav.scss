@@ -93,7 +93,6 @@
   margin-top: 50px;
 }
 
-
 .social {
   list-style: none;
   display: flex;
@@ -108,8 +107,25 @@
 
 
 @media (min-width: $tablet) {
+  .main-menu {
+    padding: 45px 40px;
+    background: #192144;
+  }
+
+  .main-menu__toggle {
+    margin-left: 23px;
+  }
+
   .main-menu__reg {
     display: block;
+    @include text-style-btn;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161c35;
+    background: #ffd74b;
+    border-radius: 25px;
+    padding: 11px 29px;
+    margin-top: -5px;
   }
 
   .main-menu__login {

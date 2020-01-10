@@ -66,15 +66,19 @@
 
 @media (min-width: $tablet) {
   .map {
-    padding: 85px 75px;
+    margin-top: -60px;
+    padding: 105px 75px 82px 75px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .map__block {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 
     p {
       font-size: 28px;
       line-height: 28px;
+      margin-top: 10px;
     }
 
     br {
@@ -85,10 +89,20 @@
   .map__wrapper {
     width: 67px;
     height: 67px;
+    margin-right: 26px;
 
     svg {
       width: 21px;
       height: 31px;
+    }
+  }
+
+  .map__button {
+    padding: 26px 23px 23px 33px;
+
+    &::before {
+      top: 30px;
+      right: 33px;
     }
   }
 }

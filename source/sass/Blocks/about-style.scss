@@ -21,6 +21,10 @@
   width: 209px;
   margin: 0 0 18px 0;
 
+  .about-br-tablet {
+    display: none;
+  }
+
   &--quote {
     font-weight: bold;
   }
@@ -33,17 +37,19 @@
 
 @media (min-width: $tablet) {
   .about {
-    padding: 40px 40px;
+    padding: 40px 40px 89px 40px;
     background-image: url("../img/about-tablet@1x.png");
-    background-position-x: 410px;
-    background-position-y: 29px;
-    background-size: 50%;
+    background-position-x: 384px;
+    background-position-y: 94px;
+    background-size: 49%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .about__title {
     font-size: 45px;
     line-height: 45px;
-    margin-left: 40px;
+    margin: 48px 40px 40px 34px;
   }
 
   .about__text {
@@ -52,7 +58,16 @@
     line-height: 33px;
     font-weight: 300;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 36px;
+    text-align: left;
+
+    .about-br-mobile {
+      display: none;
+    }
+
+    .about-br-tablet {
+      display: block;
+    }
 
     &--quote {
       width: 290px;
@@ -60,13 +75,28 @@
       font-weight: bold;
       font-size: 21px;
       line-height: 25px;
+      margin-top: 31px;
+      margin-bottom: 50px
     }
   }
 
   .about__link {
+    position: relative;
     display: block;
-    margin-left: 40px;
-    width: 200px;
+    margin-left: 37px;
+    width: 209px;
+    padding: 29px 31px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      width: 10px;
+      height: 14px;
+      background-image: url("../img/triangle-arrow-right.svg");
+      background-size: 10px 14px;
+    }
   }
 }
 

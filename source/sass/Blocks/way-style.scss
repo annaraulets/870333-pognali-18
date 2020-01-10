@@ -108,33 +108,47 @@
   background-size: 10px 14px;
 }
 
+
 @media (min-width: $tablet) {
   .way {
-    padding: 75px 75px;
+    padding: 68px 75px 80px 75px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: 439px;
+    background-position-y: 100px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .way__title {
     font-size: 45px;
     line-height: 45px;
     padding: 0;
+    margin-left: -3px;
+    margin-bottom: 58px;
   }
 
   .way__text {
     width: 340px;
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 104px;
     font-size: 28px;
     line-height: 33px;
     font-weight: 300;
   }
 
+  .way-list {
+    margin-bottom: 42px;
+  }
+
   .way-list__item {
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 5px;
   }
 
   .way-list__image {
-    flex-basis: 30%;
+    flex-basis: 35%;
 
     img {
       width: 186px;
@@ -147,16 +161,25 @@
   }
 
   .way-list__block {
+    height: 100px;
     margin: 0;
     flex-basis: 70%;
-    padding: 20px 30px;
+    padding: 20px 30px 20px 30px;;
     border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
+  .way-list__svg {
+    width: 70px;
+    height: 43px;
+    top: 17px;
+    left: initial;
+    right: -35px;
+  }
+
   .way-list__title {
-    margin: 6px 0;
+    margin: 11px 0 7px 0;
     font-size: 24px;
     line-height: 24px;
   }
@@ -169,8 +192,31 @@
   .way-list__number {
     font-size: 20px;
     line-height: 30px;
-    top: 80px;
-    right: 340px;
+    top: 94px;
+    right: 321px;
+
+    &--last {
+      right: 332px;
+    }
+  }
+
+  .way-list__user-pic {
+    width: 21px;
+    height: 20px;
+    right: 60px;
+
+    &--last {
+      right: 50px;
+    }
+  }
+
+  .way__link {
+    padding: 31px 35px 26px 34px;
+
+    &::before {
+      top: 33px;
+      right: 35px;
+    }
   }
 }
 
