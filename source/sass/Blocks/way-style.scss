@@ -223,16 +223,63 @@
 
 @media (min-width: $desktop) {
   .way {
-    padding: 160px 240px 140px 130px;
+    margin-top: -60px;
+    padding: 160px 130px 99px 130px;
     display: flex;
     justify-content: space-around;
+    background-position-x: 1090px;
+    background-position-y: 148px;
   }
 
   .way__wrapper {
     order: 1;
+    margin-left: -54px;
+  }
+
+  .way__title {
+    margin: 66px 0 59px 0;
+  }
+
+  .way__text {
+    margin-bottom: 95px;
+  }
+
+  .way-list {
+    margin-left: -109px;
+  }
+
+  .way-list__item {
+    width: 560px;
+  }
+
+  .way-list__image {
+    flex-basis: 42%;
+  }
+
+  .way-list__block {
+    width: 375px;
+  }
+
+  .way-list__svg {
+    top: 25px;
+  }
+
+  .way-list__title {
+    margin: 5px 0 7px 0;
+  }
+
+  .way-list__number {
+    right: 262px;
+
+    &--last {
+      right: 271px;
+    }
   }
 
   .way__link {
-    display: none;
+    position: absolute;
+    right: 303px;
+    bottom: 140px;
+    width: 205px;
   }
 }

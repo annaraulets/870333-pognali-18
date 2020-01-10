@@ -182,10 +182,46 @@
 
 @media (min-width: $desktop) {
   .promo {
-    padding: 100px 130px 165px 130px;
+    padding: 167px 130px 183px 130px;
   }
 
   .promo__title {
     margin: 0 auto;
+  }
+
+  .promo__avatar {
+    img {
+      width: 198px;
+      height: 198px;
+    }
+  }
+
+  .promo__img {
+    right: 133px;
+    bottom: 265px;
+  }
+
+  .promo__list {
+    width: 76%;
+    margin: 134px 0 59px 0;
+
+    &::before {
+      width: 444px;
+      height: 300px;
+      top: -51px;
+      right: -77px;
+    }
+  }
+
+  .promo__button {
+    &::before {
+      bottom: 163px;
+      left: 132px;
+    }
+
+    &::after {
+      bottom: 188px;
+      left: 155px;
+    }
   }
 }

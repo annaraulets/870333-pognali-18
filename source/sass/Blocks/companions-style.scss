@@ -290,15 +290,41 @@
 @media (min-width: $desktop) {
   .companion {
     display: flex;
-    padding: 130px 60px 130px 130px;
     justify-content: space-between;
+    margin-top: -60px;
+    padding: 135px 60px 54px 130px;
   }
 
-  // .companion__wrapper {
+  .companion__title {
+    margin: 53px 0 58px -3px;
+  }
 
-  // }
+  .companion__main-item {
+    &:first-child {
+      margin-right: 60px;
+    }
+  }
+
+  .companion__lvl {
+    top: 23px;
+    left: 22px;
+  }
+
+  .companion__about {
+    padding: 30px 30px 24px 30px;
+  }
+
+  .companion__list--flag {
+    margin-top: -41px;
+  }
+
+  .companion__name {
+    margin: 15px 0 22px 0;
+  }
 
   .companion__link {
-    display: none;
+    position: absolute;
+    bottom: 135px;
+    width: 211px;
   }
 }

@@ -214,12 +214,6 @@
     }
   }
 
-  .content__item-text {
-    // br {
-    //   display: none;
-    // }
-  }
-
   .content__item:first-child {
     border-top-left-radius: 20px;
     border-top-right-radius: 0;
@@ -249,25 +243,25 @@
 
 @media (min-width: $desktop) {
   .main-banner {
-    padding: 60px 60px;
+    padding: 76px 60px 65px 60px;
     background-image: url("../img/globe-back-desktop@1x.jpg");
     background-size: 100%;
     background-position-y: bottom;
     background-color: #161c35;
-    min-height: 630px;
+    min-height: 475px;
   }
 
   .main-banner__title {
     width: 395px;
     text-align: left;
     margin: 0;
-    padding-left: 60px;
+    padding-left: 67px;
   }
 
   .traveller-pic {
     margin: 0 auto;
-    top: 30px;
-    left: 500px;
+    top: -24px;
+    left: 604px;
     background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-size: 100%;
     width: 431px;
@@ -279,7 +273,7 @@
     display: flex;
     margin: 0;
     right: 60px;
-    top: -40px;
+    top: -84px;
   }
 
   .main-banner__tel {
@@ -304,9 +298,13 @@
   }
 
   .content__quote {
-    top: 0;
+    top: 34px;
     left: initial;
-    right: 60px;
+    right: 86px;
+
+    p {
+      margin: 28px 0 43px 0;
+    }
   }
 
   .content__list {
@@ -315,24 +313,35 @@
     flex-wrap: nowrap;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 0;
   }
 
   .content__item {
     width: 25%;
-    padding: 30px 30px;
+    padding: 30px 61px 30px 33px;
     min-height: 47px;
+    height: 20px;
     display: flex;
     align-content: center;
+
+    span {
+      font-size: 24px;
+      line-height: 24px;
+      left: initial;
+      right: 61px;
+      top: 29px;
+    }
   }
 
   .content__item:first-child {
     border-bottom-left-radius: 20px;
-    width: 25%;
+    width: 23%;
     margin-right: -2%;
   }
 
   .content__item:nth-child(2) {
     margin: 0;
+    padding-left: 30px;
     width: 25%;
     margin-right: -2%;
     border-bottom-left-radius: 20px;
@@ -340,6 +349,7 @@
   }
 
   .content__item:nth-child(3) {
+    min-height: 48px;
     width: 25%;
     margin: 0;
     margin-right: -2%;
@@ -349,6 +359,7 @@
   }
 
   .content__item:nth-child(4) {
+    min-height: 48px;
     width: 25%;
     border-top-left-radius: 20px;
     margin: 0;

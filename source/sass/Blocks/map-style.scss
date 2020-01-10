@@ -111,17 +111,19 @@
 @media (min-width: $desktop) {
   .map {
     display: flex;
-    justify-content: space-around;
+    padding: 105px 130px 61px 130px;
   }
 
   .map__block {
-    margin: 0;
+    margin: 0 148px 0 0;
   }
 
   .map__wrapper {
     width: 90px;
     height: 90px;
     margin-right: 32px;
+    margin-left: 152px;
+    margin-top: 10px;
 
     svg {
       width: 28px;
@@ -129,7 +131,10 @@
     }
   }
 
-  .mao__button {
-    margin: 0;
+  .map__button {
+    width: 263px;
+    height: 20px;
+    padding: 28px 23px 29px 33px;
+    margin-top: 13px;
   }
 }

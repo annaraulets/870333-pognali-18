@@ -209,12 +209,20 @@
 
 @media (min-width: $desktop) {
   .contact-block {
-    padding: 100px 130px;
+    padding: 144px 130px 103px 131px;
   }
 
   .contact-block__text {
-    width: 600px;
+    width: 610px;
     margin: auto;
+
+    &--second {
+      width: 621px;
+    }
+  }
+
+  .contact__form {
+    margin: 58px 0 65px 0;
   }
 
   .contact__input {
@@ -222,8 +230,10 @@
   }
 
   .contact__btn {
-    width: 350px;
-    right: 130px;
+    width: 322px;
+    right: 135px;
+    padding: 30px 30px 28px 34px;
+    text-align: left;
   }
 
   .contact__btn-text {
@@ -234,23 +244,38 @@
     font-weight: bold;
   }
 
-  // .contact {
-  //   display: flex;
-  //   justify-content: center;
-  // }
+  .contact-span {
+    font-size: 29.5px;
+    line-height: 40.5px;
+  }
 
-  // .contact__text:first-child {
-  //   margin-right: 100px;
-  // }
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+  }
 
-  // .contact__link {
-  //   width: 90px;
-  //   height: 90px;
-  //   margin-right: 32px;
+  .contact__text:first-child {
+    margin-right: 113px;
+  }
 
-  //   svg {
-  //     width: 36px;
-  //     height: 36px;
-  //   }
-  // }
+  .contact__link {
+    width: 90px;
+    height: 90px;
+    margin-right: 32px;
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .contact__link--second {
+      margin-right: 30px;
+
+      svg {
+        width: 36px;
+        height: 26px;
+      }
+  }
 }
