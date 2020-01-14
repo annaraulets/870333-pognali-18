@@ -8,14 +8,13 @@
   </head>
   <body>
 
-
     <header class="container">
-      <div class="main-menu">
-        <a class="main-menu__logo" href="index.html">
+      <div class="main-menu main-menu--form">
+        <a class="main-menu__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
-            <img src="img/logo-mobile-white@1x.png" width="166" height="43" alt="Главный логотип">
+            <img src="img/logo-mobile-white@1x.png" alt="Главный логотип">
           </picture>
         </a>
         <button class="main-menu__toggle">
@@ -28,7 +27,7 @@
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <a class="main-menu__login" href="#">Aвторизация</a>
+        <a class="main-menu__reg" href="#">Aвторизация</a>
       </div>
       <div class="menu-where">
         <h1>Направления</h1>
@@ -124,7 +123,6 @@
                 <span>80</span>
                 <span>level</span>
               </div>
-
             </div>
             <div class="profile__avatar">
               <picture>
@@ -236,7 +234,7 @@
               <p class="steps__main-text">Укажите предпочтительное количество попутчиков,
               которых вы хотели бы позвать в поездку и ее
               предполагаемую длительность.</p>
-              <div class="step-one__flex">
+              <div class="step-one__flex step-one__flex--first">
                 <h4 class="step-one__text-find">ищу попутчиков:</h4>
                 <span class="step-one__people">Чел.</span>
                 <div class="step-one__wrapper">
@@ -318,8 +316,8 @@
                     <td>С</td>
                     <td>Ч</td>
                     <td>П</td>
-                    <td>С</td>
-                    <td>В</td>
+                    <td class="days-weekend">С</td>
+                    <td class="days-weekend">В</td>
                   </tr>
                   <tr class="cal__days">
                     <td>23</td>
@@ -348,7 +346,7 @@
                     <td>14</td>
                     <td>15</td>
                   </tr>
-                  <tr class="cal__days">
+                  <tr class="cal__days cal__days--last-row">
                     <td>16</td>
                     <td>17</td>
                     <td>18</td>
@@ -357,23 +355,23 @@
                     <td>21</td>
                     <td>22</td>
                   </tr>
-                  <tr class="cal__days">
+                  <tr class="cal__days cal__days--last-row">
                     <td>23</td>
                     <td>24</td>
                     <td>25</td>
-                    <td>26</td>
-                    <td>27</td>
-                    <td>28</td>
-                    <td>29</td>
+                    <td class="days-blue today-mark">26</td>
+                    <td class="days-blue">27</td>
+                    <td class="days-blue">28</td>
+                    <td class="days-grey">29</td>
                   </tr>
-                  <tr class="cal__days">
-                    <td>30</td>
-                    <td>31</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
+                  <tr class="cal__days cal__days--last-row">
+                    <td class="days-grey">30</td>
+                    <td class="days-grey">31</td>
+                    <td class="days-grey">1</td>
+                    <td class="days-grey">2</td>
+                    <td class="days-grey">3</td>
+                    <td class="days-grey">4</td>
+                    <td class="days-grey">5</td>
                   </tr>
                 </table>
               </div>
@@ -498,7 +496,7 @@
 
             <div class="steps__step step-three">
               <h3 class="steps__main-title">Шаг 3.<br>Развлечения</h3>
-              <p class="steps__main-text">Наконец, расскажите о своих планах времяпровождения.
+              <p class="steps__main-text steps__main-text--three">Наконец, расскажите о своих планах времяпровождения.
               Можно писать в свободной форме и ставить тэги.</p>
 
               <div class="step-three__city-box">
@@ -518,10 +516,10 @@
                   <svg width="35" height="24" viewBox="0 0 70 47" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><path d="M63.92.55H6.65A6.36 6.36 0 0 0 .29 6.91v17.64h70V6.91A6.36 6.36 0 0 0 63.92.55z" fill="#FFF"/><path d="M.28 41.18a6.36 6.36 0 0 0 6.36 6.36h57.28a6.36 6.36 0 0 0 6.36-6.36V24.55h-70v16.63z" fill="#ED5565"/><path d="M2.19 2.38a6.34 6.34 0 0 0-1.9 4.54v34.27a6.34 6.34 0 0 0 1.95 4.57l23.05-21.21L2.19 2.38z" fill="#4758A9"/></g></svg>
                 </div>
 
-                <textarea placeholder="План действий" rows="10">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <textarea placeholder="План действий" rows="10">Пить пиво и лазить         по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
 
-              <div class="steps__wrapper">
+              <div>
                 <button class="steps__link steps__link--btn" type="submit">Отправить</button>
                 <a class="steps__link steps__link--before" href="#">На шаг назад</a>
               </div>
@@ -541,7 +539,7 @@
             <img src="img/logo-mobile-blue@1x.png">
           </picture>
       </a>
-      <ul class="footer__list social">
+      <ul class="footer__list footer__list--form social">
         <li class="social__item social__item--footer">
           <a class="social__link social__link--footer" href="#">
             <img src="img/facebook.svg" width="11" height="21">
@@ -558,7 +556,7 @@
             <span class="visually-hidden">instagram</span></a>
         </li>
       </ul>
-      <div class="footer__made">
+      <div class="footer__made footer__made--form">
         <p>Разработано</p>
         <a class="footer__html" href="#">
           <img src="img/htmlacademy.svg" width="27" height="34">

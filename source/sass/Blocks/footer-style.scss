@@ -19,9 +19,17 @@
   list-style: none;
 }
 
+.footer__list--form {
+  margin: 35px 0 20px 0;
+}
+
 .footer__made {
   display: flex;
   justify-content: space-between;
+
+  &--form {
+    margin-top: 42px;
+  }
 }
 
 .social__item--footer {
