@@ -50,31 +50,34 @@
   letter-spacing: 1.4px;
 }
 
+
 @media (min-width: $tablet) {
   .plans {
-    padding: 55px 75px 80px 75px;
+    padding: 50px 75px 87px 75px;
   }
 
   .plans__main-title {
     font-size: 36px;
     line-height: 50px;
-    margin-bottom: 55px;
+    margin-bottom: 41px;
   }
 
   .plans__box {
     position: relative;
-    padding: 40px 35px 20px 35px;
+    padding: 27px 35px 15px 35px;
+    margin-bottom: 10px;
   }
 
   .plans__title {
-    margin: 0 0 35px 0;
+    margin: 0 0 40px 0;
     font-size: 24px;
     line-height: 50px;
   }
 
   .plans__number {
     position: absolute;
-    right: 32px;
+    top: 44px;
+    right: 31px;
     font-size: 20px;
     line-height: 18px;
     font-weight: 500;
@@ -83,14 +86,22 @@
    .plans__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 -2px;
   }
 
   .plans__text {
     @include tablet-text-middle;
+    margin: 0;
+
+    &--data {
+      margin: 0 0 0 -30px;
+    }
   }
 
   .plans__link {
     @include tablet-text-middle;
+    margin: 0;
   }
 }
 

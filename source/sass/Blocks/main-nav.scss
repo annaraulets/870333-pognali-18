@@ -126,6 +126,10 @@
   .main-menu {
     padding: 45px 40px;
     background: #192144;
+
+    &--form {
+      background: #161c35;
+    }
   }
 
   .main-menu__toggle {
@@ -156,9 +160,17 @@
   }
 
   .menu-where {
-    padding: 70px 75px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    padding: 81px 75px 63px 75px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+    &::before {
+      bottom: -4px;
+      width: 355px;
+      height: 8px;
+      border-radius: 4px;
+
+    }
 
     h1 {
       font-size: 60px;
@@ -181,6 +193,7 @@
     position: initial;
     background: #161c35;
     padding: 47px 0 30px 60px;
+
   }
 
   .main-menu__toggle {

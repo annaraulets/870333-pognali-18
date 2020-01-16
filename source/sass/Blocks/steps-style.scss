@@ -181,6 +181,10 @@
   }
 }
 
+.cal__days-tablet {
+  display: none;
+}
+
 .cal__days {
 
   td {
@@ -371,72 +375,230 @@
 
 @media (min-width: $tablet) {
   .steps {
-    padding: 55px 75px 80px 75px;
+    padding: 47px 75px 69px 75px;
   }
 
   .steps__title {
+    margin: 0 0 48px 0;
     font-size: 36px;
     line-height: 50px;
   }
 
   .steps__step {
-    padding: 50px 43px;
+    padding: 49px 45px 55px 43px;
     border-radius: 30px;
   }
 
   .steps__main-title {
+    margin-bottom: 33px;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 35px;
   }
 
   .steps__main-text {
-    margin: 0 0 35px 0;
+    width: 500px;
+    margin: 0 0 63px 0;
     font-size: 20px;
     line-height: 24px;
+
+    &--step-second {
+      width: 410px;
+      margin-bottom: 33px;
+    }
+  }
+
+  .step-one {
+    margin-bottom: 40px;
+  }
+
+  .step-one__flex {
+    &--first {
+      margin-bottom: 112px;
+    }
   }
 
   .step-one__text-find {
     @include tablet-text-middle;
-    margin: 25px 0;
+    margin: 0 0 23px 0;
   }
 
   .step-one__people {
     @include tablet-text-middle;
-    top: 255px;
+    top: 289px;
+    right: 42px;
   }
 
   .step-one__wrapper {
-    width: 95%;
+    width: 92%;
+    height: 18px;
     padding: 25px 20px;
+  }
+
+  .step-one__less {
+    svg {
+      width: 20px;
+      height: 2px;
+    }
+  }
+
+  .step-one__number {
+    font-size: 20px;
+    line-height: 18px;
+    height: 20px;
+  }
+
+  .step-one__wrapper-checkbox {
+    position: absolute;
+    top: 437px;
+    margin: 0;
   }
 
   .step-one__days {
     @include tablet-text-middle;
-    top: 400px;
+    top: 514px;
+    right: 42px;
   }
 
-  .steps__link {
-    @include tablet-btn;
-    display: block;
-    width: 40%;
-    border-radius: 20px;
-    padding: 20px 35px;
+  .step-one__checkbox {
+    @include tablet-text-middle;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 59px;
 
-    &--before {
-      margin-top: 0;
-      text-align: right;
+    &::before {
+      width: 35px;
+      height: 35px;
+      top: -10px;
+      left: -59px;
     }
   }
 
+  .step-two {
+    position: relative;
+    margin-bottom: 50px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 530px;
+      height: 1px;
+      background: #d6d9e6;
+      top: 235px;
+      left: 43px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 350px;
+      height: 1px;
+      background: #d6d9e6;
+      top: 409px;
+      left: 264px;
+      transform: rotate(90deg);
+    }
+  }
+
+  .step-two__city {
+    position: relative;
+    margin-top: 75px;
+    margin-bottom: 15px;
+
+    &:nth-child(4) {
+      margin-top: 15px;
+    }
+
+    &:nth-child(5) {
+      margin-top: 15px;
+    }
+
+    &:nth-child(6) {
+      margin-top: 15px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      right: 126px;
+      width: 15px;
+      height: 15px;
+      background: #1d2e5b;
+      border-radius: 50%;
+      z-index: 20;
+    }
+  }
+
+  .step-two__city:nth-child(5)::before {
+    background: #ffffff;
+    border: 1px solid #cbced9;
+  }
+
+  .step-two__city:nth-child(6)::before {
+    background: #edeff6;
+    border: 1px solid #cbced9;
+  }
+
+
   .place__add-city {
-    width: 60%;
+    width: 369px;
+    height: 70px;
+    padding: 25px 10px;
+    box-sizing: border-box;
 
     input {
       @include tablet-text-middle;
       width: 100%;
-      height: 18px;
-      padding: 25px 20px;
+      padding: 10px 14px;
+    }
+  }
+
+  .place__btn-show {
+    right: 20px;
+    top: 20px;
+
+    svg {
+      width: 17px;
+      height: 9px;
+      opacity: 0.3;
+    }
+  }
+
+   .place__btn-show--country {
+     svg {
+      width: 20px;
+      height: 20px;
+     }
+   }
+
+  .place__flag {
+    border: none;
+    padding: 0;
+    width: 70px;
+    height: 47px;
+    margin: 12px 0 0 52px;
+
+    svg {
+      width: 70px;
+      height: 47px;
+    }
+  }
+
+  .place__btn-close {
+    right: -7px;
+    top: 23px;
+    padding: 0;
+    background: none;
+
+    &--choose {
+      right: -170px;
+
+    }
+
+    svg {
+      width: 17px;
+      height: 17px;
     }
   }
 
@@ -444,16 +606,74 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 47px;
+
+    &--last-step {
+      margin: 0;
+    }
+  }
+
+  .cal {
+    margin-top: 59px;
+    margin-bottom: 44px;
+  }
+
+  .cal__title {
+    font-size: 36px;
+    margin: 25px 0 20px 0;
+  }
+
+  .cal__top {
+    margin: 0 20px 31px 20px;
+  }
+
+  .cal__btn {
+    svg {
+      width: 15px;
+      height: 28px;
+    }
+  }
+
+  .cal__week {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+
+    td {
+      padding-bottom: 2px;
+    }
+  }
+
+  .cal__days-tablet {
+    display: initial;
+  }
+
+  .cal__days {
+    td {
+      padding: 0;
+      width: 76px;
+      height: 68px;
+      font-size: 20px;
+      line-height: 18px;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
   }
 
   .step-three__city-box {
+    position: relative;
+
     textarea {
-      width: 95%;
+      width: 459px;
       height: 100px;
       padding: 20px 20px;
       border-radius: 4px;
       font-size: 20px;
       line-height: 24px;
+    }
+
+    &--second {
+      margin: 37px 0 43px 0;
     }
   }
 
@@ -461,6 +681,63 @@
     font-size: 30px;
     line-height: 18px;
     font-weight: bold;
+  }
+
+  .step-three__wrapper {
+    padding: 0;
+    margin-bottom: 28px;
+    margin-left: -1px;
+    margin-right: 31px;
+
+    svg {
+      width: 70px;
+      height: 47px;
+    }
+  }
+
+  .steps__link {
+    @include tablet-btn;
+    position: relative;
+    display: block;
+    width: 215px;
+    border-radius: 20px;
+    padding: 30px 35px 31px 35px;
+    margin-left: 1px;
+    text-align: left;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 33px;
+      right: 35px;
+      width: 10px;
+      height: 14px;
+      background-image: url(../img/triangle-arrow-right.svg);
+      background-size: 10px 14px;
+    }
+
+    &--step-two {
+      padding: 30px 35px 31px 32px;
+    }
+
+    &--btn {
+      width: 285px;
+      height: 80px;
+      padding: 30px 35px 31px 32px;
+    }
+  }
+
+  .steps__link--before {
+    margin-top: 0;
+    text-align: right;
+    padding: 0 0 0 35px;
+    margin-right: -3px;
+
+    &::before {
+      top: 4px;
+      right: 169px;
+      background-image: url(../img/triangle-arrow-left.svg);
+    }
   }
 }
 

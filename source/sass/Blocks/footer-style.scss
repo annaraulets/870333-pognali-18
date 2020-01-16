@@ -65,10 +65,19 @@
     padding: 45px 40px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
+
+    &--form {
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+    }
+  }
+
+  .footer__logo {
+    margin-top: 11px;
   }
 
   .footer__list {
-    margin: 0;
+    margin: 3px 0 0 -11px;
   }
 
   .social__item:first-child img {
@@ -95,6 +104,10 @@
   .footer__made {
     font-size: 20px;
     line-height: 24px;
+
+    &--form {
+      margin: 0;
+    }
   }
 
   .footer__html {

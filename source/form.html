@@ -212,7 +212,7 @@
             <h3 class="plans__title"><span class="plans__number">1.</span> Франция, Италия</h3>
             <div class="plans__wrapper">
               <p class="plans__text">3 попутчика</p>
-              <p class="plans__text">26 мар — 29 мар</p>
+              <p class="plans__text plans__text--data">26 мар — 29 мар</p>
               <a class="plans__link" href="#">Изменить</a>
             </div>
 
@@ -221,7 +221,7 @@
             <h3 class="plans__title"><span class="plans__number">2.</span> Таиланд, Индонезия</h3>
             <div class="plans__wrapper">
               <p class="plans__text">1 попутчика</p>
-              <p class="plans__text">1 июл — 15 июл</p>
+              <p class="plans__text plans__text--data">1 июл — 15 июл</p>
               <a class="plans__link" href="#">Изменить</a>
             </div>
           </div>
@@ -311,13 +311,15 @@
                 </div>
                 <table class="cal__table">
                   <tr class="cal__week">
-                    <td>П</td>
-                    <td>В</td>
-                    <td>С</td>
-                    <td>Ч</td>
-                    <td>П</td>
-                    <td class="days-weekend">С</td>
-                    <td class="days-weekend">В</td>
+                    <td>П<span class="cal__days-tablet">н</span></td>
+                    <td>В<span class="cal__days-tablet">т</span></td>
+                    <td>С<span class="cal__days-tablet">р</span></td>
+                    <td>Ч<span class="cal__days-tablet">т</span></td>
+                    <td>П<span class="cal__days-tablet">т</span></td>
+                    <td class="days-weekend">С<span class="cal__days-tablet">б</span>
+                    </td>
+                    <td class="days-weekend">В<span class="cal__days-tablet">с</span>
+                    </td>
                   </tr>
                   <tr class="cal__days">
                     <td>23</td>
@@ -380,7 +382,7 @@
 
             <div class="steps__step step-two">
               <h3 class="steps__main-title">Шаг 2.<br> Маршрут</h3>
-              <p class="steps__main-text">Укажите страны, которые вы хотели по посетить.
+              <p class="steps__main-text steps__main-text--step-second">Укажите страны, которые вы хотели посетить.
               Это может быть одна или сразу несколько.</p>
 
               <div class="step-two__city place">
@@ -489,7 +491,7 @@
               </div>
 
               <div class="steps__wrapper">
-                <a class="steps__link" href="form.html#step-two">Следующий шаг</a>
+                <a class="steps__link steps__link--step-two" href="form.html#step-two">Следующий шаг</a>
                 <a class="steps__link steps__link--before" href="#">На шаг назад</a>
               </div>
             </div>
@@ -519,7 +521,7 @@
                 <textarea placeholder="План действий" rows="10">Пить пиво и лазить         по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
 
-              <div>
+              <div class="steps__wrapper steps__wrapper--last-step">
                 <button class="steps__link steps__link--btn" type="submit">Отправить</button>
                 <a class="steps__link steps__link--before" href="#">На шаг назад</a>
               </div>
@@ -531,7 +533,7 @@
 
 
     <footer class="container">
-      <section class="footer">
+      <section class="footer footer--form">
         <a class="footer__logo" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png">
