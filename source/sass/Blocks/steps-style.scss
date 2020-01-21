@@ -34,6 +34,10 @@
   color: #444444;
   margin-bottom: 21px;
 
+  br {
+    display: none;
+  }
+
   &--three {
     margin-bottom: 20px;
   }
@@ -744,11 +748,19 @@
 
 @media (min-width: $desktop) {
   .steps {
-    padding: 60px 60px;
+    margin-top: -52px;
+    padding: 50px 60px 100px 60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .steps__title {
+    margin-left: 70px;
   }
 
   .steps__step {
-    padding: 100px 160px;
+    padding: 100px 160px 105px 160px;
+    border-radius: 60px;
   }
 
   .steps__main-title {
@@ -758,28 +770,228 @@
   }
 
   .steps__main-text {
-    width: 50%;
+    width: 578px;
+    margin: 0 0 88px 0;
+
+    &--step-second {
+      width: 407px;
+      margin-bottom: 117px;
+    }
+
+    &--three {
+      width: 475px;
+      margin-bottom: 127px;
+    }
+
+    br {
+      display: block;
+    }
   }
 
   .step-one__flex {
     display: flex;
+    align-items: center;
+  }
+
+  .step-one {
+    margin-bottom: 44px;
+  }
+
+  .step-one__flex--first {
+    margin: 0 0 14px 0;
+  }
+
+  .step-one__text-find {
+    margin: 0 27px 0 0;
+
+    &--second {
+      margin-right: 51px;
+    }
+  }
+
+  .step-one__people {
+    right: initial;
+    left: 597px;
+    top: 328px;
+    color: #1d2e5b;
+  }
+
+  .step-one__days {
+    right: initial;
+    left: 600px;
+    top: 412px;
+    color: #1d2e5b;
   }
 
   .step-one__wrapper {
-    width: 180px;
+    width: 181px;
+    height: 68px;
+    margin: 0;
+    padding: 21px 20px 25px 20px;
+    box-sizing: border-box;
+  }
+
+  .step-one__wrapper-checkbox {
+    top: 328px;
+    right: 159px;
+  }
+
+
+  .cal {
+    margin-top: 33px;
+    margin-bottom: 56px;
+  }
+
+  .cal__top {
+    margin: 0 0 10px 0;
+  }
+
+  .cal__table {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+    text-align: left;
+  }
+
+  .cal__week {
+    td {
+      padding-left: 16px;
+      padding-bottom: 13px;
+    }
+  }
+
+  .cal__days {
+    td {
+      width: 147px;
+      height: 72px;
+      padding: 14px 0 0 14px;
+      line-height: 18px;
+      font-weight: 300;
+      text-align: left;
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+  }
+
+  .cal__days--last-row {
+    td {
+      width: 147px;
+      height: 70px;
+    }
+  }
+
+  .step-two {
+    margin-bottom: 45px;
+
+    &::before {
+      width: 997px;
+      top: 271px;
+      left: 159px;
+    }
+
+    &::after {
+      width: 494px;
+      top: 517px;
+      left: 688px;
+    }
+  }
+
+  .step-two__city {
+    &::before {
+      top: 25px;
+      right: 218px;
+    }
+  }
+
+  .place__add-city {
+    width: 730px;
+  }
+
+  .place__flag {
+    margin: 12px 0 0 85px;
+  }
+
+  .place__btn-close {
+    right: 2px;
+
+    &--choose {
+      right: -268px;
+    }
   }
 
   .steps__wrapper {
     justify-content: space-between;
+    margin-top: 55px;
+
+    &--last-step {
+      margin: 50px 0 0 0;
+    }
   }
 
+
+
+  .step-three {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 271px;
+      left: 160px;
+      width: 997px;
+      height: 1px;
+      background: #d6d9e6;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 497px;
+      right: 256px;
+      width: 260px;
+      height: 3px;
+      background: #1d2e5b;
+      transform: rotate(90deg);
+    }
+  }
+
+
   .step-three__city-box {
+    position: relative;
+
     textarea {
-      width: 50%;
+      width: 678px;
+      height: 95px;
+      padding: 23px 25px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 16px;
+      right: 218px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: #1d2e5b;
+    }
+  }
+
+  .step-three__wrapper {
+    svg {
+      margin-right: 84px;
     }
   }
 
   .steps__link {
-    width: 20%;
+    width: 217px;
+
+    &--before {
+      margin-right: 3px;
+    }
+
+    &--btn {
+      width: 284px;
+    }
   }
 }

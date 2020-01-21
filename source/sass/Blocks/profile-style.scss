@@ -237,16 +237,19 @@ input:checked + label svg {
 
 
 @media (min-width: $desktop) {
+  .profile {
+    padding: 42px 60px 100px 124px;;
+  }
   .profile__top {
     position: absolute;
-    top: -170px;
+    top: -169px;
     right: 155px;
     z-index: 100;
   }
 
   .profile__lvl {
-    left: -150px;
-    top: 50px;
+    left: -142px;
+    top: 40px;
 
     span {
       color: #ffffff;
@@ -256,6 +259,7 @@ input:checked + label svg {
   .profile__avatar {
     display: flex;
     flex-direction: column;
+    margin: 0;
     img {
       width: 190px;
       height: 190px;
@@ -272,6 +276,8 @@ input:checked + label svg {
     background: #dfe3f0;
     border: none;
     height: 47px;
+    margin-top: -5px;
+    text-transform: uppercase;
   }
 
   .profile__bottom {
@@ -280,18 +286,33 @@ input:checked + label svg {
   }
 
   .profile__box-one {
-    width: 50%;
+    width: 679px;
+
+    legend {
+      left: 21px;
+    }
   }
 
   .profile__box-two {
     position: initial;
     top: initial;
     left: initial;
+    width: 358px;
 
     legend {
       left: initial;
-      right: 150px;
-      bottom: 62px;
+      right: 175px;
+      bottom: 98px;
+    }
+  }
+
+  .transport__item {
+    margin-right: 0;
+  }
+
+  .plane-field {
+    svg {
+
     }
   }
 }

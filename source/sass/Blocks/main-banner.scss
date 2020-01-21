@@ -31,6 +31,10 @@
   margin-top: 243px;
   z-index: 50;
   position: relative;
+
+  &--form {
+    display: none;
+  }
 }
 
 .main-banner__tel {
@@ -274,6 +278,10 @@
     margin: 0;
     right: 60px;
     top: -84px;
+
+    &--form {
+      top: 50px;
+    }
   }
 
   .main-banner__tel {

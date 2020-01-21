@@ -107,10 +107,23 @@
 
 
 @media (min-width: $desktop) {
+  .plans {
+    margin-top: -55px;
+    padding: 50px 60px 100px 124px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
   .plans__box {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 24px 39px 23px 42px;
+  }
+
+  .plans__main-title {
+    margin-left: 6px;
   }
 
   .plans__title {
@@ -119,6 +132,7 @@
 
   .plans__number {
     position: initial;
+    margin-right: 30px;
   }
 
   .plans__wrapper {
@@ -126,7 +140,23 @@
   }
 
   .plans__text {
-    margin-right: 40px;
+    margin-right: 38px;
+
+    &--data {
+      margin: 0;
+    }
+
+    &--second-box {
+      margin-right: 50px;
+    }
+  }
+
+  .plans__link {
+    margin: 0 0 0 124px;
+
+    &--second-box {
+      margin: 0 0 0 129px;
+    }
   }
 
 
