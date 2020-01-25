@@ -204,12 +204,23 @@
     display: none;
   }
 
+  // .menu-where--people {
+  //   &::before {
+  //     content: '';
+  //     position: absolute;
+  //     bottom: 0;
+  //     width: 174px;
+  //     height: 5px;
+  //     background-color: #ff8d30;
+  //     border-radius: 2.4px;
+  //   }
+  // }
+
   .main-popup__contacts.contact {
     display: none;
   }
 
   .main-popup {
-    // display: none;
     display: flex;
     position: absolute;
     left: 405px;

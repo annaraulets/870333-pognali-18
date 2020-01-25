@@ -962,7 +962,8 @@
     textarea {
       width: 678px;
       height: 95px;
-      padding: 23px 25px;
+      padding: 23px 20px;
+      resize: none;
     }
 
     &::before {

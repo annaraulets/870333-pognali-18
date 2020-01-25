@@ -8,9 +8,13 @@
   </head>
   <body>
     <header class="container">
-      <div class="main-menu">
+      <div class="main-menu main-menu--form">
         <a class="main-menu__logo" href="index.html">
-          <img src="img/logo-mobile-white@1x.png" alt="Главный логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop-white@1x.png">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png">
+            <img src="img/logo-mobile-white@1x.png" alt="Главный логотип">
+          </picture>
         </a>
         <button class="main-menu__toggle">
           <svg class="main-menu__burger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -22,8 +26,18 @@
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <a class="main-menu__reg" href="#">Aвторизация</a>
       </div>
-      <div class="menu-where">
+      <div class="main-banner__wrapper main-banner__wrapper--form">
+        <a class="main-banner__tel" href="#">
+          <img src="img/topmenu-phone.svg" width="18" height="18">
+        </a>
+        <a class="main-banner__mail" href="#">
+          <img src="img/topmenu-mail.svg" width="18" height="14">
+        </a>
+        <a class="main-banner__login" href="#">авторизация</a>
+      </div>
+      <div class="menu-where menu-where--people">
         <h1>Попутчики</h1>
       </div>
 
@@ -79,9 +93,6 @@
             <a class="contact__link" href="#">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-              <!-- <style type="text/css">
-              .st0{fill:#010101;}
-              </style> -->
               <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
               c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
               L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
@@ -111,60 +122,68 @@
       </nav>
     </header>
 
-    <main class="container">
 
-      <section class="filter visually-hidden">
+    <main class="container catalog-main">
+      <section class="filter">
         <div class="filter__close close">
-          <span class="close__img"></span>
           <h3 class="close__title">Фильтрация по странам</h3>
+          <button class="close__btn">
+            <svg width="12" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+            <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
+            L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
+            L6.9,6z"/>
+            </svg>
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </div>
 
-        <div class="filter__open open">
-          <ul class="fitler__list open__country">
-            <li>
-              <a href="europe.html">Европа</a>
+        <div class="filter__open open visually-hidden">
+          <ul class="filter__list filter__list--continents">
+            <li class="filter__item filter__item--continents">
+              <a class="choosen-item" href="europe.html">Европа</a>
             </li>
-            <li>
+            <li class="filter__item filter__item--continents">
               <a href="europe.html">Азия</a>
             </li>
-            <li>
+            <li class="filter__item filter__item--continents">
               <a href="europe.html">Америка</a>
             </li>
-            <li>
+            <li class="filter__item filter__item--continents">
               <a href="europe.html">Острова</a>
             </li>
           </ul>
 
-          <table class="filter__list open__letters">
-            <tr>
-              <td>А</td>
+          <table class="filter__list filter-table">
+            <tr class="filter-table__row">
+              <td class="choosen-letter">А</td>
               <td>Б</td>
               <td>В</td>
               <td>Г</td>
               <td>Д</td>
             </tr>
-            <tr>
+            <tr class="filter-table__row">
               <td>Е</td>
               <td>З</td>
               <td>И</td>
               <td>К</td>
               <td>Л</td>
             </tr>
-            <tr>
+            <tr class="filter-table__row filter-table__row--last">
               <td>М</td>
               <td>Н</td>
               <td>О</td>
               <td>П</td>
               <td>Р</td>
             </tr>
-            <tr>
+            <tr class="filter-table__row filter-table__row--last">
               <td>С</td>
               <td>Т</td>
               <td>У</td>
               <td>Ф</td>
               <td>Х</td>
             </tr>
-            <tr>
+            <tr class="filter-table__row filter-table__row--last">
               <td>Ч</td>
               <td>Ш</td>
               <td>Э</td>
@@ -173,115 +192,136 @@
             </tr>
           </table>
 
-          <ul class="filter__list open__city">
-            <li>
+          <ul class="filter__list filter__list--cities">
+            <li class="filter__item">
               <a href="#">Афганистан</a>
             </li>
-            <li>
+            <li class="filter__item">
               <a href="#">Албания</a>
             </li>
-            <li>
+            <li class="filter__item">
               <a href="#">Алжир</a>
             </li>
-            <li>
+            <li class="filter__item">
               <a href="#">Андорра</a>
             </li>
-            <li>
+            <li class="filter__item">
               <a href="#">Аргентина</a>
             </li>
-            <li>
+            <li class="filter__item">
               <a href="#">Армения</a>
             </li>
-            <li>
+            <li class="filter__item">
               <a href="#">Австралия</a>
             </li>
-            <li>
+            <li class="filter__item">
               <a href="#">Австрия</a>
             </li>
-            <li>
+            <li class="filter__item">
               <a href="#">Азербайджан</a>
             </li>
           </ul>
-
           <button class="filter__btn">свернуть</button>
         </div>
       </section>
 
-      <section class="filter-travel visually-hidden">
+      <section class="filter-travel">
         <h2 class="filter-travel__main-title">Подберите идеального попутчика</h2>
         <form class="filter-travel__form">
           <ul class="filter-travel__list">
             <li class="filter-travel__item">
-              <h3 class="filter-travel__title">Хобби</h3>
-              <span class="filter-travel__arrow"></span>
-              <ul class="hobbi">
-                <li class="hobbi__item">
-                  <input type="checkbox" name="hobbi-1" id="hobbi1-field">
-                  <label for="hobbi1-field">Вышивать крестиком</label>
+              <div class="filter-travel__wrap">
+                <h3 class="filter-travel__title">Хобби</h3>
+                <button class="filter-btn__arrow">
+                  <span class="visually-hidden">Показать</span>
+                  <span class="visually-hidden">Скрыть</span>
+                </button>
+              </div>
+              <ul class="check__list hobbi">
+                <li class="check__item hobbi__item">
+                  <input class="visually-hidden" type="checkbox" name="hobbi-1" id="hobbi1-field" checked>
+                  <label class="check__checkbox" for="hobbi1-field">Спортзал</label>
                 </li>
-                <li class="hobbi__item">
-                  <input type="checkbox" name="hobbi-2" id="hobbi2-field">
-                  <label for="hobbi2-field">Готовить</label>
+                <li class="check__item hobbi__item">
+                  <input class="visually-hidden" type="checkbox" name="hobbi-2" id="hobbi2-field">
+                  <label class="check__checkbox" for="hobbi2-field">Кальян</label>
                 </li>
-                <li class="hobbi__item">
-                  <input type="checkbox" name="hobbi-3" id="hobbi3-field">
-                  <label for="hobbi3-field">Экономить деньги</label>
+                <li class="check__item hobbi__item">
+                  <input class="visually-hidden" type="checkbox" name="hobbi-3" id="hobbi3-field">
+                  <label class="check__checkbox" for="hobbi3-field">Диван</label>
                 </li>
               </ul>
             </li>
+
             <li class="filter-travel__item">
-              <h3 class="filter-travel__title">Музыка</h3>
-              <span class="filter-travel__arrow"></span>
-              <ul class="music">
-                <li class="music__item">
-                  <input type="checkbox" name="music-1" id="music1">
-                  <label for="music1">Тяжелый рок</label>
+              <div class="filter-travel__wrap">
+                <h3 class="filter-travel__title">Музыка</h3>
+                <button class="filter-btn__arrow">
+                  <span class="visually-hidden">Показать</span>
+                  <span class="visually-hidden">Скрыть</span>
+                </button>
+              </div>
+              </div>
+              <ul class="check__list music">
+                <li class="check__item music__item">
+                  <input class="visually-hidden" type="checkbox" name="music-1" id="music1">
+                  <label class="check__checkbox" for="music1">Тяжелый рок</label>
                 </li>
-                <li class="music__item">
-                  <input type="checkbox" name="music-2" id="music2">
-                  <label for="music2">Русский рэп</label>
+                <li class="check__item music__item">
+                  <input class="visually-hidden" type="checkbox" name="music-2" id="music2">
+                  <label class="check__checkbox" for="music2">Русский рэп</label>
                 </li>
-                <li class="music__item">
-                  <input type="checkbox" name="music-3" id="music3">
-                  <label for="music3">Евроденс</label>
+                <li class="check__item music__item">
+                  <input class="visually-hidden" type="checkbox" name="music-3" id="music3">
+                  <label class="check__checkbox" for="music3">Евроденс</label>
               </li>
               </ul>
             </li>
             <li class="filter-travel__item">
-              <h3 class="filter-travel__title">Еда</h3>
-              <span class="filter-travel__arrow"></span>
-              <ul class="food">
-                <li class="food__item">
-                  <input type="checkbox" name="food-1" id="food1">
-                  <label for="food1">Мясоед</label>
+              <div class="filter-travel__wrap">
+                <h3 class="filter-travel__title">Еда</h3>
+                <button class="filter-btn__arrow">
+                  <span class="visually-hidden">Показать</span>
+                  <span class="visually-hidden">Скрыть</span>
+                </button>
+              </div>
+              <ul class="check__list food">
+                <li class="check__item food__item">
+                  <input class="visually-hidden" type="checkbox" name="food-1" id="food1">
+                  <label class="check__checkbox" for="food1">Мясоед</label>
                 </li>
-                <li class="food__item">
-                  <input type="checkbox" name="food-2" id="food2">
-                  <label for="food2">Веган</label>
+                <li class="check__item food__item">
+                  <input class="visually-hidden" type="checkbox" name="food-2" id="food2">
+                  <label class="check__checkbox" for="food2">Сидит на ПП</label>
                 </li>
-                <li class="food__item">
-                  <input type="checkbox" name="food-3" id="food3">
-                  <label for="food3">Кошер</label>
+                <li class="check__item food__item">
+                  <input class="visually-hidden" type="checkbox" name="food-3" id="food3">
+                  <label class="check__checkbox" for="food3">Веган-сыроед</label>
                 </li>
               </ul>
             </li>
             <li class="filter-travel__item">
-              <h3 class="filter-travel__title">Транспорт</h3>
-              <span class="filter-travel__arrow"></span>
+              <div class="filter-travel__wrap">
+                <h3 class="filter-travel__title">Транспорт</h3>
+                <button class="filter-btn__arrow">
+                  <span class="visually-hidden">Показать</span>
+                  <span class="visually-hidden">Скрыть</span>
+                </button>
+              </div>
               <ul class="transport">
-                <li class="transport__item">
+                <li class="tr__item">
                   <input type="checkbox" name="plane" id="plane-field">
                   <label for="plane-field"></label>
                 </li>
-                <li class="transport__item">
+                <li class="tr__item">
                   <input type="checkbox" name="bus" id="bus-field">
                   <label for="bus-field"></label>
                 </li>
-                <li class="transport__item">
+                <li class="tr__item">
                   <input type="checkbox" name="bike" id="bike-field">
                   <label for="bike-field"></label>
                 </li>
-                <li class="transport__item">
+                <li class="tr__item">
                   <input type="checkbox" name="run" id="run-field">
                   <label for="run-field"></label>
                 </li>
@@ -317,15 +357,15 @@
               <h3 class="ctl__title">хочет посетить:</h3>
               <ul class="ctl__citi-list citi-list">
                 <li class="citi-list__item">
-                  <img src="#">
+                  <img src="img/flag-sri-lanka.svg" width="26" height="18">
                   <p>Шри-ланка</p>
                 </li>
                 <li class="citi-list__item">
-                  <img src="#">
+                  <img src="img/flag-thailand.svg" width="26" height="18">
                   <p>Таиланд</p>
                 </li>
                 <li class="citi-list__item">
-                  <img src="#">
+                  <img src="img/flag-seychelles.svg" width="26" height="18">
                   <p>Сейшелы</p>
                 </li>
               </ul>
@@ -403,11 +443,11 @@
               <h3 class="ctl__title">хочет посетить:</h3>
               <ul class="ctl__citi-list citi-list">
                 <li class="citi-list__item">
-                  <img src="#">
+                  <img src="img/flag-belgium.svg" width="26" height="18">
                   <p>Бельгия</p>
                 </li>
                 <li class="citi-list__item">
-                  <img src="#">
+                  <img src="img/flag-czech.svg" width="26" height="18">
                   <p>Чехия</p>
                 </li>
               </ul>
@@ -486,15 +526,15 @@
               <h3 class="ctl__title">хочет посетить:</h3>
               <ul class="ctl__citi-list citi-list">
                 <li class="citi-list__item">
-                  <img src="#">
+                  <img src="img/flag-usa.svg" width="26" height="18">
                   <p>США</p>
                 </li>
                 <li class="citi-list__item">
-                  <img src="#">
+                  <img src="img/flag-australia.svg" width="26" height="18">
                   <p>Австралия</p>
                 </li>
                 <li class="citi-list__item">
-                  <img src="#">
+                  <img src="img/flag-dominica.svg" width="26" height="18">
                   <p>Доминикана</p>
                 </li>
               </ul>
