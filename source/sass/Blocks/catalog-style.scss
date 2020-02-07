@@ -10,7 +10,7 @@
 }
 
 .ctl__item {
-  padding: 15px 20px;
+  padding: 13px 20px 12px 19px;
   margin-bottom: 10px;
   background: #ffffff;
   border-radius: 20px;
@@ -22,31 +22,53 @@
 
   &--last {
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-top: -12px;
+    padding-left: 1px;
   }
 }
 
 
 .ctl__avatar {
+  margin-right: 15px;
   img {
     border-radius: 50%;
   }
 }
 
 .ctl__name {
+  margin: 0;
   font-size: 20px;
   color: #1d2e5b;
+  line-height: 20px;
 }
 
 .ctl__tag {
   @include text-style-ctl;
-  padding-left: 5px;
+  padding-left: 6px;
+  margin: 10px 0 0 0;
+}
+
+.ctl__block {
+  padding-left: 6px;
+
+  &--second {
+    margin-bottom: 17px;
+  }
+
+  &--third {
+    margin-bottom: 15px;
+  }
+
+  &--fourth{
+    margin-bottom: 15px;
+  }
 }
 
 .ctl__title {
   @include text-style-ctl;
   text-transform: lowercase;
   font-weight: 300;
+  margin: 13px 0 17px 0;
 }
 
 .citi-list {
@@ -61,7 +83,7 @@
   font-weight: 500;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   img {
     margin-right: 15px;
@@ -72,25 +94,34 @@
   }
 }
 
-.trans-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
+.ctl__tr-list.tr__list {
+  height: 35px;
 }
 
-.trans-list__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #edeff6;
-  border-radius: 50%;
-  width: 33px;
-  height: 32px;
+.ctl__lvl {
+  position: relative;
+}
 
-  svg {
-    width: 14px;
-    height: 14px;
-  }
+.ctl__lvl-image {
+  position: absolute;
+  top: 54px;
+  left: 4px;
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ctl__lvl-image::before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: -11px;
+  background: transparent;
+  width: 42px;
+  height: 42px;
+  border: 3px solid #ff8d30;
+  border-radius: 50%;
 }
 
 .ctl__btn {
@@ -103,13 +134,20 @@
   margin-bottom: 10px;
 }
 
-
 .ctl__show-more {
-  display: block;
-
   @include text-style-btn;
+  display: block;
+  position: relative;
   text-align: center;
-  margin: 25px 0;
+  margin: 20px 0;
+  padding-left: 31px;
+
+  svg {
+    position: absolute;
+    top: 4px;
+    left: 60px;
+    fill: #1d2e5b;
+  }
 }
 
 .ctl__wrapper-page {
@@ -128,4 +166,8 @@
     width: 10px;
     height: 20px;
   }
+}
+
+.ctl__pages {
+  margin-bottom: 36px;
 }
