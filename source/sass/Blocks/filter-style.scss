@@ -182,7 +182,12 @@
     text-transform: uppercase;
   }
 
+  .open__btn {
+    z-index: 30;
+  }
+
   .close__btn {
+    z-index: 30;
     right: -6px;
     top: -2px;
     svg {
@@ -192,9 +197,22 @@
   }
 
   .filter__open {
+    display: none;
     position: relative;
     margin-top: 0;
   }
+
+  .filter__close .filter__wrap {
+    display: none;
+  }
+
+  .filter-opened .filter__wrap {
+    display: block;
+  }
+
+  //  .filter-opened .filter__open {
+  //   display: block;
+  // }
 
   .filter__list--continents {
     display: flex;
