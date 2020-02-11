@@ -54,6 +54,10 @@
   }
 }
 
+.menu-where__wrapper {
+  display: none;
+}
+
 .main-popup {
   min-width: 270px;
   padding: 25px 25px;
@@ -177,7 +181,29 @@
       line-height: 70px;
     }
   }
+
+  .menu-where__wrapper {
+    display: block;
+    position: absolute;
+    right: 76px;
+    top: 107px;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  .menu-where__back {
+    margin-right: 22px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
 }
+
 
 
 @media (min-width: $desktop) {
@@ -203,18 +229,6 @@
   .main-menu__reg {
     display: none;
   }
-
-  // .menu-where--people {
-  //   &::before {
-  //     content: '';
-  //     position: absolute;
-  //     bottom: 0;
-  //     width: 174px;
-  //     height: 5px;
-  //     background-color: #ff8d30;
-  //     border-radius: 2.4px;
-  //   }
-  // }
 
   .main-popup__contacts.contact {
     display: none;

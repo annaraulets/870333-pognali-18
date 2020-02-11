@@ -61,6 +61,24 @@ img {
   background: #edeff6;
 }
 
+.closed .check__list{
+  display: none;
+}
+
+.closed .tr__list{
+  display: none;
+}
+
+.closed .filter-travel__wrapper{
+  display: none;
+}
+
+.closed .filter-btn__arrow {
+  transform: none;
+}
+
+// document.getElementsByClassName('filter-travel__item')[0].classList.toggle('closed')
+
 @media (min-width: $tablet) {
   .container {
     width: 768px;

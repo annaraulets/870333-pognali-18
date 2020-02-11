@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.close__title {
+.filter__title {
   margin: 0 0 0 27px;
   font-size: 16px;
   line-height: 22px;
@@ -30,16 +30,43 @@
   }
 }
 
+.filter__btn-text {
+  display: none;
+}
+
 .close__btn {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
+  border: none;
+  background: transparent;
+}
+
+.filter-opened .close__btn {
+  display: block;
+}
+
+.open__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+}
+
+.filter-opened .open__btn {
+  display: none;
 }
 
 
 .filter__open {
-  // padding: 0 25px;
+  display: none;
   margin: 31px 0 9px 0;
+}
+
+.filter-opened .filter__open {
+  display: block;
 }
 
 .filter__list {
@@ -130,4 +157,114 @@
     background-repeat: no-repeat;
   }
 }
+
+
+
+@media (min-width: $tablet) {
+  .filter {
+    padding: 90px 75px 65px 75px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .filter__title {
+    display: none;
+  }
+
+  .filter__btn-text {
+    display: inline-block;
+    padding: 0;
+    margin-right: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .close__btn {
+    right: -6px;
+    top: -2px;
+    svg {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  .filter__open {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .filter__list--continents {
+    display: flex;
+    justify-content: space-between;
+    width: 363px;
+    padding: 0;
+    margin-bottom: 55px;
+  }
+
+  .filter__item {
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .filter__item--continents {
+    a {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .filter-table {
+    font-size: 60px;
+    line-height: 24px;
+    margin: -9px 0 55px -20px;
+  }
+
+  .filter-table__row {
+    td {
+      width: 77px;
+      height: 82px;
+      background: #e2e5f2;
+      border: none;
+      color: rgba(25, 33, 68, 0.2);
+      font-weight: bold;
+    }
+
+    .choosen-letter {
+      background: transparent;
+      border: none;
+      color: #192144;
+    }
+  }
+
+  .filter__list--cities {
+    position: absolute;
+    top: 80px;
+    right: 65px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .filter__btn {
+    width: 618px;
+    height: 100px;
+    padding: 0 0 0 37px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      width: 19px;
+      height: 19px;
+      top: 39px;
+      left: 242px;
+    }
+  }
+}
+
 

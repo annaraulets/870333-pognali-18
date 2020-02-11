@@ -37,9 +37,17 @@
         </a>
         <a class="main-banner__login" href="#">авторизация</a>
       </div>
-      <div class="menu-where menu-where--people">
+      <section class="menu-where menu-where--people">
         <h1>Попутчики</h1>
-      </div>
+        <div class="menu-where__wrapper">
+          <a class="menu-where__back" href="index.html">На главную</a>
+          <svg width="32" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 32 16.1" style="enable-background:new 0 0 32 16.1;" xml:space="preserve">
+          <path class="st0" d="M27.6,2.1H10L10,0L0,3l10,2.9l0-1.8h17.6c0.4,0,2.4,0,2.4,2v6.1c0,0.5-0.1,0.9-0.4,1.2C29,14,28,14.1,27.6,14.1
+          H4v2h23.6c0,0,0,0,0.1,0c0.4,0,2.1-0.1,3.2-1.2c0.7-0.7,1.1-1.6,1.1-2.7V6.1C32,4.1,29.4,2.1,27.6,2.1z"/>
+          </svg>
+        </div>
+      </section>
 
 
       <nav class="main-popup main-popup--close">
@@ -122,20 +130,29 @@
 
     <main class="container catalog-main">
       <section class="filter">
-        <div class="filter__close close">
-          <h3 class="close__title">Фильтрация по странам</h3>
+        <div class="filter__close">
+          <h3 class="filter__title">Фильтрация по странам</h3>
+          <button class="open__btn">
+            <span class="filter__btn-text">Показать все</span>
+            <svg width="17" height="3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 27 5" style="enable-background:new 0 0 27 5;" xml:space="preserve">
+            <circle class="st0" cx="2.5" cy="2.5" r="2.5"/>
+            <circle class="st0" cx="13.5" cy="2.5" r="2.5"/>
+            <circle class="st0" cx="24.5" cy="2.5" r="2.5"/>
+            </svg>
+          </button>
           <button class="close__btn">
+            <span class="filter__btn-text">Свернуть</span>
             <svg width="12" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
             <path class="st0" d="M6.9,6l4.9-4.9c0.2-0.2,0.2-0.6,0-0.9s-0.6-0.2-0.9,0L6,5.1L1.1,0.2c-0.2-0.2-0.6-0.2-0.9,0s-0.2,0.6,0,0.9
             L5.1,6l-4.9,4.9c-0.2,0.2-0.2,0.6,0,0.9v0c0.2,0.2,0.6,0.2,0.9,0L6,6.9l4.9,4.9c0.2,0.2,0.6,0.2,0.9,0v0c0.2-0.2,0.2-0.6,0-0.9
             L6.9,6z"/>
             </svg>
-            <span class="visually-hidden">Закрыть</span>
           </button>
         </div>
 
-        <div class="filter__open open visually-hidden">
+        <div class="filter__open">
           <ul class="filter__list filter__list--continents">
             <li class="filter__item filter__item--continents">
               <a class="choosen-item" href="europe.html">Европа</a>
@@ -226,7 +243,7 @@
         <h2 class="filter-travel__main-title">Подберите идеального попутчика</h2>
         <form class="filter-travel__form">
           <ul class="filter-travel__list">
-            <li class="filter-travel__item">
+            <li class="filter-travel__item closed">
               <div class="filter-travel__wrap">
                 <h3 class="filter-travel__title">Хобби</h3>
                 <button class="filter-btn__arrow">
@@ -261,7 +278,7 @@
               </div>
               <ul class="check__list music">
                 <li class="check__item music__item">
-                  <input class="visually-hidden check__input" type="checkbox" name="music-1" id="music1">
+                  <input class="visually-hidden check__input" type="checkbox" name="music-1" id="music1" checked>
                   <label class="check__checkbox" for="music1">Тяжелый рок</label>
                 </li>
                 <li class="check__item music__item">
@@ -274,7 +291,7 @@
               </li>
               </ul>
             </li>
-            <li class="filter-travel__item">
+            <li class="filter-travel__item closed">
               <div class="filter-travel__wrap">
                 <h3 class="filter-travel__title">Еда</h3>
                 <button class="filter-btn__arrow">
@@ -356,11 +373,17 @@
             <div class="ctl__wrapper">
               <a class="ctl__avatar" href="#">
               <img src="img/firsova-mobile@1x.jpg" width="70" height="70">
-              <span></span>
+              <span class="heart heart--active">
+                <svg width="13" height="11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 13 11" style="enable-background:new 0 0 13 11;" xml:space="preserve">
+                <path d="M12,1c-1.3-1.3-3.4-1.3-4.7,0L6.5,1.7L5.7,1C4.4-0.3,2.3-0.3,1,1c-1.3,1.3-1.3,3.4,0,4.6l0.8,0.8L6.5,11l4.7-4.6L12,5.6
+                C13.3,4.3,13.3,2.2,12,1z"/>
+                </svg>
+              </span>
             </a>
             <h3 class="ctl__name">Таня<br> Фирсова</h3>
             </div>
-            <span class="visually-hidden">1,5 m</span>
+            <span class="ctl__span-text">1,5 M</span>
             <p class="ctl__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <div class="ctl__block">
               <h3 class="ctl__title">хочет посетить:</h3>
@@ -384,20 +407,20 @@
                 <h3 class="ctl__title">транспорт:</h3>
                 <ul class="ctl__tr-list tr__list">
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="plane" id="plane-field">
-                    <label class="tr__checkbox tr__checkbox--plane tr__checkbox--ctl" for="plane-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="plane" id="plane-field1">
+                    <label class="tr__checkbox tr__checkbox--plane tr__checkbox--ctl" for="plane-field1"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="bus" id="bus-field">
-                    <label class="tr__checkbox tr__checkbox--bus tr__checkbox--ctl" for="bus-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="bus" id="bus-field1">
+                    <label class="tr__checkbox tr__checkbox--bus tr__checkbox--ctl" for="bus-field1"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="bike" id="bike-field" checked>
-                    <label class="tr__checkbox tr__checkbox--bike tr__checkbox--ctl" for="bike-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="bike" id="bike-field1" checked>
+                    <label class="tr__checkbox tr__checkbox--bike tr__checkbox--ctl" for="bike-field1"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="run" id="run-field" checked>
-                    <label class="tr__checkbox tr__checkbox--run tr__checkbox--ctl" for="run-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="run" id="run-field1" checked>
+                    <label class="tr__checkbox tr__checkbox--run tr__checkbox--ctl" for="run-field1"></label>
                   </li>
                 </ul>
               </div>
@@ -413,11 +436,18 @@
             <div class="ctl__wrapper">
               <a class="ctl__avatar" href="#">
               <img src="img/demin-mobile@1x.jpg" width="70" height="70">
-              <span></span>
+              <span class="heart">
+                <svg width="13" height="11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                </svg>
+              </span>
             </a>
             <h3 class="ctl__name">Петя<br> Демин</h3>
             </div>
-            <span class="visually-hidden">150</span>
+            <span class="ctl__span-text">150</span>
             <p class="ctl__tag">#бургер #бар #футбол<br> #концерт #крафт</p>
             <div class="ctl__block ctl__block--second">
               <h3 class="ctl__title">хочет посетить:</h3>
@@ -437,20 +467,20 @@
                 <h3 class="ctl__title">транспорт:</h3>
                 <ul class="ctl__tr-list tr__list">
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="plane" id="plane-field">
-                    <label class="tr__checkbox tr__checkbox--plane tr__checkbox--ctl" for="plane-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="plane" id="plane-field2">
+                    <label class="tr__checkbox tr__checkbox--plane tr__checkbox--ctl" for="plane-field2"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="bus" id="bus-field">
-                    <label class="tr__checkbox tr__checkbox--bus tr__checkbox--ctl" for="bus-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="bus" id="bus-field2">
+                    <label class="tr__checkbox tr__checkbox--bus tr__checkbox--ctl" for="bus-field2"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="bike" id="bike-field" checked>
-                    <label class="tr__checkbox tr__checkbox--bike tr__checkbox--ctl" for="bike-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="bike" id="bike-field2" checked>
+                    <label class="tr__checkbox tr__checkbox--bike tr__checkbox--ctl" for="bike-field2"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="run" id="run-field" checked>
-                    <label class="tr__checkbox tr__checkbox--run tr__checkbox--ctl" for="run-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="run" id="run-field2" checked>
+                    <label class="tr__checkbox tr__checkbox--run tr__checkbox--ctl" for="run-field2"></label>
                   </li>
                 </ul>
               </div>
@@ -467,11 +497,18 @@
             <div class="ctl__wrapper">
               <a class="ctl__avatar" href="#">
               <img src="img/smolov-mobile@1x.jpg" width="70" height="70">
-              <span></span>
+              <span class="heart">
+                <svg width="13" height="11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                </svg>
+              </span>
             </a>
             <h3 class="ctl__name">Марк<br> Смолов</h3>
             </div>
-            <span class="visually-hidden">1700</span>
+            <span class="ctl__span-text">1700</span>
             <p class="ctl__tag">#рэп #тату #хайпбист<br> #кроссовки #суприм</p>
             <div class="ctl__block ctl__block--third">
               <h3 class="ctl__title">хочет посетить:</h3>
@@ -495,20 +532,20 @@
                 <h3 class="ctl__title">транспорт:</h3>
                 <ul class="ctl__tr-list tr__list">
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="plane" id="plane-field">
-                    <label class="tr__checkbox tr__checkbox--plane tr__checkbox--ctl" for="plane-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="plane" id="plane-field3">
+                    <label class="tr__checkbox tr__checkbox--plane tr__checkbox--ctl" for="plane-field3"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="bus" id="bus-field">
-                    <label class="tr__checkbox tr__checkbox--bus tr__checkbox--ctl" for="bus-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="bus" id="bus-field3">
+                    <label class="tr__checkbox tr__checkbox--bus tr__checkbox--ctl" for="bus-field3"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="bike" id="bike-field" checked>
-                    <label class="tr__checkbox tr__checkbox--bike tr__checkbox--ctl" for="bike-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="bike" id="bike-field3" checked>
+                    <label class="tr__checkbox tr__checkbox--bike tr__checkbox--ctl" for="bike-field3"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="run" id="run-field" checked>
-                    <label class="tr__checkbox tr__checkbox--run tr__checkbox--ctl" for="run-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="run" id="run-field3" checked>
+                    <label class="tr__checkbox tr__checkbox--run tr__checkbox--ctl" for="run-field3"></label>
                   </li>
                 </ul>
               </div>
@@ -525,11 +562,18 @@
             <div class="ctl__wrapper">
               <a class="ctl__avatar" href="#">
               <img src="img/rogovaya-mobile@1x.jpg" width="70" height="70">
-              <span></span>
+              <span class="heart">
+                <svg width="13" height="11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 20 17" style="enable-background:new 0 0 20 17;" xml:space="preserve">
+                <path d="M18.5,1.5c-2-2-5.3-2-7.3,0L10,2.7L8.8,1.5c-2-2-5.3-2-7.3,0c-2,2-2,5.2,0,7.2l1.2,1.2L10,17l7.3-7.2l1.2-1.2
+                C20.5,6.7,20.5,3.5,18.5,1.5z M14.9,9.8L10,14.6L5.1,9.8L2.7,7.5C1.4,6.1,1.4,4,2.7,2.7c1.3-1.3,3.5-1.3,4.9,0L10,5.1l2.4-2.4
+                c1.3-1.3,3.5-1.3,4.9,0c1.3,1.3,1.3,3.5,0,4.8L14.9,9.8z"/>
+                </svg>
+              </span>
             </a>
             <h3 class="ctl__name">Лариса<br> Роговая</h3>
             </div>
-            <span class="visually-hidden">1700</span>
+            <span class="ctl__span-text">23</span>
             <p class="ctl__tag">#образование #карьера<br> #учеба #линкедин</p>
             <div class="ctl__block ctl__block--fourth">
               <h3 class="ctl__title">хочет посетить:</h3>
@@ -549,20 +593,20 @@
                 <h3 class="ctl__title">транспорт:</h3>
                 <ul class="ctl__tr-list tr__list">
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="plane" id="plane-field">
-                    <label class="tr__checkbox tr__checkbox--plane tr__checkbox--ctl" for="plane-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="plane-ctl" id="plane-ctl4">
+                    <label class="tr__checkbox tr__checkbox--plane tr__checkbox--ctl" for="plane-ctl"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="bus" id="bus-field">
-                    <label class="tr__checkbox tr__checkbox--bus tr__checkbox--ctl" for="bus-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="bus-ctl" id="bus-ctl4">
+                    <label class="tr__checkbox tr__checkbox--bus tr__checkbox--ctl" for="bus-ctl4"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="bike" id="bike-field" checked>
-                    <label class="tr__checkbox tr__checkbox--bike tr__checkbox--ctl" for="bike-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="bike-ctl" id="bike-ctl4" checked>
+                    <label class="tr__checkbox tr__checkbox--bike tr__checkbox--ctl" for="bike-ctl4"></label>
                   </li>
                   <li class="tr__item">
-                    <input class="visually-hidden tr__input" type="checkbox" name="run" id="run-field" checked>
-                    <label class="tr__checkbox tr__checkbox--run tr__checkbox--ctl" for="run-field"></label>
+                    <input class="visually-hidden tr__input" type="checkbox" name="run-ctl" id="run-ctl4" checked>
+                    <label class="tr__checkbox tr__checkbox--run tr__checkbox--ctl" for="run-ctl4"></label>
                   </li>
                 </ul>
               </div>
@@ -635,20 +679,7 @@
       </section>
     </footer>
 
-    <script>
-      var mainNav = document.querySelector('.main-popup');
-      var openMenu = document.querySelector('.main-menu__toggle');
-      var closeMenu = document.querySelector('.main-popup__toggle');
-
-      openMenu.addEventListener('click', function(evt) {
-        evt.preventDefault();
-        mainNav.classList.remove('main-popup--close');
-      });
-
-      closeMenu.addEventListener('click', function(evt) {
-        evt.preventDefault();
-        mainNav.classList.add('main-popup--close');
-      })
-    </script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/catalog.js" type="text/javascript"></script>
   </body>
 </html>
