@@ -19,12 +19,6 @@
   margin: 23px 0 0 0;
 }
 
-.filter-travel__item {
-  &:nth-child(2) {
-    margin-bottom: 15px;
-  }
-
-}
 
 .filter-travel__title {
   margin: 0;
@@ -91,6 +85,22 @@
   background-image: url('../img/tick.svg');
   background-size: 9px 9px;
   background-repeat: no-repeat;
+}
+
+.closed .check__list{
+  display: none;
+}
+
+.closed .tr__list{
+  display: none;
+}
+
+.closed .filter-travel__wrapper{
+  display: none;
+}
+
+.closed .filter-btn__arrow {
+  transform: none;
 }
 
 .tr__list {
@@ -236,10 +246,239 @@
   box-sizing: border-box;
 }
 
-// .hobbi {
-//   display: none;
-// }
+@media (min-width: $tablet) {
+  .filter-travel {
+    margin: 45px 40px 0 40px;
+    padding: 35px 35px 36px 36px;
+  }
 
-// .food {
-//   display: none;
-// }
+  .filter-travel__main-title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 37px;
+    border-bottom: 1px solid rgba(29, 46, 91, 0.2);
+  }
+
+  .filter-travel__wrap {
+    border: none;
+  }
+
+  .filter-travel__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .filter-travel__wrap {
+    width: 20%;
+
+    &--last {
+      margin-top: -4px;
+    }
+  }
+
+  .filter-travel__list {
+    margin-bottom: 37px;
+    padding-bottom: 31px;
+    border-bottom: 1px solid rgba(29, 46, 91, 0.2);
+  }
+
+  .filter-travel__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .filter-btn__arrow {
+    display: none;
+  }
+
+  .check__list {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .check__item {
+    width: 31%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .check__checkbox {
+    padding-left: 37px;
+    padding-top: 5px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .check__input:checked + .check__checkbox::after {
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: 6px;
+    background-size: 12px 12px;
+  }
+
+  .closed .check__list{
+    display: flex;
+  }
+
+  .tr__list {
+    margin-left: 2px;
+    margin-top: 5px;
+  }
+
+  .tr__item {
+    margin-right: 44px;
+  }
+
+  .tr__checkbox {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .tr__checkbox--plane::after {
+    background-size: 19px 21px;
+    width: 19px;
+    height: 21px;
+  }
+
+  .tr__checkbox--bus::after {
+    background-size: 17px 21px;
+    width: 17px;
+    height: 21px;
+  }
+
+  .tr__checkbox--bike::after {
+    background-size: 24px 21px;
+    width: 24px;
+    height: 21px;
+  }
+
+  .tr__checkbox--run::after {
+    background-size: 20px 21px;
+    width: 20px;
+    height: 21px;
+  }
+
+  .filter-travel__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .lvl__lvl-box {
+    width: 150px;
+    height: 43px;
+    margin: 0;
+  }
+
+  .lvl__number {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .lvl__line-box {
+    width: 277px;
+    height: 3px;
+    margin: 18px 67px 0 0;
+  }
+
+  .lvl__line {
+    width: 201px;
+    height: 3px;
+  }
+
+  .lvl__dots {
+    width: 13px;
+    height: 13px;
+
+    &--one {
+      right: -7px;
+    }
+
+    &--two {
+      right: 193px;
+    }
+  }
+
+  .filter-travel__btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .filter-travel {
+    position: absolute;
+    z-index: 100;
+    width: 285px;
+    right: 60px;
+    padding: 47px 40px 45px 48px;
+    margin: 103px 0 0 0;
+    box-sizing: border-box;
+  }
+
+  .filter-travel__main-title {
+    padding: 0;
+    border: none;
+  }
+
+  .filter-btn__arrow {
+    display: block;
+  }
+
+  .check__list {
+    display: block;
+    margin-top: 9px;
+  }
+
+  .closed .check__list {
+    display: none;
+  }
+
+  .filter-travel__list {
+    margin: 20px 0 0 0;
+  }
+
+  .filter-travel__item {
+    display: block;
+    justify-content: unset;
+    margin-bottom: -11px;
+  }
+
+  .filter-travel__wrap {
+    width: auto;
+  }
+
+  .check__item {
+    width: auto;
+    padding-bottom: 20px;
+  }
+
+  .filter-travel__wrapper {
+    display: block;
+  }
+
+  .lvl__line-box {
+    width: 190px;
+  }
+
+  .lvl__line {
+    width: 123px;
+  }
+
+  .lvl__dots--two {
+    right: 120px;
+  }
+}

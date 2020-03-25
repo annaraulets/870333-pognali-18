@@ -59,25 +59,24 @@ img {
 
 .catalog-main {
   background: #edeff6;
+  position: relative;
 }
 
-.closed .check__list{
-  display: none;
-}
+// .closed .check__list{
+//   display: none;
+// }
 
-.closed .tr__list{
-  display: none;
-}
+// .closed .tr__list{
+//   display: none;
+// }
 
-.closed .filter-travel__wrapper{
-  display: none;
-}
+// .closed .filter-travel__wrapper{
+//   display: none;
+// }
 
-.closed .filter-btn__arrow {
-  transform: none;
-}
-
-// document.getElementsByClassName('filter-travel__item')[0].classList.toggle('closed')
+// .closed .filter-btn__arrow {
+//   transform: none;
+// }
 
 @media (min-width: $tablet) {
   .container {

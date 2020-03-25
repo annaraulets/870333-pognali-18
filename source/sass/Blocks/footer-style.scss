@@ -78,6 +78,10 @@
       border-top-left-radius: 60px;
       border-top-right-radius: 60px;
     }
+
+    &--catalog {
+      margin-top: -53px;
+    }
   }
 
   .footer__logo {
@@ -115,6 +119,11 @@
 
     &--form {
       margin: 0;
+    }
+
+    &--catalog {
+      align-items: center;
+      margin-top: -32px;
     }
   }
 

@@ -46,4 +46,16 @@
   text-transform: inherit;
 }
 
+@mixin tablet-main-text {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+@mixin tablet-text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
+
 
