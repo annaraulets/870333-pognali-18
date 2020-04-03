@@ -58,6 +58,7 @@
 }
 
 .map__img {
+  margin-top: -52px;
   img {
     height: 50%;
   }
@@ -103,6 +104,12 @@
     &::before {
       top: 30px;
       right: 33px;
+    }
+  }
+
+  .map__img {
+    img {
+      width: 100%;
     }
   }
 }

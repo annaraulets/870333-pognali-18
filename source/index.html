@@ -540,16 +540,16 @@
       <h2 class="modal__title">Бизнес-тарифы</h2>
       <ul class="modal__list">
         <li class="modal__item">
-          <p class="modal__text">Реклама у блоггера 300 000 руб./пост</p>
+          <p class="modal__text">Реклама у блоггера<br> 300 000 руб./пост</p>
         </li>
         <li class="modal__item">
-          <p class="modal__text">Накрутка подписчиков от 1 руб./шт.</p>
+          <p class="modal__text">Накрутка подписчиков<br> от 1 руб./шт.</p>
         </li>
         <li class="modal__item">
-          <p class="modal__text">Лайки от ботов от 20 коп./лайк</p>
+          <p class="modal__text">Лайки от ботов<br> от 20 коп./лайк</p>
         </li>
         <li class="modal__item">
-          <p class="modal__text">Ваш продакт-плейсмент Индивидуально</p>
+          <p class="modal__text">Ваш продакт-плейсмент<br> Индивидуально</p>
         </li>
       </ul>
       <button class="modal__btn-close">Закрыть окно</button>
@@ -569,6 +569,22 @@
         evt.preventDefault();
         mainNav.classList.add('main-popup--close');
       })
+
+
+      var modalBtn = document.querySelector('.promo__button');
+      var modalAdWindow = document.querySelector('.modal');
+      var modalBtnClose = modalAdWindow.querySelector('.modal__btn-close');
+
+      modalBtn.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        modalAdWindow.classList.remove('visually-hidden');
+      })
+
+      modalBtnClose.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        modalAdWindow.classList.add('visually-hidden');
+      })
+
     </script>
 
   </body>
