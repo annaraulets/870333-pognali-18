@@ -1,7 +1,7 @@
 .main-banner {
   position: relative;
   background-color: #192144;
-  padding: 25px 25px;
+  padding: 15px 25px;
   background-image: url("../img/globe-back-mobile@1x.jpg");
   background-size: 320px 400px;
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@
 
 .traveller-pic {
   position: absolute;
+  top: 145px;
   left: 80px;
   width: 192px;
   height: 255px;
@@ -27,9 +28,13 @@
 
 .main-banner__wrapper {
   display: flex;
-  margin-top: 240px;
+  margin-top: 243px;
   z-index: 50;
   position: relative;
+
+  &--form {
+    display: none;
+  }
 }
 
 .main-banner__tel {
@@ -60,9 +65,18 @@
 
 .content__quote {
   @include textstylelight;
+  margin: 26px 0 30px 25px;
+
+  p {
+    width: 150px
+  }
 
   cite {
+    display: block;
+    margin-top: 19px;
     font-weight: bold;
+    font-style: normal;
+    width: 172px;
   }
 }
 
@@ -73,16 +87,31 @@
   font-size: 18px;
   line-height: 18px;
   padding: 0;
-  border-radius: 20px;
+  margin: 23px 0;
 }
 
 .content__item {
-  min-height: 70px;
-  padding-top: 25px;
+  position: relative;
+  min-height: 55px;
+  padding-top: 22px;
   padding-left: 25px;
-  padding-bottom: 25px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  padding-bottom: 23px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+  p {
+    width: 150px;
+    margin: 0;
+  }
+
+  span {
+    position: absolute;
+    right: 21px;
+    top: 22px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .content__item:first-child {
@@ -102,13 +131,14 @@
 .content__item:nth-child(4) {
   background-color: #ffd74b;
   margin-top: -20px;
-  border-radius: 20px;
+  border-radius: 15px;
+  min-height: 20px;
 }
 
 
 @media (min-width: $tablet) {
   .main-banner {
-    padding: 40px 40px;
+    padding: 25px 40px;
     background-image: url("../img/globe-back-tablet@1x.jpg");
     background-size: 100%;
     background-position: 0 350px;
@@ -121,9 +151,10 @@
   }
 
   .traveller-pic {
-    left: 300px;
-    width: 400px;
-    height: 591px;
+    top: 265px;
+    left: 285px;
+    width: 372px;
+    height: 553px;
     background-image: url("../img/traveller-illustration-tablet@1x.png");
     background-size: 100%;
   }
@@ -139,13 +170,20 @@
 
   .content__quote {
     position: absolute;
-    top: -380px;
-    left: 0;
+    top: -448px;
+    left: 9px;
     width: 260px;
     font-size: 28px;
     line-height: 33px;
 
+    p {
+      width: inherit;
+      margin: 28px 0 44px 0;
+    }
+
     cite {
+      margin: 0;
+      width: inherit;
       font-size: 21px;
       line-height: 25px;
       font-style: normal;
@@ -155,16 +193,29 @@
   .content__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 550px;
+    margin-top: 481px;
     width: 688px;
   }
 
   .content__item {
     font-size: 24px;
     line-height: 24px;
-    min-height: 80px;
-    padding: 30px 34px;
+    min-height: 99px;
+    padding: 31px 34px;
     width: 40%;
+
+    p {
+      width: 200px;
+    }
+
+    span {
+      right: initial;
+      left: 33px;
+      top: 85px;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: bold;
+    }
   }
 
   .content__item:first-child {
@@ -180,6 +231,7 @@
   }
 
   .content__item:nth-child(3) {
+    min-height: 80px;
     width: 42%;
     margin-right: -2%;
     border-bottom-left-radius: 20px;
@@ -195,25 +247,25 @@
 
 @media (min-width: $desktop) {
   .main-banner {
-    padding: 60px 60px;
+    padding: 76px 60px 65px 60px;
     background-image: url("../img/globe-back-desktop@1x.jpg");
     background-size: 100%;
     background-position-y: bottom;
     background-color: #161c35;
-    min-height: 630px;
+    min-height: 475px;
   }
 
   .main-banner__title {
     width: 395px;
     text-align: left;
     margin: 0;
-    padding-left: 60px;
+    padding-left: 67px;
   }
 
   .traveller-pic {
     margin: 0 auto;
-    top: 30px;
-    left: 500px;
+    top: -24px;
+    left: 604px;
     background-image: url("../img/traveller-illustration-desktop@1x.png");
     background-size: 100%;
     width: 431px;
@@ -225,7 +277,11 @@
     display: flex;
     margin: 0;
     right: 60px;
-    top: -40px;
+    top: -84px;
+
+    &--form {
+      top: 50px;
+    }
   }
 
   .main-banner__tel {
@@ -250,35 +306,56 @@
   }
 
   .content__quote {
-    top: 0;
+    top: 34px;
     left: initial;
-    right: 60px;
+    right: 86px;
+
+    p {
+      margin: 28px 0 43px 0;
+    }
   }
 
   .content__list {
-    position: relative;
+    // position: relative;
     z-index: 10;
     flex-wrap: nowrap;
     width: 100%;
     margin-top: 100px;
+    margin-bottom: 0;
   }
 
   .content__item {
+    position: relative;
     width: 25%;
-    padding: 30px 30px;
+    padding: 30px 61px 30px 33px;
     min-height: 47px;
+    height: 20px;
     display: flex;
     align-content: center;
+
+    span {
+      font-size: 24px;
+      line-height: 24px;
+      left: initial;
+      right: 80px;
+      top: 29px;
+    }
+
+    span:nth-child(2) {
+      right: 47px;
+    }
   }
+
 
   .content__item:first-child {
     border-bottom-left-radius: 20px;
-    width: 25%;
+    width: 23%;
     margin-right: -2%;
   }
 
   .content__item:nth-child(2) {
     margin: 0;
+    padding-left: 30px;
     width: 25%;
     margin-right: -2%;
     border-bottom-left-radius: 20px;
@@ -286,6 +363,7 @@
   }
 
   .content__item:nth-child(3) {
+    min-height: 48px;
     width: 25%;
     margin: 0;
     margin-right: -2%;
@@ -295,9 +373,33 @@
   }
 
   .content__item:nth-child(4) {
+    min-height: 48px;
     width: 25%;
     border-top-left-radius: 20px;
     margin: 0;
     margin-left: -2%;
   }
+
+  .content__list .content__item {
+  box-sizing: border-box;
+  width: 360px;
+  flex-shrink: 0;
+  min-height: 109px;
+  margin: 0;
+  padding: 28px 50px 25px 33px;
+
+  &:nth-child(2) {
+    margin-left: -47px;
+  }
+
+  &:nth-child(3) {
+    margin-left: -14px;
+  }
+
+  &:nth-child(4) {
+    width: 315px;
+    margin-left: -15px;
+  }
+}
+
 }

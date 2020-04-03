@@ -1,7 +1,7 @@
 .about {
   position: relative;
   z-index: 60;
-  padding: 25px 50px 85px 50px;
+  padding: 32px 50px 80px 50px;
   background-color: #192144;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
@@ -13,11 +13,17 @@
 
 .about__title {
   @include titlestyle;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .about__text {
   @include textstylelight;
+  width: 209px;
+  margin: 0 0 18px 0;
+
+  .about-br-tablet {
+    display: none;
+  }
 
   &--quote {
     font-weight: bold;
@@ -31,17 +37,19 @@
 
 @media (min-width: $tablet) {
   .about {
-    padding: 40px 40px;
+    padding: 40px 40px 89px 40px;
     background-image: url("../img/about-tablet@1x.png");
-    background-position-x: 410px;
-    background-position-y: 29px;
-    background-size: 50%;
+    background-position-x: 384px;
+    background-position-y: 94px;
+    background-size: 49%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .about__title {
     font-size: 45px;
     line-height: 45px;
-    margin-left: 40px;
+    margin: 48px 40px 40px 34px;
   }
 
   .about__text {
@@ -50,7 +58,16 @@
     line-height: 33px;
     font-weight: 300;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 36px;
+    text-align: left;
+
+    .about-br-mobile {
+      display: none;
+    }
+
+    .about-br-tablet {
+      display: block;
+    }
 
     &--quote {
       width: 290px;
@@ -58,40 +75,62 @@
       font-weight: bold;
       font-size: 21px;
       line-height: 25px;
+      margin-top: 31px;
+      margin-bottom: 50px
     }
   }
 
   .about__link {
+    position: relative;
     display: block;
-    margin-left: 40px;
-    width: 200px;
+    margin-left: 37px;
+    width: 209px;
+    padding: 29px 31px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      width: 10px;
+      height: 14px;
+      background-image: url("../img/triangle-arrow-right.svg");
+      background-size: 10px 14px;
+    }
   }
 }
 
 
 @media (min-width: $desktop) {
   .about {
-    padding: 90px 60px 160px 130px;
+    padding: 90px 60px 162px 130px;
     background-image: url("../img/about-desktop@1x.png");
     background-size: 630px 665px;
-    background-position-x: 92%;
-    background-position-y: 88px;
+    background-position-x: 749px;
+    background-position-y: 85px;
   }
 
   .about__title {
-    margin: 0;
+    margin: 42px 0 59px 0;
   }
 
   .about__text {
     width: 611px;
     margin-left: 0;
+    margin-bottom: 37px;
+
+    .about-br-tablet {
+      display: none;
+    }
 
     &--quote {
-      margin-bottom: 86px;
+      width: 410px;
+      margin-bottom: 84px;
     }
   }
 
   .about__link {
     margin-left: 0;
+    padding: 29px 33px;
   }
 }

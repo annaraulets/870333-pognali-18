@@ -1,37 +1,163 @@
 .plans {
+  position: relative;
+  margin-top: -20px;
+  z-index: 10;
   background: #dfe3f0;
   color: #1d2e5b;
+  padding: 30px 25px 41px 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .plans__main-title {
   @include titlestyle;
   color: #1d2e5b;
+  margin: 0 0 26px 0;
 }
 
 .plans__box {
   background: #ffffff;
   border-radius: 10px;
+  padding: 25px 23px 22px 25px;
+  margin-bottom: 8px;
 }
 
 .plans__title {
+  margin: 0 0 20px 0;
   font-size: 16px;
   line-height: 16px;
   font-weight: bold;
 }
 
 .plans__text {
+  margin: 0px 0 5px 0;
   font-size: 14px;
-  // line-height: 14px;
+  line-height: 14px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1.4px;
 }
 
 .plans__link {
+  display: block;
+  margin: 22px 0 0 2px;
   font-size: 14px;
+  line-height: 18px;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   letter-spacing: 1.4px;
+}
+
+
+@media (min-width: $tablet) {
+  .plans {
+    padding: 50px 75px 87px 75px;
+  }
+
+  .plans__main-title {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 41px;
+  }
+
+  .plans__box {
+    position: relative;
+    padding: 27px 35px 15px 35px;
+    margin-bottom: 10px;
+  }
+
+  .plans__title {
+    margin: 0 0 40px 0;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .plans__number {
+    position: absolute;
+    top: 44px;
+    right: 31px;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+   .plans__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 -2px;
+  }
+
+  .plans__text {
+    @include tablet-text-middle;
+    margin: 0;
+
+    &--data {
+      margin: 0 0 0 -30px;
+    }
+  }
+
+  .plans__link {
+    @include tablet-text-middle;
+    margin: 0;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .plans {
+    margin-top: -55px;
+    padding: 50px 60px 100px 124px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .plans__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 24px 39px 23px 42px;
+  }
+
+  .plans__main-title {
+    margin-left: 6px;
+  }
+
+  .plans__title {
+    margin: 0;
+  }
+
+  .plans__number {
+    position: initial;
+    margin-right: 30px;
+  }
+
+  .plans__wrapper {
+    display: flex;
+  }
+
+  .plans__text {
+    margin-right: 38px;
+
+    &--data {
+      margin: 0;
+    }
+
+    &--second-box {
+      margin-right: 50px;
+    }
+  }
+
+  .plans__link {
+    margin: 0 0 0 124px;
+
+    &--second-box {
+      margin: 0 0 0 129px;
+    }
+  }
+
+
 }

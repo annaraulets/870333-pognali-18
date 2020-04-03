@@ -2,7 +2,7 @@
   position: relative;
   z-index: 10;
   margin-top: -20px;
-  padding: 50px 25px 25px 25px;
+  padding: 50px 25px 35px 25px;
   background: #ffd74b;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -11,10 +11,12 @@
 .map__block {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 
   p {
     margin: 0;
     font-size: 16px;
+    line-height: 22px;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -29,7 +31,7 @@
   width: 45px;
   height: 45px;
   margin-right: 15px;
-
+  margin-top: 3px;
 
   svg {
     fill: #ffd74b;
@@ -39,21 +41,45 @@
 }
 
 .map__button {
+  position: relative;
+  padding: 20px 23px 20px 20px;
   border: 3px solid #192144;
+}
+
+.map__button::before {
+  content: '';
+  position: absolute;
+  top: 22px;
+  right: 21px;
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-size: 10px 14px;
+}
+
+.map__img {
+  margin-top: -52px;
+  img {
+    height: 50%;
+  }
 }
 
 
 @media (min-width: $tablet) {
   .map {
-    padding: 85px 75px;
+    margin-top: -60px;
+    padding: 105px 75px 82px 75px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .map__block {
-    margin-bottom: 60px;
+    margin-bottom: 45px;
 
     p {
       font-size: 28px;
       line-height: 28px;
+      margin-top: 10px;
     }
 
     br {
@@ -64,10 +90,26 @@
   .map__wrapper {
     width: 67px;
     height: 67px;
+    margin-right: 26px;
 
     svg {
       width: 21px;
       height: 31px;
+    }
+  }
+
+  .map__button {
+    padding: 26px 23px 23px 33px;
+
+    &::before {
+      top: 30px;
+      right: 33px;
+    }
+  }
+
+  .map__img {
+    img {
+      width: 100%;
     }
   }
 }
@@ -76,17 +118,19 @@
 @media (min-width: $desktop) {
   .map {
     display: flex;
-    justify-content: space-around;
+    padding: 105px 130px 61px 130px;
   }
 
   .map__block {
-    margin: 0;
+    margin: 0 148px 0 0;
   }
 
   .map__wrapper {
     width: 90px;
     height: 90px;
     margin-right: 32px;
+    margin-left: 152px;
+    margin-top: 10px;
 
     svg {
       width: 28px;
@@ -94,7 +138,10 @@
     }
   }
 
-  .mao__button {
-    margin: 0;
+  .map__button {
+    width: 263px;
+    height: 20px;
+    padding: 28px 23px 29px 33px;
+    margin-top: 13px;
   }
 }

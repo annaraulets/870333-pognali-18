@@ -2,7 +2,7 @@
   position: relative;
   z-index: 50;
   margin-top: -20px;
-  padding: 70px 25px 25px 25px;
+  padding: 70px 25px 29px 25px;
   background-color: #edeff6;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -11,14 +11,18 @@
 .way__title {
   @include titlestyle;
   padding: 0 25px;
+  margin: 24px 0 18px 0;
 }
 
 .way__text {
   @include textstylelight;
   padding: 0 25px;
+  width: 194px;
+  margin: 0;
 }
 
 .way-list {
+  margin-top: 60px;
   margin-bottom: 25px;
   padding: 0;
   list-style: none;
@@ -38,17 +42,24 @@
 .way-list__block {
   position: relative;
   z-index: 20;
-  margin-top: -37px;
+  margin-top: -15px;
   border-radius: 10px;
   background-color: #ffffff;
   padding: 23px 23px;
   color: #161c35;
 }
 
+.way-list__svg {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+}
+
 .way-list__title {
   font-size: 21px;
+  line-height: 21px;
   font-weight: bold;
-  margin: 0;
+  margin: 2px 0;
 }
 
 .way-list__text {
@@ -69,33 +80,75 @@
   opacity: 0.3;
 }
 
+.way-list__user-pic {
+  position: absolute;
+  top: 3px;
+  right: 51px;
+  width: 11px;
+  height: 11px;
+  background-image: url("../img/user.svg");
+
+  &--last {
+    right: 42px;
+  }
+}
+
+.way__link {
+  position: relative;
+}
+
+.way__link::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 23px;
+  width: 10px;
+  height: 14px;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-size: 10px 14px;
+}
+
+
 @media (min-width: $tablet) {
   .way {
-    padding: 75px 75px;
+    padding: 68px 75px 80px 75px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: 439px;
+    background-position-y: 100px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .way__title {
     font-size: 45px;
     line-height: 45px;
     padding: 0;
+    margin-left: -3px;
+    margin-bottom: 58px;
   }
 
   .way__text {
     width: 340px;
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 104px;
     font-size: 28px;
     line-height: 33px;
     font-weight: 300;
   }
 
+  .way-list {
+    margin-bottom: 42px;
+  }
+
   .way-list__item {
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 5px;
   }
 
   .way-list__image {
-    flex-basis: 30%;
+    flex-basis: 35%;
 
     img {
       width: 186px;
@@ -108,16 +161,25 @@
   }
 
   .way-list__block {
+    height: 100px;
     margin: 0;
     flex-basis: 70%;
-    padding: 20px 30px;
+    padding: 20px 30px 20px 30px;;
     border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
+  .way-list__svg {
+    width: 70px;
+    height: 43px;
+    top: 17px;
+    left: initial;
+    right: -35px;
+  }
+
   .way-list__title {
-    margin: 6px 0;
+    margin: 11px 0 7px 0;
     font-size: 24px;
     line-height: 24px;
   }
@@ -130,24 +192,94 @@
   .way-list__number {
     font-size: 20px;
     line-height: 30px;
-    top: 80px;
-    right: 340px;
+    top: 94px;
+    right: 321px;
+
+    &--last {
+      right: 332px;
+    }
+  }
+
+  .way-list__user-pic {
+    width: 21px;
+    height: 20px;
+    right: 60px;
+
+    &--last {
+      right: 50px;
+    }
+  }
+
+  .way__link {
+    padding: 31px 35px 26px 34px;
+
+    &::before {
+      top: 33px;
+      right: 35px;
+    }
   }
 }
 
 
 @media (min-width: $desktop) {
   .way {
-    padding: 160px 240px 140px 130px;
+    margin-top: -60px;
+    padding: 160px 130px 99px 130px;
     display: flex;
     justify-content: space-around;
+    background-position-x: 1090px;
+    background-position-y: 148px;
   }
 
   .way__wrapper {
     order: 1;
+    margin-left: -54px;
+  }
+
+  .way__title {
+    margin: 66px 0 59px 0;
+  }
+
+  .way__text {
+    margin-bottom: 95px;
+  }
+
+  .way-list {
+    margin-left: -109px;
+  }
+
+  .way-list__item {
+    width: 560px;
+  }
+
+  .way-list__image {
+    flex-basis: 42%;
+  }
+
+  .way-list__block {
+    width: 375px;
+  }
+
+  .way-list__svg {
+    top: 25px;
+  }
+
+  .way-list__title {
+    margin: 5px 0 7px 0;
+  }
+
+  .way-list__number {
+    right: 262px;
+
+    &--last {
+      right: 271px;
+    }
   }
 
   .way__link {
-    display: none;
+    position: absolute;
+    right: 303px;
+    bottom: 140px;
+    width: 205px;
   }
 }

@@ -1,0 +1,432 @@
+.filter {
+  margin-top: -30px;
+  padding: 46px 25px 13px 25px;
+  background: #e2e5f2;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.filter__close {
+  position: relative;
+}
+
+.filter__title {
+  margin: 0 0 0 27px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #192144;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 15px;
+    height: 10px;
+    background-image: url('../img/filter.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.filter__btn-text {
+  display: none;
+}
+
+.close__btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+}
+
+.filter-opened .close__btn {
+  display: block;
+}
+
+.open__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+}
+
+.filter-opened .open__btn {
+  display: none;
+}
+
+
+.filter__open {
+  display: none;
+  margin: 31px 0 9px 0;
+}
+
+.filter-opened .filter__open {
+  display: block;
+}
+
+.filter__list {
+  margin: 0 0 17px 0;
+  padding: 0 25px;
+  list-style: none;
+
+  &--cities {
+    margin-bottom: 38px;
+  }
+}
+
+.filter__item {
+  a {
+    text-decoration: none;
+    color: #444444;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.filter__item--continents {
+  margin-bottom: 5px;
+  a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(25, 33, 68, 0.3)
+  }
+  .choosen-item {
+    color: #192144;
+  }
+}
+
+.filter-table {
+  margin-left: 25px;
+  margin-bottom: 47px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.filter-table__row {
+  td {
+    padding: 0;
+    width: 44px;
+    height: 42px;
+    border: 1px solid #cbced9;
+    color: #1d2e5b;
+    text-align: center;
+    font-weight: 500;
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+
+  .choosen-letter {
+    background: #1d2e5b;
+    color: #ffffff;
+    border: 1px solid #1d2e5b;
+  }
+}
+
+.filter-table__row--last {
+  td {
+    height: 41px;
+  }
+}
+
+.filter__btn {
+  position: relative;
+  padding: 0 0 0 27px;
+  width: 270px;
+  height: 40px;
+  background: #d6daed;
+  border: none;
+  border-radius: 20px;
+  @include text-style-btn;
+  color: #161c35;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 85px;
+    width: 12px;
+    height: 12px;
+    background-image: url('../img/filter-close.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.filter-table__countres {
+  display: none;
+}
+
+
+
+@media (min-width: $tablet) {
+  .filter {
+    padding: 90px 75px 39px 75px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .filter__title {
+    display: none;
+  }
+
+  .filter__btn-text {
+    display: inline-block;
+    padding: 0;
+    margin-right: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .open__btn {
+    z-index: 30;
+  }
+
+  .open__btn .filter__btn-text {
+    margin-right: 19px;
+  }
+
+  .close__btn {
+    z-index: 30;
+    right: -6px;
+    top: -2px;
+    svg {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  .filter__open {
+    display: block;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .filter__wrap {
+    display: none;
+  }
+
+  .filter__close .filter__wrap {
+    display: none;
+  }
+
+  .filter-opened .filter__wrap {
+    display: block;
+  }
+
+  .filter .filter__list {
+    margin-bottom: 0;
+  }
+
+  .filter-opened .filter__list {
+    margin-bottom: 55px;
+  }
+
+
+  .filter__list--continents {
+    display: flex;
+    justify-content: space-between;
+    width: 363px;
+    padding: 0;
+    // margin-bottom: 55px;
+  }
+
+  .filter__item {
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .filter__item--continents {
+    a {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .filter-table {
+    font-size: 60px;
+    line-height: 24px;
+    margin: -9px 0 55px -20px;
+  }
+
+  .filter-table__row {
+    td {
+      width: 77px;
+      height: 82px;
+      background: #e2e5f2;
+      border: none;
+      color: rgba(25, 33, 68, 0.2);
+      font-weight: bold;
+    }
+
+    .choosen-letter {
+      background: transparent;
+      border: none;
+      color: #192144;
+    }
+  }
+
+  .filter__list--cities {
+    position: absolute;
+    top: 80px;
+    right: 65px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .filter__btn {
+    width: 618px;
+    height: 100px;
+    padding: 0 0 0 37px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      width: 19px;
+      height: 19px;
+      top: 39px;
+      left: 242px;
+    }
+  }
+}
+
+
+
+@media (min-width: $desktop) {
+  .filter {
+    background: #e2e5f2;
+  }
+
+  .filter.filter-opened {
+    background: #edeff6;
+  }
+
+  .filter__title {
+    display: block;
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      width: 23px;
+      height: 15px;
+      top: 0;
+      left: -42px;
+    }
+  }
+
+  .filter__list--continents {
+    margin-left: 330px;
+  }
+
+  .filter-table {
+    margin-left: 20px;
+    margin-top: 83px;
+    width: 84%;
+    text-align: left;
+  }
+
+  .filter-table__row {
+    display: flex;
+    justify-content: space-between;
+
+    &--desktop {
+      margin-bottom: 40px;
+    }
+
+    td {
+      text-align: left;
+      height: auto;
+      background: transparent;
+      color: #192144;
+    }
+  }
+
+  .filter__list--cities {
+    display: none;
+  }
+
+  .filter-table__countres {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: normal;
+
+    &--letterA {
+      width: 155px;
+    }
+
+    &--letterB {
+      width: 182px;
+    }
+
+    &--letterV {
+      width: 146px;
+    }
+
+    &--letterG {
+      width: 110px;
+    }
+
+    &--letterK {
+      width: 95px;
+    }
+
+    &--letterN {
+      width: 136px;
+    }
+
+    &--letterP {
+      width: 182px;
+    }
+
+    &--letterS {
+      width: 160px;
+    }
+
+    &--letterT {
+      width: 157px;
+    }
+
+    &--letterSH {
+      width: 96px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #444444;
+    }
+  }
+
+  .filter-opened .filter__list {
+    margin-bottom: -1px;
+  }
+
+  .filter__btn {
+    width: 102%;
+    margin-left: -14px;
+
+    &::before {
+      left: 594px;
+    }
+  }
+}
+
+

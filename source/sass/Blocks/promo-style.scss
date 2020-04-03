@@ -1,19 +1,20 @@
 .promo {
+  @include textstylelight;
+
   position: relative;
   z-index: 30;
   margin-top: -20px;
-  padding: 70px 25px 25px 50px;
+  padding: 72px 25px 35px 50px;
   background: #edeff6;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-
-  @include textstylelight;
 }
 
 .promo__avatar {
   display: flex;
 
   img {
+    margin-top: -15px;
     height: 99px;
   }
 }
@@ -21,16 +22,23 @@
 
 .promo__title {
   @include titlestyle;
+  margin: 0;
 }
 
 .promo__list {
   width: 185px;
   padding: 0;
+  margin: 33px 0 29px 0;
   list-style: none;
 }
 
 .promo__item {
-  padding: 15px 0;
+  position:  relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 230px;
+  padding: 10px 0;
   border-top: 1px solid #cccccc;
 
   &:last-child {
@@ -38,7 +46,12 @@
   }
 }
 
+.promo__text {
+  margin: 0;
+}
+
 .promo__button {
+  padding: 0;
   color: #192144;
   font-size: 16px;
   line-height: 16px;
@@ -48,55 +61,167 @@
   cursor: pointer;
 }
 
+.promo__number {
+  position: absolute;
+  top: 2px;
+  right: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #ffa530;
+  border-radius: 50%;
+}
+
 
 @media (min-width: $tablet) {
   .promo {
     position: relative;
-    padding: 75px 40px;
+    padding: 134px 40px 84px 40px;
+    margin-top: -60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .promo__title {
     font-size: 45px;
     line-height: 45px;
-    padding-left: 80px;
+    margin: 0 auto;
   }
 
   .promo__img {
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    right: 85px;
+    bottom: 48px;
+    z-index: 50;
   }
 
   .promo__list {
-    width: 100%;
+    position: relative;
+    width: 90%;
     margin-bottom: 60px;
+    padding-left: 90px;
+    margin: 73px 0 59px 0;
     font-size: 28px;
     line-height: 33px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -42px;
+      right: 22px;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background: #e2e5f2;
+    }
   }
 
   .promo__item {
     display: flex;
     justify-content: space-between;
+    width: 91%;
+    padding: 16px 0;
 
-    span {
-      margin-left: 100px;
-    }
+    // span {
+    //   margin-left: 100px;
+    // }
+  }
+
+  .promo__span {
+    position: absolute;
+    top: 17px;
+    right: 0;
+
+  }
+
+  .promo__number {
+    top: -1px;
+    right: initial;
+    left: -90px;
+    width: 67px;
+    height: 67px;
+    font-size: 28px;
+    line-height: 28px;
   }
 
   .promo__button {
     font-size: 20px;
     line-height: 20px;
-    margin-left: 60px;
+    margin-left: 90px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 65px;
+      left: 39px;
+      width: 67px;
+      height: 67px;
+      background: #e2e5f2;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 87px;
+      left: 65px;
+      width: 17px;
+      height: 21px;
+      background-image: url("../img/business.svg");
+      background-size: 17px 21px;
+    }
   }
 }
 
 
 @media (min-width: $desktop) {
   .promo {
-    padding: 100px 130px 165px 130px;
+    padding: 167px 130px 183px 130px;
   }
 
   .promo__title {
     margin: 0 auto;
+  }
+
+  .promo__avatar {
+    img {
+      width: 198px;
+      height: 198px;
+    }
+  }
+
+  .promo__img {
+    right: 133px;
+    bottom: 265px;
+  }
+
+  .promo__list {
+    width: 76%;
+    margin: 134px 0 59px 0;
+
+    &::before {
+      width: 444px;
+      height: 300px;
+      top: -51px;
+      right: -77px;
+    }
+  }
+
+  .promo__button {
+    &::before {
+      bottom: 163px;
+      left: 132px;
+    }
+
+    &::after {
+      bottom: 188px;
+      left: 155px;
+    }
   }
 }

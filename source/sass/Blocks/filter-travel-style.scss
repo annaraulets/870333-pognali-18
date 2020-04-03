@@ -1,22 +1,484 @@
 .filter-travel {
+  margin: 25px 25px 0 25px;
+  padding: 25px 25px 20px 25px;
   background: #ffd74b;
   border-radius: 20px;
   color: #1d2e5b;
 }
 
 .filter-travel__main-title {
+  margin: 0;
   font-size: 22.5px;
+  line-height: 22.5px;
   font-weight: bold;
 }
 
 .filter-travel__list {
   list-style: none;
+  padding: 0;
+  margin: 23px 0 0 0;
+}
+
+
+.filter-travel__title {
+  margin: 0;
+  padding: 10px 0 13px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter-travel__wrap {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.5px solid #999999;
+}
+
+.filter-btn__arrow {
+  margin-top: 17px;
+  padding: 0;
+  width: 8px;
+  height: 4px;
+  background-color: transparent;
+  background-image: url('../img/dropdown.svg');
+  background-size: 8px 4px;
+  background-repeat: no-repeat;
+  border: none;
+  transform: rotate(180deg);
+}
+
+
+.check__list {
+  padding: 0;
+  list-style: none;
+}
+
+.check__item {
+  padding-bottom: 10px;
+}
+
+.check__checkbox {
+  position: relative;
+  padding-left: 27px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+.check__input:checked + .check__checkbox::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: transparent;
+  background-image: url('../img/tick.svg');
+  background-size: 9px 9px;
+  background-repeat: no-repeat;
+}
+
+.closed .check__list{
+  display: none;
+}
+
+.closed .tr__list{
+  display: none;
+}
+
+.closed .filter-travel__wrapper{
+  display: none;
+}
+
+.closed .filter-btn__arrow {
+  transform: none;
+}
+
+.tr__list {
+  position: relative;
+  height: 40px;
+  display: flex;
+  padding: 15px 0 0 15px;
+  list-style: none;
+}
+
+.tr__item {
+  margin-right: 32px;
+}
+
+.tr__checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tr__checkbox::before {
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.tr__checkbox--ctl::before {
+  background-color: #edeff6;
+}
+
+.tr__checkbox::after {
+  content: '';
+  position: absolute;
+}
+
+.tr__checkbox--plane::after {
+  background-image: url('../img/plane.svg');
+  background-size: 14px 16px;
+  width: 14px;
+  height: 16px;
+}
+
+.tr__checkbox--bus::after {
+  background-image: url('../img/bus.svg');
+  background-size: 13px 16px;
+  width: 13px;
+  height: 16px;
+}
+
+.tr__checkbox--bike::after {
+  background-image: url('../img/bike.svg');
+  background-size: 19px 17px;
+  width: 19px;
+  height: 17px;
+}
+
+.tr__checkbox--run::after {
+  background-image: url('../img/run.svg');
+  background-size: 15px 17px;
+  width: 15px;
+  height: 17px;
+}
+
+.tr__input:checked + .tr__checkbox::after {
+  opacity: 0.2;
+}
+
+
+.lvl__lvl-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 220px;
+  height: 33px;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+  background: #ffffff;
+  margin-bottom: 23px;
+}
+
+.lvl__number {
+  color: #1d2e5b;
+  font-size: 15px;
+  line-height: 13.5px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.lvl__line-box {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background-color: rgba(29, 46, 91, 0.2);
+  // opacity: 0.2;
+  margin-bottom: 27px;
+  border-radius: 0.5px;
+}
+
+.lvl__line {
+  position: absolute;
+  right: 0;
+  width: 144px;
+  height: 2px;
+  background-color: #1d2e5b;
+  z-index: 10;
+}
+
+.lvl__dots {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #1d2e5b;
+  z-index: 15;
+  border-radius: 50%;
+
+  &--one {
+    top: -4px;
+    right: 0;
+  }
+
+  &--two {
+    top: -4px;
+    right: 143px;
+  }
 }
 
 .filter-travel__btn {
   @include text-style-btn;
+  width: 230px;
+  height: 40px;
+  margin-left: -5px;
+  padding: 8px 0;
   font-family: inherit;
   border: none;
   background: #ffffff;
   border-radius: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet) {
+  .filter-travel {
+    margin: 45px 40px 0 40px;
+    padding: 35px 35px 36px 36px;
+  }
+
+  .filter-travel__main-title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 37px;
+    border-bottom: 1px solid rgba(29, 46, 91, 0.2);
+  }
+
+  .filter-travel__wrap {
+    border: none;
+  }
+
+  .filter-travel__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .filter-travel__wrap {
+    width: 20%;
+
+    &--last {
+      margin-top: -4px;
+    }
+  }
+
+  .filter-travel__list {
+    margin-bottom: 37px;
+    padding-bottom: 31px;
+    border-bottom: 1px solid rgba(29, 46, 91, 0.2);
+  }
+
+  .filter-travel__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .filter-btn__arrow {
+    display: none;
+  }
+
+  .check__list {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .check__item {
+    width: 31%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .check__checkbox {
+    padding-left: 37px;
+    padding-top: 5px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .check__input:checked + .check__checkbox::after {
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: 6px;
+    background-size: 12px 12px;
+  }
+
+  .closed .check__list{
+    display: flex;
+  }
+
+  .tr__list {
+    margin-left: 2px;
+    margin-top: 5px;
+  }
+
+  .tr__item {
+    margin-right: 44px;
+  }
+
+  .tr__checkbox {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .tr__checkbox--plane::after {
+    background-size: 19px 21px;
+    width: 19px;
+    height: 21px;
+  }
+
+  .tr__checkbox--bus::after {
+    background-size: 17px 21px;
+    width: 17px;
+    height: 21px;
+  }
+
+  .tr__checkbox--bike::after {
+    background-size: 24px 21px;
+    width: 24px;
+    height: 21px;
+  }
+
+  .tr__checkbox--run::after {
+    background-size: 20px 21px;
+    width: 20px;
+    height: 21px;
+  }
+
+  .filter-travel__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .lvl__lvl-box {
+    width: 150px;
+    height: 43px;
+    margin: 0;
+  }
+
+  .lvl__number {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .lvl__line-box {
+    width: 277px;
+    height: 3px;
+    margin: 18px 67px 0 0;
+  }
+
+  .lvl__line {
+    width: 201px;
+    height: 3px;
+  }
+
+  .lvl__dots {
+    width: 13px;
+    height: 13px;
+
+    &--one {
+      right: -7px;
+    }
+
+    &--two {
+      right: 193px;
+    }
+  }
+
+  .filter-travel__btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .filter-travel {
+    position: absolute;
+    z-index: 100;
+    width: 285px;
+    right: 60px;
+    padding: 47px 40px 45px 48px;
+    margin: 103px 0 0 0;
+    box-sizing: border-box;
+  }
+
+  .filter-travel__main-title {
+    padding: 0;
+    border: none;
+  }
+
+  .filter-btn__arrow {
+    display: block;
+  }
+
+  .check__list {
+    display: block;
+    margin-top: 9px;
+  }
+
+  .closed .check__list {
+    display: none;
+  }
+
+  .filter-travel__list {
+    margin: 20px 0 0 0;
+  }
+
+  .filter-travel__item {
+    display: block;
+    justify-content: unset;
+    margin-bottom: -11px;
+  }
+
+  .filter-travel__wrap {
+    width: auto;
+  }
+
+  .check__item {
+    width: auto;
+    padding-bottom: 20px;
+  }
+
+  .filter-travel__wrapper {
+    display: block;
+  }
+
+  .lvl__line-box {
+    width: 190px;
+  }
+
+  .lvl__line {
+    width: 123px;
+  }
+
+  .lvl__dots--two {
+    right: 120px;
+  }
 }
