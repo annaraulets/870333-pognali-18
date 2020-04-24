@@ -34,7 +34,7 @@
   display: none;
 }
 
-.close__btn {
+.close-btn {
   display: none;
   position: absolute;
   right: 0;
@@ -43,11 +43,11 @@
   background: transparent;
 }
 
-.filter-opened .close__btn {
+.filter-opened .close-btn {
   display: block;
 }
 
-.open__btn {
+.open-btn {
   position: absolute;
   right: 0;
   top: 0;
@@ -55,7 +55,7 @@
   background: transparent;
 }
 
-.filter-opened .open__btn {
+.filter-opened .open-btn {
   display: none;
 }
 
@@ -186,15 +186,15 @@
     text-transform: uppercase;
   }
 
-  .open__btn {
+  .open-btn {
     z-index: 30;
   }
 
-  .open__btn .filter__btn-text {
+  .open-btn .filter__btn-text {
     margin-right: 19px;
   }
 
-  .close__btn {
+  .close-btn {
     z-index: 30;
     right: -6px;
     top: -2px;

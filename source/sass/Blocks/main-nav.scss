@@ -110,7 +110,41 @@
 }
 
 .main-popup__link {
+  display: inline-block;
+  padding-right: 5px;
   font-weight: 500;
+  overflow: hidden;
+  height: auto;
+
+  &:hover {
+    outline: none;
+    color: #ffd74b;
+  }
+
+  &:active {
+    color: rgba(255, 215, 75, 0.3);
+  }
+
+  .nav-span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+
+  .nav-span::before {
+    // display: none;
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    transform: translate3d(0,0,0);
+    white-space: nowrap;
+  }
+}
+
+.main-popup__link:hover .nav-span {
+  // display: inline-block;
+  transform: translateY(-100%);
 }
 
 .main-popup__reg {

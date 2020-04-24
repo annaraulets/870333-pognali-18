@@ -37,10 +37,22 @@
 }
 
 .contact-block__login {
-  text-decoration: none;
   color: #ffd74b;
   text-transform: lowercase;
 }
+
+.contact-block .contact-block__login {
+  text-decoration: underline;
+}
+
+.contact-block .contact-block__login:hover {
+  color: #ff8d30;
+}
+
+.contact-block .contact-block__login:active {
+  color: rgba(255, 141, 48, 0.3);
+}
+
 
 .contact--menu {
   background: #ffffff;
@@ -73,14 +85,15 @@
   }
 }
 
+
 .upper {
   text-transform: uppercase;
 }
 
 .contact-block__input {
   position: relative;
-  width: 225px;
-  height: 22px;
+  width: 270px;
+  height: 62px;
   border-radius: 10px;
   border: none;
   padding: 20px 20px;
@@ -88,7 +101,23 @@
   font-weight: bold;
   font-size: 18px;
   color: rgba(68, 68, 68, 0.3);
+  box-sizing: border-box;
 }
+
+.contact-block__input:hover {
+  background-color: #edeff6;
+}
+
+.contact-block__input:focus { 
+  background-color: #192144;
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+// .contact-block__input:invalid {
+//   color: #ff0000;
+// }
 
 .contact-block__btn {
   position: absolute;
@@ -160,7 +189,8 @@
   }
 
   .contact-block__input {
-    width: 470px;
+    width: 539px;
+    height: 82px;
     font-size: 24px;
     line-height: 24px;
     padding: 30px 35px;
@@ -204,6 +234,22 @@
       height: 27px;
     }
   }
+
+  .contact__text:hover a {
+
+    svg {
+      fill: #ffbd30;
+    }
+    color: #ffbd30;
+  }
+
+  .contact__text:active a {
+
+    svg {
+      fill: rgba(255, 189, 48, 0.3);
+    }
+    color: rgba(255, 189, 48, 0.3);
+  }
 }
 
 
@@ -226,7 +272,8 @@
   }
 
   .contact-block__input {
-    width: 790px;
+    width: 853px;
+    height: 82px
   }
 
   .contact-block__btn {

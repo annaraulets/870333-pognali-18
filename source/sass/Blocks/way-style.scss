@@ -95,6 +95,14 @@
 
 .way__link {
   position: relative;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }
 
 .way__link::before {

@@ -44,15 +44,31 @@
   border-radius: 50%;
   width: 40px;
   height: 40px;
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  img:active {
+    opacity: 0.2;
+  }
 }
 
 .main-banner__mail {
   display: flex;
   justify-content: center;
-  background-color: #ff8d30;
+  background-color: #ffbd30;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+
+  &:hover {
+    background-color: #ff8d30;
+  }
+
+  img:active {
+    opacity: 0.2;
+  }
 }
 
 .main-banner__login {
@@ -61,6 +77,14 @@
   background: #ffd74b;
   padding: 0 38px;
   border-radius: 20px;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
 
 .content__quote {

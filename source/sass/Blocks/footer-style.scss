@@ -30,6 +30,7 @@
 .footer__made {
   display: flex;
   justify-content: space-between;
+  coursor: pointer;
 
   &--form {
     margin-top: 42px;
@@ -38,6 +39,11 @@
   &--catalog {
     margin-top: 42px;
   }
+
+}
+
+.footer__made:hover {
+  opacity: 0.4;
 }
 
 .social__item--footer {
@@ -58,6 +64,14 @@
     background: #ffd74b;
     opacity: 1;
   }
+}
+
+.social__link--footer:hover {
+  background-color: #ffbd30;
+}
+
+.social__link--footer:active img {
+  opacity: 0.2;
 }
 
 .footer__html {
