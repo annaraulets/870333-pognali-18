@@ -15,8 +15,8 @@ var filterBlockClickHandler = function(evt) {
   filterBlock.classList.toggle('filter-opened');
 }
 
-var openBtn = filterBlock.querySelector('.open__btn');
-var closeBtn = filterBlock.querySelector('.close__btn');
+var openBtn = filterBlock.querySelector('.open-btn');
+var closeBtn = filterBlock.querySelector('.close-btn');
 var closeBtnBottom = filterBlock.querySelector('.filter__btn');
 
 openBtn.addEventListener('click', filterBlockClickHandler);

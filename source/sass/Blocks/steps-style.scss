@@ -140,7 +140,23 @@
     border: 1px solid #cbced9;
     border-radius: 4px;
   }
+
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-image: url('../img/tick.svg');
+    background-size: 12px 12px;
+  }
 }
+
+input:checked + .step-one__checkbox::after {
+    display: block;
+  }
 
 .cal {
   margin-top: 25px;
@@ -245,7 +261,26 @@
     padding: 13px 35px;
     line-height: 17px;
   }
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &--before:hover {
+    background: none;
+    opacity: 0.6;
+  }
+
+  &--before:active {
+    background: none;
+    opacity: 0.3;
+  }
 }
+
+// .steps__link--before:hover {
+//   background-color: none;
+//   opacity: 0.6;
+// }
 
 .step-two {
   padding: 22px 25px 6px 25px;
@@ -475,6 +510,10 @@
       height: 35px;
       top: -10px;
       left: -59px;
+    }
+
+    &::after {
+      left: -45px;
     }
   }
 

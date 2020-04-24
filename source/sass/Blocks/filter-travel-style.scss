@@ -34,7 +34,7 @@
   border-top: 0.5px solid #999999;
 }
 
-.filter-btn__arrow {
+.filter-travel__btn-arrow {
   margin-top: 17px;
   padding: 0;
   width: 8px;
@@ -48,16 +48,16 @@
 }
 
 
-.check__list {
+.filter-travel__check-list {
   padding: 0;
   list-style: none;
 }
 
-.check__item {
+.filter-travel__check-item {
   padding-bottom: 10px;
 }
 
-.check__checkbox {
+.filter-travel__check-checkbox {
   position: relative;
   padding-left: 27px;
 
@@ -74,7 +74,7 @@
   }
 }
 
-.check__input:checked + .check__checkbox::after {
+.filter-travel__check-input:checked + .filter-travel__check-checkbox::after {
   content: '';
   width: 9px;
   height: 9px;
@@ -87,11 +87,11 @@
   background-repeat: no-repeat;
 }
 
-.closed .check__list{
+.closed .filter-travel__check-list{
   display: none;
 }
 
-.closed .tr__list{
+.closed .tr-list{
   display: none;
 }
 
@@ -99,11 +99,11 @@
   display: none;
 }
 
-.closed .filter-btn__arrow {
+.closed .filter-travel__btn-arrow {
   transform: none;
 }
 
-.tr__list {
+.tr-list {
   position: relative;
   height: 40px;
   display: flex;
@@ -111,18 +111,18 @@
   list-style: none;
 }
 
-.tr__item {
+.tr-list__item {
   margin-right: 32px;
 }
 
-.tr__checkbox {
+.tr-list__checkbox {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.tr__checkbox::before {
+.tr-list__checkbox::before {
   content: '';
   position: absolute;
   width: 33px;
@@ -131,44 +131,44 @@
   background-color: #ffffff;
 }
 
-.tr__checkbox--ctl::before {
+.tr-list__checkbox--ctl::before {
   background-color: #edeff6;
 }
 
-.tr__checkbox::after {
+.tr-list__checkbox::after {
   content: '';
   position: absolute;
 }
 
-.tr__checkbox--plane::after {
+.tr-list__checkbox--plane::after {
   background-image: url('../img/plane.svg');
   background-size: 14px 16px;
   width: 14px;
   height: 16px;
 }
 
-.tr__checkbox--bus::after {
+.tr-list__checkbox--bus::after {
   background-image: url('../img/bus.svg');
   background-size: 13px 16px;
   width: 13px;
   height: 16px;
 }
 
-.tr__checkbox--bike::after {
+.tr-list__checkbox--bike::after {
   background-image: url('../img/bike.svg');
   background-size: 19px 17px;
   width: 19px;
   height: 17px;
 }
 
-.tr__checkbox--run::after {
+.tr-list__checkbox--run::after {
   background-image: url('../img/run.svg');
   background-size: 15px 17px;
   width: 15px;
   height: 17px;
 }
 
-.tr__input:checked + .tr__checkbox::after {
+.tr-list__input:checked + .tr-list__checkbox::after {
   opacity: 0.2;
 }
 
@@ -241,10 +241,20 @@
   padding: 8px 0;
   font-family: inherit;
   border: none;
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 20px;
   box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);  
+  }
+
+  &:active {
+    background: #f3c72b;
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
+
 
 @media (min-width: $tablet) {
   .filter-travel {
@@ -290,23 +300,23 @@
     font-weight: 500;
   }
 
-  .filter-btn__arrow {
+  .filter-travel__btn-arrow {
     display: none;
   }
 
-  .check__list {
+  .filter-travel__check-list {
     display: flex;
     justify-content: space-between;
     width: 80%;
   }
 
-  .check__item {
+  .filter-travel__check-item {
     width: 31%;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .check__checkbox {
+  .filter-travel__check-checkbox {
     padding-left: 37px;
     padding-top: 5px;
 
@@ -316,7 +326,7 @@
     }
   }
 
-  .check__input:checked + .check__checkbox::after {
+  .filter-travel__check-input:checked + .filter-travel__check-checkbox::after {
     width: 12px;
     height: 12px;
     top: 6px;
@@ -324,45 +334,45 @@
     background-size: 12px 12px;
   }
 
-  .closed .check__list{
+  .closed .filter-travel__check-list{
     display: flex;
   }
 
-  .tr__list {
+  .tr-list {
     margin-left: 2px;
     margin-top: 5px;
   }
 
-  .tr__item {
+  .tr-list__item {
     margin-right: 44px;
   }
 
-  .tr__checkbox {
+  .tr-list__checkbox {
     &::before {
       width: 43px;
       height: 43px;
     }
   }
 
-  .tr__checkbox--plane::after {
+  .tr-list__checkbox--plane::after {
     background-size: 19px 21px;
     width: 19px;
     height: 21px;
   }
 
-  .tr__checkbox--bus::after {
+  .tr-list__checkbox--bus::after {
     background-size: 17px 21px;
     width: 17px;
     height: 21px;
   }
 
-  .tr__checkbox--bike::after {
+  .tr-list__checkbox--bike::after {
     background-size: 24px 21px;
     width: 24px;
     height: 21px;
   }
 
-  .tr__checkbox--run::after {
+  .tr-list__checkbox--run::after {
     background-size: 20px 21px;
     width: 20px;
     height: 21px;
@@ -434,16 +444,16 @@
     border: none;
   }
 
-  .filter-btn__arrow {
+  .filter-travel__btn-arrow {
     display: block;
   }
 
-  .check__list {
+  .filter-travel__check-list {
     display: block;
     margin-top: 9px;
   }
 
-  .closed .check__list {
+  .closed .filter-travel__check-list {
     display: none;
   }
 
@@ -461,7 +471,7 @@
     width: auto;
   }
 
-  .check__item {
+  .filter-travel__check-item {
     width: auto;
     padding-bottom: 20px;
   }

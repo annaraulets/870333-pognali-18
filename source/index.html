@@ -17,7 +17,7 @@
             <img src="img/logo-mobile-white@1x.png" alt="Главный логотип">
           </picture>
         </a>
-        <button class="main-menu__toggle main-menu--open">
+        <button class="main-menu__toggle">
           <svg class="main-menu__burger" width="25" height="11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 25 11" xml:space="preserve">
           <g>
@@ -35,10 +35,10 @@
       <nav class="main-popup main-popup--close">
         <div class="main-popup__wrapper">
           <a class="main-popup__logo">
-            <img src="img/logo-mobile-blue@1x.png">
+            <img src="img/logo-mobile-blue@1x.png" alt="Главный логотип голубой">
           </a>
           <button class="main-popup__toggle">
-            <svg class="main-popup__close" width="" height="" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg class="main-popup__close" width="" height="" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
             <path class="st0" d="M10.3,9l7.4-7.4c0.4-0.4,0.4-0.9,0-1.3s-0.9-0.4-1.3,0L9,7.7L1.6,0.3c-0.4-0.4-0.9-0.4-1.3,0s-0.4,0.9,0,1.3
             L7.7,9l-7.4,7.4c-0.4,0.4-0.4,0.9,0,1.3v0c0.4,0.4,0.9,0.4,1.3,0L9,10.3l7.4,7.4c0.4,0.4,0.9,0.4,1.3,0v0c0.4-0.4,0.4-0.9,0-1.3
@@ -48,21 +48,31 @@
           </button>
         </div>
         <ul class="main-popup__main-menu">
-          <li class="main-popup__item">
+          <!-- <li class="main-popup__item">
             <a class="main-popup__link" href="#">О сервисе</a>
+          </li> -->
+          <li class="main-popup__item">
+            <a class="main-popup__link" href="#">
+              <span class="nav-span" data-hover="О сервисе">О сервисе</span>
+            </a>
+          </li>
+
+          <li class="main-popup__item">
+            <a class="main-popup__link" href="form.html">
+              <span class="nav-span" data-hover="Направления">Направления</span>
+            </a>
           </li>
           <li class="main-popup__item">
-            <a class="main-popup__link" href="form.html">Направления</a>
-          </li>
-          <li class="main-popup__item">
-            <a class="main-popup__link" href="catalog.html">Попутчики</a>
+            <a class="main-popup__link" href="catalog.html">
+              <span class="nav-span" data-hover="Попутчики">Попутчики</span>
+            </a>
           </li>
         </ul>
         <a class="main-popup__reg" href="#">Авторизация</a>
         <div class="main-popup__contacts contact contact--menu">
           <p class="contact__text">
             <a class="contact__link" href="#">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
               <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
               c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
@@ -78,7 +88,7 @@
           </p>
           <p class="contact__text">
             <a class="contact__link" href="#">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
               <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
               c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
@@ -92,17 +102,17 @@
         <ul class="main-popup__social social">
           <li class="social__item">
             <a class="social__link" href="#">
-              <img src="img/facebook.svg" width="11" height="21">
+              <img src="img/facebook.svg" width="11" height="21" alt="Логотип фейсбука">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <img src="img/vk.svg" width="23" height="12">
+              <img src="img/vk.svg" width="23" height="12" alt="Логотип вк">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="#">
-              <img src="img/instagram.svg" width="18" height="18">
+              <img src="img/instagram.svg" width="18" height="18" alt="Логотип инстаграма">
             </a>
           </li>
         </ul>
@@ -119,38 +129,39 @@
         </div>
         <div class="main-banner__wrapper">
           <a class="main-banner__tel" href="#">
-            <img src="img/topmenu-phone.svg" width="18" height="18">
+            <img src="img/topmenu-phone.svg" width="18" height="18" alt="Телефон">
           </a>
           <a class="main-banner__mail" href="#">
-            <img src="img/topmenu-mail.svg" width="18" height="14">
+            <img src="img/topmenu-mail.svg" width="18" height="14" alt="Емейл">
           </a>
           <a class="main-banner__login" href="#">авторизация</a>
         </div>
 
-      <div class="content">
-        <blockquote class="content__quote">
-          <p>«Лучшее приложение, что я видел в жизни!»</p>
-          <cite>Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
-        </blockquote>
+        <div class="content">
+          <blockquote class="content__quote">
+            <p>«Лучшее приложение, что я видел в жизни!»</p>
+            <cite>Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
+          </blockquote>
 
-        <ul class="content__list">
-          <li class="content__item">
-            <p>Выберите направление</p>
-            <span>1</span>
-          </li>
-          <li class="content__item">
-            <p>Изучите идеи путешественников</p>
-            <span>2</span>
-          </li>
-          <li class="content__item">
-            <p class="content__item-text">Находите тех,<br> кто похож на вас</p>
-            <span>3</span>
-          </li>
-          <li class="content__item">
-            <p>Путешествуйте вместе!</p>
-            <span>4</span>
-          </li>
-        </ul>
+          <ul class="content__list">
+            <li class="content__item">
+              <p>Выберите направление</p>
+              <span>1</span>
+            </li>
+            <li class="content__item">
+              <p>Изучите идеи путешественников</p>
+              <span>2</span>
+            </li>
+            <li class="content__item">
+              <p class="content__item-text">Находите тех,<br> кто похож на вас</p>
+              <span>3</span>
+            </li>
+            <li class="content__item">
+              <p>Путешествуйте вместе!</p>
+              <span>4</span>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="about">
@@ -180,7 +191,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/thailand-desktop@1x.jpg">
                 <source media="(min-width: 768px)" srcset="img/thailand-desktop@1x.jpg">
-                <img src="../img/thailand-mobile@1x.jpg" width="270" height="110">
+                <img src="../img/thailand-mobile@1x.jpg" width="270" height="110" alt="Фото Тайланда">
               </picture>
             </div>
             <div class="way-list__block">
@@ -195,7 +206,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/france-desktop@1x.jpg">
                 <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg">
-                <img src="../img/france-mobile@1x.jpg">
+                <img src="../img/france-mobile@1x.jpg" alt="Фото Франции">
               </picture>
             </div>
             <div class="way-list__block">
@@ -210,7 +221,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/czech-desktop@1x.jpg">
                 <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg">
-                <img src="../img/czech-mobile@1x.jpg">
+                <img src="../img/czech-mobile@1x.jpg" alt="Фото Чехии">
               </picture>
             </div>
             <div class="way-list__block">
@@ -232,7 +243,7 @@
             каждого свой взгляд на идеальный отдых.
             Одному нужен пляж и коктейль,<br>
             а другому маршрут для хайкинга.</p>
-          <b class="companion__text companion__text--quote">Теперь можно легко<br clear="companion__text-br"> найти единомышленников!</b>
+          <b class="companion__text companion__text--quote">Теперь можно легко<br class="companion__text-br"> найти единомышленников!</b>
         </div>
 
 
@@ -243,7 +254,7 @@
                 <source media="(min-width: 1200px)" srcset="img/firsova-desktop@1x.jpg">
                 <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg">
                 <source media="(min-width: 768px)" srcset="img/firsova-mobile@2x.jpg">
-                <img src="img/firsova-tablet@1x.jpg" width="270" height="270">
+                <img src="img/firsova-tablet@1x.jpg" width="270" height="270" alt="Аватар человека">
               </picture>
               <div class="companion__lvl">
                 <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
@@ -256,7 +267,7 @@
             <div class="companion__about">
               <ul class="companion__list companion__list--flag">
                 <li class="companion__item companion__item--flag">
-                  <svg width="35" height="24" viewBox="0 0 70 47"xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><rect fill="#FFCE54" x=".25" y=".52" width="70" height="47" rx="6.36"/><path fill="#57A863" d="M5.25 42.52v-37h8.11v37z"/><path fill="#FF8416" d="M13.36 42.52v-37h8.11v37z"/><path fill="#ED5565" d="M26.47 42.52v-37h38.79v37z"/><path d="M59.54 16.69a.72.72 0 0 0-.56-.39.7.7 0 0 0-.61.26.59.59 0 0 0-.15.55 4.29 4.29 0 0 1-1.29-.88 11.63 11.63 0 0 0-3.68-2.14 8.18 8.18 0 0 0-2.81-.15 4.6 4.6 0 0 0-2.13 1 2.06 2.06 0 0 0 0 3l.15.18-.09.14a1.22 1.22 0 0 0 .05 1.37c.26.35.33.35.39.35s.22-.28.23-.37a.46.46 0 0 1 .27-.45c.14-.05.25 0 1.15.33a8.4 8.4 0 0 0 4.39.08 4.71 4.71 0 0 1 2.17 0 1 1 0 0 1 .62.68 1 1 0 0 1-.28.92c-.22.24-.4.35-1.24.58a6 6 0 0 1-2.15.16 9.58 9.58 0 0 0-2.18.12 9.48 9.48 0 0 1-2.41.08h-1.71l-.34-.46a1.18 1.18 0 0 1-.18-.51V21l.2.12a.2.2 0 0 0 .23 0c.11-.1.09-.26-.12-.76a1.26 1.26 0 0 1-.07-.39v-.05a.16.16 0 0 0 .16 0c.06-.05.08-.07.12-1.33.04-1.26 0-1.6-.34-2l-.07-.09.15-.16a2 2 0 0 0 .57-1.08l.13-.8-.64.6a.54.54 0 0 1-.48.21.43.43 0 0 1-.41-.18 2.4 2.4 0 0 0-1-.59.33.33 0 0 0-.3 0 .24.24 0 0 0-.09.2 1.44 1.44 0 0 1-.14.34l-.06.1-.18-.18a1.79 1.79 0 0 0-.71-.45c-.27-.07-.45-.12-.58 0-.13.12-.12.25-.12.42 0 .17-.06.31-.06.31s-.08 0-.29-.17a1.42 1.42 0 0 0-1.28-.3l-.67.07.16.41c0 .1 0 .12-.07.27a1 1 0 0 1-.88.38 1.91 1.91 0 0 0-.68.12 2.31 2.31 0 0 1-.58.13l-.47.07a.74.74 0 0 0-.16-.6.83.83 0 0 0-.64-.27.79.79 0 0 0-.67.32 1.15 1.15 0 0 0-.08 1c0 .12.09.31.12.42a3 3 0 0 0 .62.82c.207.201.4.415.58.64.104.146.241.266.4.35l.54.3-.06-.47c.072.063.149.12.23.17.13.08.25.15.36.09a.23.23 0 0 0 .1-.21.65.65 0 0 1 0-.12c.17.27.36.528.57.77l.14.17a7.35 7.35 0 0 1-2.49-.7c-.67-.3-.88-.36-1-.22a.34.34 0 0 0-.1.31 1 1 0 0 0 .4.54.66.66 0 0 0-.23.38l-.2.63-.19.59.65-.06a4.77 4.77 0 0 0 .59-.09l-.32.59.6-.12a2.48 2.48 0 0 0 .49-.16h.07l.09.13c.05.09.22.35.44.3.22-.05.2-.13.23-.3l.05.11c.18.39.36.57.55.55.19-.02.19 0 .22-.26a.51.51 0 0 1 .17-.2.25.25 0 0 1 .17-.07s.07.06.1.14c.03.08 0 .31-.76.78a5 5 0 0 0-2.53 3.61 3.39 3.39 0 0 0 0 1.23c-.21-.23-.5-.52-.92-.93l-1.16-1.13a1 1 0 0 0 .52-.89.81.81 0 0 0-.61-.72.93.93 0 0 0-.38 0c0-.34.06-1 .09-2.55.08-4.13.38-7.27.78-8 .1-.18.17-.32.05-.43-.12-.11-.25 0-.58.19a4.26 4.26 0 0 0-1.38 1.6c-.7 1.32-1 3.12-1 6.86a23.17 23.17 0 0 0 .05 2.35.92.92 0 0 0-.41 0 .8.8 0 0 0-.64.69 1 1 0 0 0 .64 1c.147.068.301.118.46.15a.32.32 0 0 0-.08.29.31.31 0 0 0 0 .11.34.34 0 0 0-.17.1c-.07.08-.13.23 0 .49a.5.5 0 0 0 .22.22.36.36 0 0 0-.1.36c.032.1.1.186.19.24a.4.4 0 0 0 0 .24.43.43 0 0 0 .27.42.5.5 0 0 0 0 .23l-.13-.06a.45.45 0 0 0-.46 0 .42.42 0 0 0-.07.65.81.81 0 0 0 .62.15.7.7 0 0 1-.14.21l-.28.31.23.32a.82.82 0 0 1 0 .91l-.05.06a.49.49 0 0 0-.47-.22.4.4 0 0 0-.3.31c-.07.25 0 .39.25.58a1 1 0 0 0 .55.25.61.61 0 0 1-.12.12l-.52.4.72.11h.21c.06.22.25.65.45.65s.29-.18.33-.23a.81.81 0 0 0 .15-.42h.21l.73-.1-.54-.43-.11-.1a1.13 1.13 0 0 0 .82-.55.46.46 0 0 0-.07-.43.47.47 0 0 0-.45-.15.36.36 0 0 0-.27.24l-.06-.06a.75.75 0 0 1 0-1c.21-.24.17-.35-.05-.56a.8.8 0 0 1-.19-.31h.11a.53.53 0 0 0 .54 0 .36.36 0 0 0 .14-.43.51.51 0 0 0-.38-.27.48.48 0 0 0 .27-.14.85.85 0 0 0 .16.15c.16.12.16.12.16.78s0 .84.19 1c.19.16.18.17.3.12a.22.22 0 0 0 .12-.23.33.33 0 0 1 .2-.12c.23.175.447.365.65.57.265.28.572.516.91.7h.25a1.36 1.36 0 0 0 .41-.12 2.79 2.79 0 0 0 1-.87 7.7 7.7 0 0 0 .85.52c.202.14.436.226.68.25.07.24.16.51.26.81.53 1.57.35 2-.21 2.35-.19.11-.29.13-.91.13-.62 0-.81 0-1.07.21a1.91 1.91 0 0 0-.54 1.1.25.25 0 0 0 .12.22c.13.07.3 0 .59-.13l.13-.08a.57.57 0 0 0 .38.21 1 1 0 0 0 .69-.18l.1-.07.07.07a.85.85 0 0 0 .56.2 1 1 0 0 0 .58-.19l.1-.07c.175.111.374.18.58.2.42.05.48 0 .73-.34a.85.85 0 0 0 .18-.74c0-.16-.06-.42-.06-.58a.94.94 0 0 1 0-.16c.096-.05.196-.09.3-.12a5.89 5.89 0 0 0 .63-.25c.16-.09.73-.68.73-.9 0-.22-.14-.22-.56-.26-.42-.04-.56-.13-.63-.28-.07-.15 0-.5.29-.93.17-.26.32-.51.46-.76l.28-.06c.15 0 .95-.38 1.61-.68a8 8 0 0 1 3.57-1v.28a3.21 3.21 0 0 0 .93 1.94 2.63 2.63 0 0 1 .79 2.23v1l-.16.15c-.15.14-.17.16-.81.2-.64.04-.78.06-1 .26a1.14 1.14 0 0 0-.43.69.35.35 0 0 0 0 .32.28.28 0 0 0 .23.09 1.28 1.28 0 0 0 .52-.21l.17-.11.1.09a.68.68 0 0 0 1 0 .63.63 0 0 0 .54.25c.29 0 .44 0 .59-.23l.14.09c.179.127.39.2.61.21a.56.56 0 0 0 .34-.11l.05.05c.15.11.36 0 .63-.16l.14-.09a.57.57 0 0 0 .4.24.85.85 0 0 0 .64-.21l.11-.09.12.09a.87.87 0 0 0 .76.18.64.64 0 0 0 .37-.27c.288.21.647.3 1 .25a.3.3 0 0 0 .23-.17.66.66 0 0 0-.13-.52 2 2 0 0 1-.47-1c0-.34.07-.5.53-.84.46-.34.71-.74.62-1a.37.37 0 0 0-.4-.25c-.2 0-.43-.21-.58-.54-.34-.77-.27-1.63.26-3.1a6.62 6.62 0 0 0 .62-2.89 3 3 0 0 0-.22-1.49 5.3 5.3 0 0 0-.54-1l-.21-.29.28-.23a2.1 2.1 0 0 0 .82-1.92 2.15 2.15 0 0 0-1.35-1.65 2.61 2.61 0 0 0-1.41-.22 11.61 11.61 0 0 0-1.62.14 10.87 10.87 0 0 1-1.57.13c-.76 0-.86 0-1.11-.15-.25-.15-.28-.17-.33-.5a.39.39 0 0 0-.24-.31c-.21-.07-.61.3-.78.54a1.55 1.55 0 0 1-.15-.31c-.07-.2-.07-.43.37-.65l.61-.29-.46-.28a1.13 1.13 0 0 0-.86-.11 1.16 1.16 0 0 0-.73.5l-.05.08-.16-.15a.74.74 0 0 1-.24-.7.76.76 0 0 1 .53-.53.63.63 0 0 1 .47 0 .18.18 0 0 1 .09.11c.08.29.28.26.32.25.27-.05.43-.53.38-.89v-.12c.392.08.745.292 1 .6a1.13 1.13 0 0 1 0 1.12l-.39.64.62-.12a1.64 1.64 0 0 0 1-.65 1.53 1.53 0 0 0 .07-1.3c.253.108.459.303.58.55.117.16.14.37.06.55a1.79 1.79 0 0 1-.22.49c-.1.13-.18.24-.12.36a.23.23 0 0 0 .22.11 1.6 1.6 0 0 0 .88-.4c.11-.132.197-.28.26-.44.234.335.56.596.94.75.45.19.62.21.7.07.08-.14-.08-.28-.14-.33a2.09 2.09 0 0 1-.26-.61c.22.16.58.45 1 .84a2.4 2.4 0 0 0 1.75.81 1.14 1.14 0 0 0 1-.52 1 1 0 0 0 .31-1.09zM34.4 28a.66.66 0 0 0 .26-.07.2.2 0 0 0 .08.06 1 1 0 0 0-.26 0l-.08.01zm20.85 6a2.2 2.2 0 0 0-1.2.62 2.55 2.55 0 0 0-.12-.53c-.14-.43-.1-.66.45-1.31.08-.09.47-.56.47-.77a.3.3 0 0 0-.08-.23c-.09-.09-.23-.09-.45-.09s-.3 0-.42-.14-.25-.37.05-.75l.2-.25.19.12c1.55 1 1.55 1 1.62 2.08.07 1.08.04 1.11-.71 1.25z" fill="#FFCE54"/></g>
+                  <svg width="35" height="24" viewBox="0 0 70 47" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><rect fill="#FFCE54" x=".25" y=".52" width="70" height="47" rx="6.36"/><path fill="#57A863" d="M5.25 42.52v-37h8.11v37z"/><path fill="#FF8416" d="M13.36 42.52v-37h8.11v37z"/><path fill="#ED5565" d="M26.47 42.52v-37h38.79v37z"/><path d="M59.54 16.69a.72.72 0 0 0-.56-.39.7.7 0 0 0-.61.26.59.59 0 0 0-.15.55 4.29 4.29 0 0 1-1.29-.88 11.63 11.63 0 0 0-3.68-2.14 8.18 8.18 0 0 0-2.81-.15 4.6 4.6 0 0 0-2.13 1 2.06 2.06 0 0 0 0 3l.15.18-.09.14a1.22 1.22 0 0 0 .05 1.37c.26.35.33.35.39.35s.22-.28.23-.37a.46.46 0 0 1 .27-.45c.14-.05.25 0 1.15.33a8.4 8.4 0 0 0 4.39.08 4.71 4.71 0 0 1 2.17 0 1 1 0 0 1 .62.68 1 1 0 0 1-.28.92c-.22.24-.4.35-1.24.58a6 6 0 0 1-2.15.16 9.58 9.58 0 0 0-2.18.12 9.48 9.48 0 0 1-2.41.08h-1.71l-.34-.46a1.18 1.18 0 0 1-.18-.51V21l.2.12a.2.2 0 0 0 .23 0c.11-.1.09-.26-.12-.76a1.26 1.26 0 0 1-.07-.39v-.05a.16.16 0 0 0 .16 0c.06-.05.08-.07.12-1.33.04-1.26 0-1.6-.34-2l-.07-.09.15-.16a2 2 0 0 0 .57-1.08l.13-.8-.64.6a.54.54 0 0 1-.48.21.43.43 0 0 1-.41-.18 2.4 2.4 0 0 0-1-.59.33.33 0 0 0-.3 0 .24.24 0 0 0-.09.2 1.44 1.44 0 0 1-.14.34l-.06.1-.18-.18a1.79 1.79 0 0 0-.71-.45c-.27-.07-.45-.12-.58 0-.13.12-.12.25-.12.42 0 .17-.06.31-.06.31s-.08 0-.29-.17a1.42 1.42 0 0 0-1.28-.3l-.67.07.16.41c0 .1 0 .12-.07.27a1 1 0 0 1-.88.38 1.91 1.91 0 0 0-.68.12 2.31 2.31 0 0 1-.58.13l-.47.07a.74.74 0 0 0-.16-.6.83.83 0 0 0-.64-.27.79.79 0 0 0-.67.32 1.15 1.15 0 0 0-.08 1c0 .12.09.31.12.42a3 3 0 0 0 .62.82c.207.201.4.415.58.64.104.146.241.266.4.35l.54.3-.06-.47c.072.063.149.12.23.17.13.08.25.15.36.09a.23.23 0 0 0 .1-.21.65.65 0 0 1 0-.12c.17.27.36.528.57.77l.14.17a7.35 7.35 0 0 1-2.49-.7c-.67-.3-.88-.36-1-.22a.34.34 0 0 0-.1.31 1 1 0 0 0 .4.54.66.66 0 0 0-.23.38l-.2.63-.19.59.65-.06a4.77 4.77 0 0 0 .59-.09l-.32.59.6-.12a2.48 2.48 0 0 0 .49-.16h.07l.09.13c.05.09.22.35.44.3.22-.05.2-.13.23-.3l.05.11c.18.39.36.57.55.55.19-.02.19 0 .22-.26a.51.51 0 0 1 .17-.2.25.25 0 0 1 .17-.07s.07.06.1.14c.03.08 0 .31-.76.78a5 5 0 0 0-2.53 3.61 3.39 3.39 0 0 0 0 1.23c-.21-.23-.5-.52-.92-.93l-1.16-1.13a1 1 0 0 0 .52-.89.81.81 0 0 0-.61-.72.93.93 0 0 0-.38 0c0-.34.06-1 .09-2.55.08-4.13.38-7.27.78-8 .1-.18.17-.32.05-.43-.12-.11-.25 0-.58.19a4.26 4.26 0 0 0-1.38 1.6c-.7 1.32-1 3.12-1 6.86a23.17 23.17 0 0 0 .05 2.35.92.92 0 0 0-.41 0 .8.8 0 0 0-.64.69 1 1 0 0 0 .64 1c.147.068.301.118.46.15a.32.32 0 0 0-.08.29.31.31 0 0 0 0 .11.34.34 0 0 0-.17.1c-.07.08-.13.23 0 .49a.5.5 0 0 0 .22.22.36.36 0 0 0-.1.36c.032.1.1.186.19.24a.4.4 0 0 0 0 .24.43.43 0 0 0 .27.42.5.5 0 0 0 0 .23l-.13-.06a.45.45 0 0 0-.46 0 .42.42 0 0 0-.07.65.81.81 0 0 0 .62.15.7.7 0 0 1-.14.21l-.28.31.23.32a.82.82 0 0 1 0 .91l-.05.06a.49.49 0 0 0-.47-.22.4.4 0 0 0-.3.31c-.07.25 0 .39.25.58a1 1 0 0 0 .55.25.61.61 0 0 1-.12.12l-.52.4.72.11h.21c.06.22.25.65.45.65s.29-.18.33-.23a.81.81 0 0 0 .15-.42h.21l.73-.1-.54-.43-.11-.1a1.13 1.13 0 0 0 .82-.55.46.46 0 0 0-.07-.43.47.47 0 0 0-.45-.15.36.36 0 0 0-.27.24l-.06-.06a.75.75 0 0 1 0-1c.21-.24.17-.35-.05-.56a.8.8 0 0 1-.19-.31h.11a.53.53 0 0 0 .54 0 .36.36 0 0 0 .14-.43.51.51 0 0 0-.38-.27.48.48 0 0 0 .27-.14.85.85 0 0 0 .16.15c.16.12.16.12.16.78s0 .84.19 1c.19.16.18.17.3.12a.22.22 0 0 0 .12-.23.33.33 0 0 1 .2-.12c.23.175.447.365.65.57.265.28.572.516.91.7h.25a1.36 1.36 0 0 0 .41-.12 2.79 2.79 0 0 0 1-.87 7.7 7.7 0 0 0 .85.52c.202.14.436.226.68.25.07.24.16.51.26.81.53 1.57.35 2-.21 2.35-.19.11-.29.13-.91.13-.62 0-.81 0-1.07.21a1.91 1.91 0 0 0-.54 1.1.25.25 0 0 0 .12.22c.13.07.3 0 .59-.13l.13-.08a.57.57 0 0 0 .38.21 1 1 0 0 0 .69-.18l.1-.07.07.07a.85.85 0 0 0 .56.2 1 1 0 0 0 .58-.19l.1-.07c.175.111.374.18.58.2.42.05.48 0 .73-.34a.85.85 0 0 0 .18-.74c0-.16-.06-.42-.06-.58a.94.94 0 0 1 0-.16c.096-.05.196-.09.3-.12a5.89 5.89 0 0 0 .63-.25c.16-.09.73-.68.73-.9 0-.22-.14-.22-.56-.26-.42-.04-.56-.13-.63-.28-.07-.15 0-.5.29-.93.17-.26.32-.51.46-.76l.28-.06c.15 0 .95-.38 1.61-.68a8 8 0 0 1 3.57-1v.28a3.21 3.21 0 0 0 .93 1.94 2.63 2.63 0 0 1 .79 2.23v1l-.16.15c-.15.14-.17.16-.81.2-.64.04-.78.06-1 .26a1.14 1.14 0 0 0-.43.69.35.35 0 0 0 0 .32.28.28 0 0 0 .23.09 1.28 1.28 0 0 0 .52-.21l.17-.11.1.09a.68.68 0 0 0 1 0 .63.63 0 0 0 .54.25c.29 0 .44 0 .59-.23l.14.09c.179.127.39.2.61.21a.56.56 0 0 0 .34-.11l.05.05c.15.11.36 0 .63-.16l.14-.09a.57.57 0 0 0 .4.24.85.85 0 0 0 .64-.21l.11-.09.12.09a.87.87 0 0 0 .76.18.64.64 0 0 0 .37-.27c.288.21.647.3 1 .25a.3.3 0 0 0 .23-.17.66.66 0 0 0-.13-.52 2 2 0 0 1-.47-1c0-.34.07-.5.53-.84.46-.34.71-.74.62-1a.37.37 0 0 0-.4-.25c-.2 0-.43-.21-.58-.54-.34-.77-.27-1.63.26-3.1a6.62 6.62 0 0 0 .62-2.89 3 3 0 0 0-.22-1.49 5.3 5.3 0 0 0-.54-1l-.21-.29.28-.23a2.1 2.1 0 0 0 .82-1.92 2.15 2.15 0 0 0-1.35-1.65 2.61 2.61 0 0 0-1.41-.22 11.61 11.61 0 0 0-1.62.14 10.87 10.87 0 0 1-1.57.13c-.76 0-.86 0-1.11-.15-.25-.15-.28-.17-.33-.5a.39.39 0 0 0-.24-.31c-.21-.07-.61.3-.78.54a1.55 1.55 0 0 1-.15-.31c-.07-.2-.07-.43.37-.65l.61-.29-.46-.28a1.13 1.13 0 0 0-.86-.11 1.16 1.16 0 0 0-.73.5l-.05.08-.16-.15a.74.74 0 0 1-.24-.7.76.76 0 0 1 .53-.53.63.63 0 0 1 .47 0 .18.18 0 0 1 .09.11c.08.29.28.26.32.25.27-.05.43-.53.38-.89v-.12c.392.08.745.292 1 .6a1.13 1.13 0 0 1 0 1.12l-.39.64.62-.12a1.64 1.64 0 0 0 1-.65 1.53 1.53 0 0 0 .07-1.3c.253.108.459.303.58.55.117.16.14.37.06.55a1.79 1.79 0 0 1-.22.49c-.1.13-.18.24-.12.36a.23.23 0 0 0 .22.11 1.6 1.6 0 0 0 .88-.4c.11-.132.197-.28.26-.44.234.335.56.596.94.75.45.19.62.21.7.07.08-.14-.08-.28-.14-.33a2.09 2.09 0 0 1-.26-.61c.22.16.58.45 1 .84a2.4 2.4 0 0 0 1.75.81 1.14 1.14 0 0 0 1-.52 1 1 0 0 0 .31-1.09zM34.4 28a.66.66 0 0 0 .26-.07.2.2 0 0 0 .08.06 1 1 0 0 0-.26 0l-.08.01zm20.85 6a2.2 2.2 0 0 0-1.2.62 2.55 2.55 0 0 0-.12-.53c-.14-.43-.1-.66.45-1.31.08-.09.47-.56.47-.77a.3.3 0 0 0-.08-.23c-.09-.09-.23-.09-.45-.09s-.3 0-.42-.14-.25-.37.05-.75l.2-.25.19.12c1.55 1 1.55 1 1.62 2.08.07 1.08.04 1.11-.71 1.25z" fill="#FFCE54"/></g>
                   </svg>
                 </li>
                 <li class="companion__item companion__item--flag">
@@ -270,7 +281,7 @@
               <p class="companion__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               <ul class="companion__list companion__list--transport">
                 <li class="companion__item companion__item--plane">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                   <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
                   c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
@@ -282,7 +293,7 @@
                   </svg>
                 </li>
                 <li class="companion__item companion__item--bus">
-                  <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                   <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
                   c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
@@ -292,7 +303,7 @@
                   </svg>
                 </li>
                 <li class="companion__item companion__item--bike">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                   <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
                   S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
@@ -302,7 +313,7 @@
                   </svg>
                 </li>
                 <li class="companion__item companion__item--run">
-                  <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                   <g>
                   <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
@@ -324,7 +335,7 @@
                 <source media="(min-width: 1200px)" srcset="img/demin-desktop@1x.jpg">
                 <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg">
                 <source media="(min-width: 768px)" srcset="img/demin-mobile@2x.jpg">
-                <img src="img/demin-tablet@1x.jpg" width="270" height="270">
+                <img src="img/demin-tablet@1x.jpg" width="270" height="270" alt="Аватар человека">
               </picture>
               <div class="companion__lvl">
                 <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
@@ -347,7 +358,7 @@
               <p class="companion__tags companion__tags--second">#бургер #бар #футбол #концерт #крафт</p>
               <ul class="companion__list companion__list--transport">
                 <li class="companion__item companion__item--plane">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 19 21" style="enable-background:new 0 0 19 21;" xml:space="preserve">
                   <path d="M18.9,18.9c-0.1-0.3-3.7-10.1-3.7-10.1c0,0,0,0,0,0c-0.1-0.5,0.1-0.7,0.3-1.1c0,0,2.1-3.5,2.8-4.6c0.7-1.2,0.6-2.3-0.1-2.8
                   c-0.7-0.5-1.7-0.1-2.5,1c-0.8,1.1-3,4.5-3,4.5c-0.3,0.4-0.4,0.7-0.9,0.8c0,0,0,0,0,0C11.7,6.5,1.5,7,1.2,7c-0.3,0-0.7,0.1-1,0.6
@@ -359,7 +370,7 @@
                   </svg>
                 </li>
                 <li class="companion__item companion__item--bus">
-                  <svg version="1.1" id="svg2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 17 21" style="enable-background:new 0 0 17 21;" xml:space="preserve">
                   <path d="M16.2,3.1c-0.2-1.2-1-1.6-2.1-2.1C13,0.6,10.4,0,8.5,0C6.6,0,4,0.6,2.9,1C1.8,1.5,1.1,1.9,0.8,3.1L0,9.5v8.8h1.4v1.4
                   c0,1.7,2.5,1.7,2.5,0v-1.4h4.5h0h4.7v1.4c0,1.7,2.5,1.7,2.5,0v-1.4H17V9.5L16.2,3.1z M5,1.6h3.4H12c0.7,0,0.7,1,0,1H8.4H5
@@ -369,7 +380,7 @@
                   </svg>
                 </li>
                 <li class="companion__item companion__item--bike">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 24 21" style="enable-background:new 0 0 24 21;" xml:space="preserve">
                   <path d="M16,3.6c1,0,1.8-0.8,1.8-1.8S17,0,16,0s-1.8,0.8-1.8,1.8S15,3.6,16,3.6z M19,11c-2.8,0-5,2.3-5,5s2.2,5,5,5s5-2.3,5-5
                   S21.8,11,19,11z M19,19.6c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S20.9,19.6,19,19.6z M14.8,8.9H19V7.1h-3.2
@@ -379,7 +390,7 @@
                   </svg>
                 </li>
                 <li class="companion__item companion__item--run">
-                  <svg version="1.1" id="Icons_Run" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 20 21" style="enable-background:new 0 0 20 21;" xml:space="preserve">
                   <g>
                   <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>
@@ -403,7 +414,7 @@
 
         <div class="promo__avatar">
           <h3 class="promo__title">Добавьте свой профиль</h3>
-          <img class="promo__img" src="img/rates@1x.png" width="99" height="99">
+          <img class="promo__img" src="img/rates@1x.png" width="99" height="99" alt="image rates">
           <span></span>
         </div>
         <ul class="promo__list">
@@ -436,17 +447,17 @@
         <a class="contact-block__login" href="#">авторизуйтесь</a>.
         </p>
 
-        <form class="contact__form" action="https://echo.htmlacademy.ru">
-          <input class="contact__input" type="email" name="email" placeholder="E-mail">
-          <button class="contact__btn" type="submit">
-            <span class="contact__btn-text">Регистрация</span>
+        <form class="contact-block__form" action="https://echo.htmlacademy.ru">
+          <input class="contact-block__input" type="email" name="email" placeholder="E-mail">
+          <button class="contact-block__btn" type="submit">
+            <span class="contact-block__btn-text">Регистрация</span>
           </button>
         </form>
         <p class="contact-block__text contact-block__text--second">Остались вопросы?<br> <span class="contact-span">Мы с радостью на них ответим!</span></p>
         <div class="contact">
           <p class="contact__text">
             <a class="contact__link" href="#">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
               <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
               c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
@@ -458,11 +469,11 @@
               c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
               </svg>
             </a>
-            <a href="#">8 800 555-86-28</a>
+            <a class="contact__link-hover" href="#">8 800 555-86-28</a>
           </p>
           <p class="contact__text contact__text--second">
             <a class="contact__link contact__link--second" href="#">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
               <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
               c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
@@ -470,15 +481,16 @@
               c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
               </svg>
             </a>
-            <a class="upper" href="#">mail@htmlacademy.ru</a>
+            <a class="upper contact__link-hover" href="#">mail@htmlacademy.ru</a>
           </p>
         </div>
       </section>
 
       <section class="map">
+        <h2 class="visually-hidden">Адрес для навигации</h2>
         <div class="map__block">
           <div class="map__wrapper">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
             <path class="st0" d="M11.7,13.9c0-1.2,1-2.2,2.3-2.2s2.3,1,2.3,2.2c0,1.2-1,2.2-2.3,2.2C12.8,16.1,11.7,15.1,11.7,13.9z M14,8.1
             c-3.2,0-5.9,2.6-5.9,5.8s2.6,5.8,5.9,5.8c3.2,0,5.9-2.6,5.9-5.8C19.9,10.7,17.2,8.1,14,8.1z M0,13.6c0,9.1,10.9,16.2,11.7,26.7v0.4
@@ -492,45 +504,47 @@
         <a class="map__button btn-yellow" href="#">Проложить маршрут</a>
       </section>
 
-      <div class="map__img">
+      <div class="map-img">
+        <h2 class="visually-hidden">Карта из навигатора</h2>
         <picture>
             <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-            <img src="img/map-mobile@1x.jpg" width="320" height="320">
+            <img src="img/map-mobile@1x.jpg" width="320" height="320" alt="Map photo">
         </picture>
       </div>
     </main>
 
     <footer class="container">
       <section class="footer">
+        <h2 class="visually-hidden">Подвал сайта "Погнали"</h2>
         <a class="footer__logo" href="#">
         <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop-blue@1x.png">
             <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png">
-            <img src="img/logo-mobile-blue@1x.png">
+            <img src="img/logo-mobile-blue@1x.png" alt="Main logo blue">
         </picture>
       </a>
       <ul class="footer__list social">
         <li class="social__item social__item--footer">
           <a class="social__link social__link--footer" href="#">
-            <img src="img/facebook.svg" width="11" height="21">
+            <img src="img/facebook.svg" width="11" height="21" alt="Logo FB">
             <span class="visually-hidden">facebook</span></a>
         </li>
         <li class="social__item social__item--footer">
           <a class="social__link social__link--footer" href="#">
-            <img src="img/vk.svg" width="23" height="12">
+            <img src="img/vk.svg" width="23" height="12" alt="Logo VK">
             <span class="visually-hidden">vkontakte</span></a>
         </li>
         <li class="social__item social__item--footer">
           <a class="social__link social__link--footer" href="#">
-            <img src="img/instagram.svg" width="18" height="18">
+            <img src="img/instagram.svg" width="18" height="18" alt="Logo instagram">
             <span class="visually-hidden">instagram</span></a>
         </li>
       </ul>
       <div class="footer__made">
         <p>Разработано</p>
         <a class="footer__html" href="#">
-          <img src="img/htmlacademy.svg" width="27" height="34">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Logo Html Academy">
         </a>
       </div>
       </section>

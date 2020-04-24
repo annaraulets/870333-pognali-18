@@ -44,6 +44,15 @@
   position: relative;
   padding: 20px 23px 20px 20px;
   border: 3px solid #192144;
+
+  &:hover {
+    background-color: #192144;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .map__button::before {
@@ -57,7 +66,7 @@
   background-size: 10px 14px;
 }
 
-.map__img {
+.map-img {
   margin-top: -52px;
   img {
     height: 50%;
@@ -107,7 +116,7 @@
     }
   }
 
-  .map__img {
+  .map-img {
     img {
       width: 100%;
     }

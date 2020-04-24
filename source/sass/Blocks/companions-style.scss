@@ -162,6 +162,14 @@
 .companion__link {
   padding: 22px 23px 22px 23px;
   position: relative;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 }
 
 .companion__link::before {

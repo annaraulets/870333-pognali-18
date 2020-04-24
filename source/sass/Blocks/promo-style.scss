@@ -59,6 +59,10 @@
   background: none;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
 .promo__number {

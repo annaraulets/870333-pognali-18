@@ -15,6 +15,7 @@
   margin-bottom: 10px;
   background: #ffffff;
   border-radius: 20px;
+
 }
 
 .ctl__item::before {
@@ -75,6 +76,14 @@
   svg {
     fill: #ff004b;
   }
+
+  &:hover {
+    background-color: #f9d8d8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .ctl__name {
@@ -82,6 +91,11 @@
   font-size: 20px;
   color: #1d2e5b;
   line-height: 20px;
+
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 }
 
 .ctl__span-text {
@@ -145,7 +159,7 @@
   }
 }
 
-.ctl__tr-list.tr__list {
+.ctl__tr-list.tr-list {
   height: 35px;
 }
 
@@ -187,6 +201,14 @@
   padding: 5px 79px;
   border-radius: 20px;
   margin-bottom: 10px;
+
+  &:hover {
+    background: #ffbd30;
+  }
+
+  &:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
 }
 
 .ctl__show-more {
@@ -333,7 +355,7 @@
     top: 187px;
   }
 
-  .ctl__tr-list.tr__list {
+  .ctl__tr-list.tr-list {
     margin: 0;
     padding: 0;
     flex-direction: column;
@@ -341,11 +363,11 @@
     top: -296px;
     right: 32px;
 
-    .tr__item {
+    .tr-list__item {
       margin: 33px 0 0 0;
     }
 
-    .tr__checkbox--ctl::before {
+    .tr-list__checkbox--ctl::before {
       background: transparent;
     }
   }
@@ -469,6 +491,11 @@
     height: 285px;
     box-sizing: border-box;
     margin-bottom: 30px;
+
+    &:hover {
+      box-shadow:  0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+      transform: scale(1.05)
+    }
   }
 
   .ctl__avatar {
@@ -544,12 +571,12 @@
     right: 20px;
   }
 
-  .ctl__tr-list.tr__list {
+  .ctl__tr-list.tr-list {
     flex-direction: row;
     top: 147px;
     right: 122px;
 
-    .tr__item {
+    .tr-list__item {
       width: 22px;
       height: 22px;
       margin: 0 10px 0 0;
